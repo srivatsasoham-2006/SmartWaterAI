@@ -5,13 +5,13 @@ from threading import Lock
 import sqlite3
 import math
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
 
-# SQLite database stored in the backend folder.
+# Database stored beside this root-level app.py
 DATABASE_PATH = Path(__file__).resolve().parent / "smartwater.db"
 data_lock = Lock()
 
@@ -93,16 +93,11 @@ def validate_readings(data):
 
 
 def analyze_water_quality(readings):
-    """
-    Preliminary rule-based screening, not a trained AI model
-    and not a drinking-water safety certification.
-    """
+    """Preliminary rule-based screening, not a trained AI model."""
 
     issues = []
     checked = []
 
-    # Initial screening thresholds only. Confirm suitability for
-    # the intended water use before relying on these thresholds.
     thresholds = {
         "ph": (6.5, 8.5, "pH"),
         "turbidity": (None, 5.0, "Turbidity"),
@@ -153,23 +148,18 @@ def analyze_water_quality(readings):
     }
 
 
-@app.get("/")
-def home():
-    return jsonify({
-        "project": "SmartWater AI",
-        "message": "Water quality monitoring API is running.",
-        "status": "online",
-        "data_mode": "real_submissions_only",
-        "storage": "SQLite",
-        "endpoints": {
-            "health": "/api/health",
-            "latest": "/api/readings/latest",
-            "history": "/api/readings/history",
-            "submit": "/api/readings",
-            "analysis": "/api/analysis/latest"
-        }
-    })
+# -------------------- WEBSITE --------------------
 
+@app.get("/")
+@app.get("/index.html")
+def home():
+    return send_from_directory(
+        Path(__file__).resolve().parent,
+        "index.html"
+    )
+
+
+# -------------------- HEALTH API --------------------
 
 @app.get("/api/health")
 def health():
@@ -180,6 +170,8 @@ def health():
         "storage": "SQLite"
     })
 
+
+# -------------------- SENSOR READING APIs --------------------
 
 @app.get("/api/readings/latest")
 def get_latest_readings():
@@ -196,7 +188,7 @@ def get_latest_readings():
             "status": "no_data",
             "message": "No sensor readings have been submitted yet.",
             "readings": None
-        }), 200
+        })
 
     return jsonify({
         "status": "data_available",
@@ -258,14 +250,14 @@ def submit_readings():
                 (cursor.lastrowid,)
             ).fetchone()
 
-    record = row_to_dict(row)
-
     return jsonify({
         "status": "success",
         "message": "Sensor readings saved to SQLite.",
-        "reading": record
+        "reading": row_to_dict(row)
     }), 201
 
+
+# -------------------- WATER QUALITY ANALYSIS API --------------------
 
 @app.get("/api/analysis/latest")
 def get_latest_analysis():
@@ -279,7 +271,7 @@ def get_latest_analysis():
         return jsonify({
             "status": "no_data",
             "message": "No sensor readings are available for analysis."
-        }), 200
+        })
 
     readings = {
         field: row[field]
@@ -294,7 +286,7 @@ def get_latest_analysis():
     })
 
 
-# Create the database and table when the app starts.
+# -------------------- DATASET APIs --------------------
 
 def get_dataset_catalog():
     with get_db_connection() as connection:
@@ -310,10 +302,10 @@ def get_dataset_catalog():
 
         for row in rows:
             table_name = row["name"]
+            safe_table = '"' + table_name.replace('"', '""') + '"'
 
-            # Table names come only from SQLite's own table catalog.
             count = connection.execute(
-                'SELECT COUNT(*) FROM "' + table_name.replace('"', '""') + '"'
+                "SELECT COUNT(*) FROM " + safe_table
             ).fetchone()[0]
 
             datasets.append({
@@ -326,10 +318,12 @@ def get_dataset_catalog():
 
 @app.get("/api/datasets")
 def list_datasets():
+    datasets = get_dataset_catalog()
+
     return jsonify({
         "status": "success",
-        "count": len(get_dataset_catalog()),
-        "datasets": get_dataset_catalog()
+        "count": len(datasets),
+        "datasets": datasets
     })
 
 
@@ -444,13 +438,18 @@ def test_dataset_record(table_name):
         "record": dict(record),
         "analysis": {
             "method": "dataset_record_inspection",
-            "message": "Record retrieved successfully. No trained AI prediction has been performed."
+            "message": (
+                "Record retrieved successfully. No trained AI prediction "
+                "has been performed."
+            )
         }
     })
+
+
+# -------------------- STARTUP --------------------
 
 initialize_database()
 
 
 if __name__ == "__main__":
-    # Local development only.
     app.run(host="127.0.0.1", port=5000, debug=False)
