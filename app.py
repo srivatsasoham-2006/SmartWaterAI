@@ -5,7 +5,7 @@ from threading import Lock
 import sqlite3
 import math
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -154,21 +154,12 @@ def analyze_water_quality(readings):
 
 
 @app.get("/")
+@app.get("/index.html")
 def home():
-    return jsonify({
-        "project": "SmartWater AI",
-        "message": "Water quality monitoring API is running.",
-        "status": "online",
-        "data_mode": "real_submissions_only",
-        "storage": "SQLite",
-        "endpoints": {
-            "health": "/api/health",
-            "latest": "/api/readings/latest",
-            "history": "/api/readings/history",
-            "submit": "/api/readings",
-            "analysis": "/api/analysis/latest"
-        }
-    })
+    return send_from_directory(
+        Path(__file__).resolve().parent,
+        "index.html"
+    )
 
 
 @app.get("/api/health")
