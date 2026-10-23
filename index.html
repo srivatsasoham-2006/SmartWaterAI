@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#087f8c">
+  <title>SmartWater AI | Water Quality Monitoring</title>
+  <meta name="description" content="SmartWater AI monitors water quality using IoT sensors and AI-assisted analysis.">
+
+  <style>
+    :root {
+      --bg: #f3f8fa;
+      --surface: #ffffff;
+      --surface-soft: #eaf5f5;
+      --text: #183443;
+      --muted: #718694;
+      --primary: #087f8c;
+      --primary-dark: #06636e;
+      --accent: #d7f3ed;
+      --border: #e1ebef;
+      --success: #16845b;
+      --warning: #b7791f;
+      --danger: #c24141;
+      --shadow: 0 8px 28px rgba(24, 52, 67, 0.06);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+    .app { min-height: 100vh; }
+
+    .sidebar {
+      position: fixed;
+      inset: 0 auto 0 0;
+      width: 248px;
+      padding: 27px 18px;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      z-index: 10;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 9px;
+      margin-bottom: 38px;
+    }
+
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--accent);
+      color: var(--primary);
+      font-size: 25px;
+    }
+
+    .brand-name {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.6px;
+    }
+
+    .brand-name span { color: var(--primary); }
+
+    .brand-caption {
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+    }
+
+    .nav-label {
+      padding: 0 12px;
+      margin-bottom: 12px;
+      color: #91a2ad;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .nav {
+      display: grid;
+      gap: 7px;
+    }
+
+    .nav button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      border: 0;
+      border-radius: 12px;
+      padding: 12px 13px;
+      text-align: left;
+      background: transparent;
+      color: var(--muted);
+      transition: 0.2s ease;
+    }
+
+    .nav button:hover {
+      background: var(--surface-soft);
+      color: var(--primary);
+    }
+
+    .nav button.active {
+      background: var(--accent);
+      color: var(--primary-dark);
+      font-weight: 700;
+    }
+
+    .nav-icon {
+      width: 23px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .sidebar-bottom { margin-top: auto; }
+
+    .connection-card {
+      padding: 15px;
+      background: #f6f9fa;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .connection-heading {
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .connection-state {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--danger);
+      font-weight: 700;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: currentColor;
+      flex-shrink: 0;
+    }
+
+    .connection-help {
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: 8px;
+    }
+
+    .sidebar-footer {
+      color: var(--muted);
+      font-size: 11px;
+      padding: 18px 6px 0;
+    }
+
+    .main {
+      margin-left: 248px;
+      padding: 28px 34px 42px;
+      max-width: 1800px;
+      box-sizing: border-box;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 26px;
+    }
+
+    .page-eyebrow {
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      margin-bottom: 4px;
+    }
+
+    .page-title {
+      font-size: clamp(23px, 3vw, 31px);
+      line-height: 1.25;
+      letter-spacing: -0.9px;
+    }
+
+    .page-subtitle {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 6px;
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 13px;
+      border-radius: 30px;
+      background: #fff0f0;
+      color: var(--danger);
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .icon-button {
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      border-radius: 12px;
+      font-size: 18px;
+    }
+
+    .icon-button:hover { border-color: var(--primary); }
+
+    .section {
+      display: none;
+      animation: appear 0.22s ease;
+    }
+
+    .section.active { display: block; }
+
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .welcome {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      padding: 28px 30px;
+      margin-bottom: 26px;
+      background: linear-gradient(115deg, #dff5f0 0%, #edf8fa 58%, #f7fbfc 100%);
+      border: 1px solid #d6eeea;
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .welcome h2 {
+      font-size: clamp(20px, 2.5vw, 27px);
+      line-height: 1.3;
+      letter-spacing: -0.6px;
+      margin-bottom: 8px;
+    }
+
+    .welcome p {
+      max-width: 600px;
+      color: #58717d;
+      font-size: 13px;
+    }
+
+    .welcome-badge {
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      width: 86px;
+      height: 86px;
+      border-radius: 25px;
+      background: rgba(255,255,255,0.75);
+      font-size: 43px;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 25px 0 14px;
+    }
+
+    .section-heading h2 {
+      font-size: 17px;
+      letter-spacing: -0.3px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .sensor-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .sensor-card {
+      padding: 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      min-width: 0;
+    }
+
+    .sensor-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+
+    .sensor-icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: var(--surface-soft);
+      font-size: 22px;
+    }
+
+    .sensor-tag {
+      padding: 5px 9px;
+      border-radius: 20px;
+      color: var(--muted);
+      background: #f2f6f8;
+      font-size: 10px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .sensor-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: #526b78;
+    }
+
+    .sensor-value {
+      margin: 5px 0 4px;
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.3;
+      overflow-wrap: anywhere;
+    }
+
+    .sensor-unit {
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0;
+      color: var(--muted);
+    }
+
+    .sensor-note {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .sensor-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      border-top: 1px solid #edf2f4;
+      padding-top: 13px;
+      margin-top: 17px;
+      font-size: 11px;
+    }
+
+    .sensor-state { color: var(--muted); }
+    .sensor-state strong { font-weight: 700; }
+
+    .empty-state {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .panel {
+      min-width: 0;
+      padding: 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .panel-header h3 { font-size: 15px; }
+
+    .panel-header p {
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: 3px;
+    }
+
+    .small-tag {
+      color: var(--primary);
+      background: var(--accent);
+      border-radius: 8px;
+      padding: 5px 9px;
+      font-size: 10px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .ai-content {
+      display: flex;
+      gap: 13px;
+      align-items: flex-start;
+      padding: 16px;
+      background: #f5fafb;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+    }
+
+    .ai-icon {
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      background: var(--accent);
+      border-radius: 12px;
+      font-size: 19px;
+    }
+
+    .ai-content h4 {
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+
+    .ai-content p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 13px;
+    }
+
+    .feature-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .feature-check {
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      width: 27px;
+      height: 27px;
+      border-radius: 9px;
+      color: var(--success);
+      background: #e6f6ee;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .feature-item h4 {
+      font-size: 12px;
+      margin-bottom: 3px;
+    }
+
+    .feature-item p {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .history-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .history-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      background: #f7fafb;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .history-item strong { font-size: 12px; }
+    .history-item span { color: var(--muted); font-size: 11px; }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .info-card {
+      min-width: 0;
+      padding: 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .info-card h3 {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .info-card p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer {
+      margin-top: 34px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* Dataset Explorer alignment and responsive layout */
+    #dataset-explorer {
+      display: block;
+      width: 100%;
+      max-width: 1200px;
+      margin: 30px auto;
+      box-sizing: border-box;
+      overflow-x: auto;
+    }
+
+    #dataset-explorer table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    @media (max-width: 1100px) {
+      .sensor-grid, .info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 15px;
+      }
+      .brand { margin-bottom: 18px; }
+      .sidebar-bottom { margin-top: 18px; }
+      .main {
+        margin-left: 0;
+        padding: 20px 16px 30px;
+        max-width: 100%;
+      }
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .welcome { padding: 22px; }
+      .welcome-badge { width: 60px; height: 60px; font-size: 30px; }
+      .sensor-grid, .info-grid { grid-template-columns: 1fr; }
+      #dataset-explorer {
+        max-width: 100%;
+        margin: 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">💧</div>
+        <div>
+          <div class="brand-name">Smart<span>Water</span></div>
+          <div class="brand-caption">AI Monitoring</div>
+        </div>
+      </div>
+
+      <div class="nav-label">Main Menu</div>
+
+      <nav class="nav">
+        <button class="active" data-section="dashboard">
+          <span class="nav-icon">▦</span>
+          Dashboard
+        </button>
+
+        <button data-section="sensors">
+          <span class="nav-icon">◉</span>
+          Sensor Monitoring
+        </button>
+
+        <button data-section="ai-analysis">
+          <span class="nav-icon">✧</span>
+          AI Analysis
+        </button>
+
+        <button data-section="datasets">
+          <span class="nav-icon">▤</span>
+          Dataset Explorer
+        </button>
+
+        <button data-section="about">
+          <span class="nav-icon">ⓘ</span>
+          About the Project
+        </button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="connection-card">
+          <div class="connection-heading">Backend Connection</div>
+          <div class="connection-state" id="connectionState">
+            <span class="dot"></span>
+            <span>Checking connection...</span>
+          </div>
+          <p class="connection-help">
+            Connect the Flask backend to load datasets and sensor data.
+          </p>
+        </div>
+
+        <div class="sidebar-footer">
+          SmartWater AI · Project Dashboard
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main">
+
+      <header class="topbar">
+        <div>
+          <div class="page-eyebrow">Water Intelligence Platform</div>
+          <h1 class="page-title" id="pageTitle">Dashboard Overview</h1>
+          <p class="page-subtitle">
+            Monitor water quality data and explore AI-assisted analysis.
+          </p>
+        </div>
+
+        <div class="top-actions">
+          <div class="status-pill" id="topStatus">
+            <span class="dot"></span>
+            Backend checking
+          </div>
+          <button class="icon-button" id="refreshButton"
+                  type="button" title="Refresh dashboard">
+            ↻
+          </button>
+        </div>
+      </header>
+
+      <!-- Dashboard section -->
+      <section class="section active" id="dashboard">
+
+        <div class="welcome">
+          <div>
+            <h2>Welcome to SmartWater AI 💧</h2>
+            <p>
+              A water quality monitoring platform designed to bring together
+              sensor measurements, dataset exploration, and AI-assisted
+              analysis in one dashboard.
+            </p>
+          </div>
+          <div class="welcome-badge">🌊</div>
+        </div>
+
+        <div class="section-heading">
+          <div>
+            <h2>Water Quality Indicators</h2>
+            <p>Measurements will update when a sensor data source is connected.</p>
+          </div>
+        </div>
+
+        <div class="sensor-grid">
+
+          <article class="sensor-card">
+            <div class="sensor-top">
+              <div class="sensor-icon">🧪</div>
+              <span class="sensor-tag">WATER</span>
+            </div>
+            <div class="sensor-name">pH Level</div>
+            <div class="sensor-value">
+              <span id="dashboardPH">--</span>
+              <span class="sensor-unit">pH</span>
+            </div>
+            <div class="sensor-note">Acidity or alkalinity</div>
+            <div class="sensor-bottom">
+              <span class="sensor-state">Reading status</span>
+              <strong id="phStatus">No data</strong>
+            </div>
+          </article>
+
+          <article class="sensor-card">
+            <div class="sensor-top">
+              <div class="sensor-icon">🌫️</div>
+              <span class="sensor-tag">CLARITY</span>
+            </div>
+            <div class="sensor-name">Turbidity</div>
+            <div class="sensor-value">
+              <span id="dashboardTurbidity">--</span>
+              <span class="sensor-unit">NTU</span>
+            </div>
+            <div class="sensor-note">Water cloudiness</div>
+            <div class="sensor-bottom">
+              <span class="sensor-state">Reading status</span>
+              <strong id="turbidityStatus">No data</strong>
+            </div>
+          </article>
+
+          <article class="sensor-card">
+            <div class="sensor-top">
+              <div class="sensor-icon">💧</div>
+              <span class="sensor-tag">DISSOLVED SOLIDS</span>
+            </div>
+            <div class="sensor-name">Total Dissolved Solids</div>
+            <div class="sensor-value">
+              <span id="dashboardTDS">--</span>
+              <span class="sensor-unit">ppm</span>
+            </div>
+            <div class="sensor-note">Estimated dissolved solids</div>
+            <div class="sensor-bottom">
+              <span class="sensor-state">Reading status</span>
+              <strong id="tdsStatus">No data</strong>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="content-grid">
+          <div class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>AI Water Quality Analysis</h3>
+                <p>Overview of the analysis capabilities</p>
+              </div>
+              <span class="small-tag">AI ASSISTED</span>
+            </div>
+
+            <div class="ai-content">
+              <div class="ai-icon">✧</div>
+              <div>
+                <h4 id="aiSummaryTitle">Waiting for data</h4>
+                <p id="aiSummary">
+                  Connect a suitable data source and use the dataset explorer
+                  to inspect the available records. No live prediction is
+                  available until a prediction model is configured.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Platform Features</h3>
+                <p>What this dashboard provides</p>
+              </div>
+            </div>
+
+            <div class="feature-list">
+              <div class="feature-item">
+                <div class="feature-check">✓</div>
+                <div>
+                  <h4>Dataset Exploration</h4>
+                  <p>Browse records stored in the local database.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-check">✓</div>
+                <div>
+                  <h4>Sensor Monitoring Interface</h4>
+                  <p>Display measurements when sensor data is connected.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-check">✓</div>
+                <div>
+                  <h4>AI Integration Ready</h4>
+                  <p>Prepare data for a separately trained prediction model.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" style="margin-top: 22px;">
+          <div class="panel-header">
+            <div>
+              <h3>System Activity</h3>
+              <p>Recent dashboard messages</p>
+            </div>
+          </div>
+          <div class="history-list" id="activityList">
+            <div class="history-item">
+              <div>
+                <strong>Dashboard initialized</strong><br>
+                <span>Waiting for backend connection</span>
+              </div>
+              <span>System</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Sensor monitoring section -->
+      <section class="section" id="sensors">
+        <div class="section-heading">
+          <div>
+            <h2>Sensor Monitoring</h2>
+            <p>View water quality measurements from connected devices.</p>
+          </div>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>pH Sensor</h3>
+            <p>Measures acidity or alkalinity after appropriate calibration.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Turbidity Sensor</h3>
+            <p>Estimates water cloudiness using the sensor's characteristics.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>TDS Sensor</h3>
+            <p>Estimates total dissolved solids according to the sensor specifications.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Temperature Sensor</h3>
+            <p>Measures water temperature, which can affect other measurements.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Dissolved Oxygen Sensor</h3>
+            <p>Measures dissolved oxygen using a suitable calibrated module.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Data Connection</h3>
+            <p>Sensor readings require a connected device or a configured data source.</p>
+          </article>
+        </div>
+
+        <div class="panel" style="margin-top: 18px;">
+          <h3 style="font-size: 15px; margin-bottom: 8px;">Important Note</h3>
+          <p class="empty-state">
+            Sensor measurements and AI predictions require calibration,
+            validation, and suitable reference criteria. This interface alone
+            cannot establish potability or certify that water is safe to drink.
+          </p>
+        </div>
+      </section>
+
+      <!-- AI analysis section -->
+      <section class="section" id="ai-analysis">
+        <div class="section-heading">
+          <div>
+            <h2>AI Analysis</h2>
+            <p>Explore the role of AI in water quality monitoring.</p>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Prediction Model Status</h3>
+              <p>Current model configuration</p>
+            </div>
+            <span class="small-tag">MODEL SETUP</span>
+          </div>
+
+          <div class="ai-content">
+            <div class="ai-icon">✧</div>
+            <div>
+              <h4>Model not configured</h4>
+              <p>
+                Loading a dataset does not automatically train an AI model.
+                A suitable model must be trained, evaluated, and connected
+                to the backend before it can generate predictions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-grid" style="margin-top: 18px;">
+          <article class="info-card">
+            <h3>1. Collect Data</h3>
+            <p>Collect measurements from calibrated sensors or validated datasets.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>2. Prepare Data</h3>
+            <p>Handle missing values, verify units, and prepare model features.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>3. Evaluate Model</h3>
+            <p>Test model performance on suitable data before using predictions.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section class="section" id="about">
+        <div class="section-heading">
+          <div>
+            <h2>About SmartWater AI</h2>
+            <p>Project overview and system information.</p>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3 style="margin-bottom: 10px;">Project Overview</h3>
+          <p class="empty-state">
+            SmartWater AI is a water quality monitoring project concept
+            combining an interactive dashboard, water quality datasets,
+            IoT sensor integration, and the potential for AI-assisted
+            analysis.
+          </p>
+        </div>
+
+        <div class="info-grid" style="margin-top: 18px;">
+          <article class="info-card">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, and JavaScript dashboard interface.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Backend</h3>
+            <p>Python Flask API with a local SQLite database.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Data</h3>
+            <p>Dataset records available through the configured backend API.</p>
+          </article>
+        </div>
+      </section>
+      <!-- Dataset Explorer section -->
+      <section class="section" id="datasets">
+        <div class="section-heading">
+          <div>
+            <h2>Dataset Explorer</h2>
+            <p>Explore records imported into the SmartWater AI database.</p>
+          </div>
+          <span class="small-tag">10 DATASETS</span>
+        </div>
+
+        <div id="dataset-explorer">
+
+          <!-- Dataset selection panel -->
+          <div class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Select a Dataset</h3>
+                <p>Choose a dataset and inspect its stored records.</p>
+              </div>
+              <span class="small-tag">SQLITE</span>
+            </div>
+
+            <div class="dataset-controls">
+              <div class="dataset-field">
+                <label for="datasetSelect">Available datasets</label>
+                <select id="datasetSelect">
+                  <option value="">Loading datasets...</option>
+                </select>
+              </div>
+
+              <div class="dataset-field">
+                <label for="recordNumber">Record number</label>
+                <input
+                  type="number"
+                  id="recordNumber"
+                  min="1"
+                  value="1"
+                  placeholder="Enter record number"
+                >
+              </div>
+            </div>
+
+            <div class="dataset-actions">
+              <button type="button" class="dataset-button"
+                      id="testRecordButton">
+                Test Dataset Record
+              </button>
+
+              <button type="button" class="dataset-button secondary"
+                      id="viewRecordsButton">
+                View First 10 Records
+              </button>
+
+              <button type="button" class="dataset-button secondary"
+                      id="refreshDatasetsButton">
+                Refresh Datasets
+              </button>
+            </div>
+
+            <p id="datasetMessage" class="dataset-message" role="status">
+              Connecting to the backend...
+            </p>
+          </div>
+
+          <!-- Dataset summary -->
+          <div class="dataset-summary-grid">
+            <div class="dataset-summary-card">
+              <span>Selected dataset</span>
+              <strong id="selectedDatasetName">None selected</strong>
+            </div>
+
+            <div class="dataset-summary-card">
+              <span>Records displayed</span>
+              <strong id="displayedRecordCount">0</strong>
+            </div>
+
+            <div class="dataset-summary-card">
+              <span>Current operation</span>
+              <strong id="datasetOperation">Waiting</strong>
+            </div>
+          </div>
+
+          <!-- Selected record output -->
+          <div class="panel dataset-result-panel">
+            <div class="panel-header">
+              <div>
+                <h3>Selected Record Details</h3>
+                <p>Inspect the record returned by the backend.</p>
+              </div>
+            </div>
+
+            <div id="recordResult" class="dataset-result">
+              <p class="empty-state">
+                Select a dataset and click "Test Dataset Record" to inspect a record.
+              </p>
+            </div>
+          </div>
+
+          <!-- Records table -->
+          <div class="panel dataset-table-panel">
+            <div class="panel-header">
+              <div>
+                <h3>Dataset Records</h3>
+                <p>First 10 records from the selected dataset.</p>
+              </div>
+              <span class="small-tag" id="tableStatus">NO DATA</span>
+            </div>
+
+            <div class="dataset-table-wrap">
+              <table id="datasetTable">
+                <thead id="datasetTableHead">
+                  <tr>
+                    <th>Information</th>
+                  </tr>
+                </thead>
+                <tbody id="datasetTableBody">
+                  <tr>
+                    <td class="empty-state">
+                      No records loaded yet.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <footer class="footer">
+        SmartWater AI · IoT Water Quality Monitoring
+        <div id="lastUpdated" style="margin-top: 4px;">
+          No readings received
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <style>
+    /* Dataset Explorer controls */
+    .dataset-controls {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(140px, 1fr);
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .dataset-field {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      min-width: 0;
+    }
+
+    .dataset-field label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .dataset-field select,
+    .dataset-field input {
+      width: 100%;
+      min-width: 0;
+      padding: 11px 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      outline: none;
+      color: var(--text);
+      background: #fff;
+    }
+
+    .dataset-field select:focus,
+    .dataset-field input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(8, 127, 140, 0.1);
+    }
+
+    .dataset-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .dataset-button {
+      padding: 10px 15px;
+      border: 1px solid var(--primary);
+      border-radius: 10px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .dataset-button:hover {
+      background: var(--primary-dark);
+    }
+
+    .dataset-button.secondary {
+      color: var(--primary);
+      background: #fff;
+      border-color: var(--border);
+    }
+
+    .dataset-button.secondary:hover {
+      background: var(--surface-soft);
+      border-color: var(--primary);
+    }
+
+    .dataset-message {
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+
+    .dataset-message.error { color: var(--danger); }
+    .dataset-message.success { color: var(--success); }
+
+    .dataset-summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin: 18px 0;
+    }
+
+    .dataset-summary-card {
+      padding: 17px;
+      min-width: 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .dataset-summary-card span {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .dataset-summary-card strong {
+      display: block;
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .dataset-result {
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .record-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .record-field {
+      min-width: 0;
+      padding: 12px;
+      background: #f7fafb;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    .record-field span {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--muted);
+      font-size: 11px;
+      overflow-wrap: anywhere;
+    }
+
+    .record-field strong {
+      display: block;
+      font-size: 12px;
+      overflow-wrap: anywhere;
+      white-space: pre-wrap;
+    }
+
+    .dataset-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    #datasetTable {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+
+    #datasetTable th,
+    #datasetTable td {
+      padding: 11px 13px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    #datasetTable th {
+      color: #526b78;
+      background: #f4f8fa;
+      font-weight: 800;
+    }
+
+    #datasetTable tbody tr:hover {
+      background: #f5fafb;
+    }
+
+    #datasetTable td.empty-state {
+      padding: 20px;
+      white-space: normal;
+    }
+
+    @media (max-width: 768px) {
+      .dataset-controls,
+      .dataset-summary-grid,
+      .record-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .dataset-actions {
+        flex-direction: column;
+      }
+
+      .dataset-button {
+        width: 100%;
+      }
+    }
+  </style>
+  <script>
+    const API_BASE = "http://127.0.0.1:5000/api";
+
+    const $ = (id) => document.getElementById(id);
+
+    function setMessage(message, type = "") {
+      const element = $("datasetMessage");
+      if (!element) return;
+
+      element.textContent = message;
+      element.className = "dataset-message" +
+        (type ? " " + type : "");
+    }
+
+    function showActivity(title, description) {
+      const list = $("activityList");
+      if (!list) return;
+
+      const item = document.createElement("div");
+      item.className = "history-item";
+
+      const left = document.createElement("div");
+      const strong = document.createElement("strong");
+      strong.textContent = title;
+
+      const br = document.createElement("br");
+      const span = document.createElement("span");
+      span.textContent = description;
+
+      left.append(strong, br, span);
+
+      const right = document.createElement("span");
+      right.textContent = new Date().toLocaleTimeString();
+
+      item.append(left, right);
+      list.prepend(item);
+
+      while (list.children.length > 5) {
+        list.lastElementChild.remove();
+      }
+    }
+
+    function showConnection(connected) {
+      const state = $("connectionState");
+      const top = $("topStatus");
+
+      if (state) {
+        state.style.color = connected
+          ? "var(--success)"
+          : "var(--danger)";
+
+        state.replaceChildren();
+
+        const dot = document.createElement("span");
+        dot.className = "dot";
+
+        const label = document.createElement("span");
+        label.textContent = connected
+          ? "Backend connected"
+          : "Backend disconnected";
+
+        state.append(dot, label);
+      }
+
+      if (top) {
+        top.style.color = connected
+          ? "var(--success)"
+          : "var(--danger)";
+
+        top.style.background = connected
+          ? "#e6f6ee"
+          : "#fff0f0";
+
+        top.replaceChildren();
+
+        const dot = document.createElement("span");
+        dot.className = "dot";
+
+        const label = document.createElement("span");
+        label.textContent = connected ? "Connected" : "Disconnected";
+
+        top.append(dot, label);
+      }
+    }
+
+    async function apiRequest(path, options = {}) {
+      const response = await fetch(API_BASE + path, {
+        ...options,
+        headers: {
+          "Content-Type": "application/json",
+          ...(options.headers || {})
+        }
+      });
+
+      const data = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        throw new Error(
+          data.error || data.message ||
+          "Request failed with status " + response.status
+        );
+      }
+
+      return data;
+    }
+
+    async function checkBackend() {
+      try {
+        const data = await apiRequest("/datasets");
+        showConnection(true);
+        return data;
+      } catch (error) {
+        showConnection(false);
+        return null;
+      }
+    }
+
+    function getDatasetName(dataset) {
+      if (typeof dataset === "string") return dataset;
+
+      return dataset.table_name ||
+        dataset.name ||
+        dataset.table ||
+        dataset.dataset ||
+        "";
+    }
+
+    function getDatasetList(data) {
+      if (Array.isArray(data)) return data;
+
+      if (Array.isArray(data.datasets)) return data.datasets;
+      if (Array.isArray(data.tables)) return data.tables;
+      if (Array.isArray(data.data)) return data.data;
+
+      return [];
+    }
+
+    async function loadDatasets() {
+      const select = $("datasetSelect");
+
+      select.replaceChildren();
+
+      const loading = document.createElement("option");
+      loading.value = "";
+      loading.textContent = "Loading datasets...";
+      select.appendChild(loading);
+
+      setMessage("Connecting to the backend...");
+
+      try {
+        const result = await apiRequest("/datasets");
+        const datasets = getDatasetList(result);
+
+        if (datasets.length === 0) {
+          throw new Error("The backend returned no datasets.");
+        }
+
+        select.replaceChildren();
+
+        datasets.forEach((dataset) => {
+          const name = getDatasetName(dataset);
+          if (!name) return;
+
+          const option = document.createElement("option");
+          option.value = name;
+          option.textContent = name;
+          select.appendChild(option);
+        });
+
+        if (!select.options.length) {
+          throw new Error("No usable dataset names were returned.");
+        }
+
+        showConnection(true);
+        $("selectedDatasetName").textContent = select.value;
+        $("datasetOperation").textContent = "Ready";
+
+        setMessage(
+          "Loaded " + select.options.length +
+          " datasets successfully.",
+          "success"
+        );
+
+        showActivity("Datasets loaded", select.options.length +
+          " datasets available.");
+
+        await viewRecords();
+      } catch (error) {
+        select.replaceChildren();
+
+        const option = document.createElement("option");
+        option.value = "";
+        option.textContent = "Unable to load datasets";
+        select.appendChild(option);
+
+        showConnection(false);
+        setMessage(
+          "Could not load datasets: " + error.message +
+          ". Check that Flask is running on port 5000.",
+          "error"
+        );
+
+        $("datasetOperation").textContent = "Connection error";
+      }
+    }
+
+    function getRows(data) {
+      if (Array.isArray(data)) return data;
+
+      if (Array.isArray(data.records)) return data.records;
+      if (Array.isArray(data.data)) return data.data;
+      if (Array.isArray(data.rows)) return data.rows;
+
+      return [];
+    }
+
+    function getColumns(data, rows) {
+      if (Array.isArray(data.columns)) return data.columns;
+      if (Array.isArray(data.column_names)) return data.column_names;
+
+      if (rows.length && rows[0] &&
+          typeof rows[0] === "object" &&
+          !Array.isArray(rows[0])) {
+        return Object.keys(rows[0]);
+      }
+
+      return [];
+    }
+
+    function renderRecord(record) {
+      const container = $("recordResult");
+      container.replaceChildren();
+
+      if (!record || typeof record !== "object") {
+        container.textContent = String(record ?? "No record returned.");
+        return;
+      }
+
+      const grid = document.createElement("div");
+      grid.className = "record-grid";
+
+      Object.entries(record).forEach(([key, value]) => {
+        const field = document.createElement("div");
+        field.className = "record-field";
+
+        const label = document.createElement("span");
+        label.textContent = key;
+
+        const content = document.createElement("strong");
+        content.textContent = value == null
+          ? "—"
+          : typeof value === "object"
+            ? JSON.stringify(value)
+            : String(value);
+
+        field.append(label, content);
+        grid.appendChild(field);
+      });
+
+      container.appendChild(grid);
+    }
+
+    function renderTable(data) {
+      const rows = getRows(data);
+      const columns = getColumns(data, rows);
+      const head = $("datasetTableHead");
+      const body = $("datasetTableBody");
+
+      head.replaceChildren();
+      body.replaceChildren();
+
+      if (!rows.length) {
+        const tr = document.createElement("tr");
+        const td = document.createElement("td");
+
+        td.colSpan = Math.max(columns.length, 1);
+        td.className = "empty-state";
+        td.textContent = "No records were returned.";
+
+        tr.appendChild(td);
+        body.appendChild(tr);
+
+        $("displayedRecordCount").textContent = "0";
+        $("tableStatus").textContent = "NO DATA";
+        return;
+      }
+
+      if (!columns.length) {
+        columns.push(...Object.keys(rows[0] || {}));
+      }
+
+      const headerRow = document.createElement("tr");
+
+      columns.forEach((column) => {
+        const th = document.createElement("th");
+        th.textContent = column;
+        headerRow.appendChild(th);
+      });
+
+      head.appendChild(headerRow);
+
+      rows.forEach((record) => {
+        const tr = document.createElement("tr");
+
+        columns.forEach((column, index) => {
+          const td = document.createElement("td");
+
+          let value;
+
+          if (Array.isArray(record)) {
+            value = record[index];
+          } else {
+            value = record[column];
+          }
+
+          td.textContent = value == null
+            ? "—"
+            : typeof value === "object"
+              ? JSON.stringify(value)
+              : String(value);
+
+          tr.appendChild(td);
+        });
+
+        body.appendChild(tr);
+      });
+
+      $("displayedRecordCount").textContent = String(rows.length);
+      $("tableStatus").textContent = rows.length + " RECORDS";
+    }
+
+    async function viewRecords() {
+      const select = $("datasetSelect");
+      const tableName = select.value;
+
+      if (!tableName) {
+        setMessage("Select a dataset first.", "error");
+        return;
+      }
+
+      $("selectedDatasetName").textContent = tableName;
+      $("datasetOperation").textContent = "Loading records";
+      setMessage("Loading records...");
+
+      try {
+        const path = "/datasets/" + encodeURIComponent(tableName) +
+          "?limit=10&offset=0";
+
+        const result = await apiRequest(path);
+
+        renderTable(result);
+
+        $("datasetOperation").textContent = "Records loaded";
+
+        setMessage("Dataset records loaded successfully.", "success");
+
+        showActivity("Records loaded", tableName);
+      } catch (error) {
+        setMessage("Could not load records: " + error.message, "error");
+        $("datasetOperation").textContent = "Error";
+      }
+    }
+
+    async function testRecord() {
+      const select = $("datasetSelect");
+      const tableName = select.value;
+      const number = Number($("recordNumber").value);
+
+      if (!tableName) {
+        setMessage("Select a dataset first.", "error");
+        return;
+      }
+
+      if (!Number.isInteger(number) || number < 1) {
+        setMessage("Enter a record number of 1 or greater.", "error");
+        return;
+      }
+
+      $("datasetOperation").textContent = "Inspecting record";
+      setMessage("Requesting record " + number + "...");
+
+      try {
+        const result = await apiRequest(
+          "/datasets/" + encodeURIComponent(tableName) + "/test",
+          {
+            method: "POST",
+            body: JSON.stringify({
+              record_number: number
+            })
+          }
+        );
+
+        renderRecord(
+          result.record ||
+          result.data ||
+          result
+        );
+
+        $("datasetOperation").textContent = "Record inspected";
+
+        setMessage(
+          "Record " + number + " returned successfully. " +
+          "This is record inspection, not an AI prediction.",
+          "success"
+        );
+
+        showActivity("Record inspected", tableName + " · #" + number);
+      } catch (error) {
+        setMessage("Could not inspect record: " + error.message, "error");
+        $("datasetOperation").textContent = "Error";
+      }
+    }
+
+    function navigateTo(sectionId) {
+      const sections = document.querySelectorAll(".section");
+      const buttons = document.querySelectorAll(".nav button");
+
+      sections.forEach((section) => {
+        section.classList.toggle("active", section.id === sectionId);
+      });
+
+      buttons.forEach((button) => {
+        button.classList.toggle(
+          "active",
+          button.dataset.section === sectionId
+        );
+      });
+
+      const titles = {
+        dashboard: "Dashboard Overview",
+        sensors: "Sensor Monitoring",
+        "ai-analysis": "AI Analysis",
+        datasets: "Dataset Explorer",
+        about: "About SmartWater AI"
+      };
+
+      $("pageTitle").textContent =
+        titles[sectionId] || "SmartWater AI";
+
+      if (sectionId === "datasets" &&
+          !$("datasetSelect").options.length) {
+        loadDatasets();
+      }
+    }
+
+    document.querySelectorAll(".nav button").forEach((button) => {
+      button.addEventListener("click", () => {
+        navigateTo(button.dataset.section);
+      });
+    });
+
+    $("testRecordButton").addEventListener("click", testRecord);
+    $("viewRecordsButton").addEventListener("click", viewRecords);
+    $("refreshDatasetsButton").addEventListener("click", loadDatasets);
+
+    $("datasetSelect").addEventListener("change", () => {
+      $("selectedDatasetName").textContent =
+        $("datasetSelect").value || "None selected";
+
+      $("recordResult").replaceChildren();
+      $("datasetTableHead").replaceChildren();
+      $("datasetTableBody").replaceChildren();
+
+      $("displayedRecordCount").textContent = "0";
+      $("tableStatus").textContent = "NO DATA";
+      $("datasetOperation").textContent = "Ready";
+
+      setMessage("Dataset selected. Load its records to continue.");
+    });
+
+    $("refreshButton").addEventListener("click", async () => {
+      await loadDatasets();
+      showActivity("Dashboard refreshed", "Dataset list checked.");
+    });
+
+    async function initializeDashboard() {
+      await loadDatasets();
+      $("lastUpdated").textContent =
+        "Last checked: " + new Date().toLocaleString();
+    }
+
+    initializeDashboard();
+  </script>
+</body>
+</html>
