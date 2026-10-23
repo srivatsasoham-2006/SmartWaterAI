@@ -4,6 +4,7 @@ from pathlib import Path
 from threading import Lock
 import sqlite3
 import math
+import re
 
 from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
@@ -11,8 +12,8 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-# SQLite database stored in the backend folder.
-DATABASE_PATH = Path(__file__).resolve().parent / "smartwater.db"
+BASE_DIR = Path(__file__).resolve().parent
+DATABASE_PATH = BASE_DIR / "smartwater.db"
 data_lock = Lock()
 
 SENSOR_FIELDS = {
@@ -22,6 +23,9 @@ SENSOR_FIELDS = {
     "temp": (-10, 100),
     "oxygen": (0, None),
 }
+
+# Dataset tables must start with this prefix.
+DATASET_PREFIX = "dataset_col_"
 
 
 def get_db_connection():
@@ -93,16 +97,6 @@ def validate_readings(data):
 
 
 def analyze_water_quality(readings):
-    """
-    Preliminary rule-based screening, not a trained AI model
-    and not a drinking-water safety certification.
-    """
-
-    issues = []
-    checked = []
-
-    # Initial screening thresholds only. Confirm suitability for
-    # the intended water use before relying on these thresholds.
     thresholds = {
         "ph": (6.5, 8.5, "pH"),
         "turbidity": (None, 5.0, "Turbidity"),
@@ -110,6 +104,9 @@ def analyze_water_quality(readings):
         "temp": (None, 35.0, "Temperature"),
         "oxygen": (5.0, None, "Dissolved oxygen"),
     }
+
+    issues = []
+    checked = []
 
     for field, (low, high, label) in thresholds.items():
         value = readings.get(field)
@@ -153,14 +150,46 @@ def analyze_water_quality(readings):
     }
 
 
+# -------------------- DATASET HELPERS --------------------
+
+def get_dataset_tables(connection):
+    """Return only tables using the expected dataset prefix."""
+    rows = connection.execute("""
+        SELECT name
+        FROM sqlite_master
+        WHERE type = 'table'
+          AND name LIKE ?
+        ORDER BY name
+    """, (DATASET_PREFIX + "%",)).fetchall()
+
+    return [row["name"] for row in rows]
+
+
+def valid_dataset_table(table_name, connection):
+    """Verify the requested table exists before querying it."""
+    if not isinstance(table_name, str):
+        return False
+
+    if not re.fullmatch(r"dataset_col_[A-Za-z0-9_]+", table_name):
+        return False
+
+    return table_name in get_dataset_tables(connection)
+
+
+def quote_identifier(identifier):
+    """Safely quote a validated SQLite identifier."""
+    return '"' + identifier.replace('"', '""') + '"'
+
+
+# -------------------- FRONTEND --------------------
+
 @app.get("/")
 @app.get("/index.html")
 def home():
-    return send_from_directory(
-        Path(__file__).resolve().parent,
-        "index.html"
-    )
+    return send_from_directory(BASE_DIR, "index.html")
 
+
+# -------------------- HEALTH API --------------------
 
 @app.get("/api/health")
 def health():
@@ -171,6 +200,8 @@ def health():
         "storage": "SQLite"
     })
 
+
+# -------------------- SENSOR APIs --------------------
 
 @app.get("/api/readings/latest")
 def get_latest_readings():
@@ -187,7 +218,7 @@ def get_latest_readings():
             "status": "no_data",
             "message": "No sensor readings have been submitted yet.",
             "readings": None
-        }), 200
+        })
 
     return jsonify({
         "status": "data_available",
@@ -249,12 +280,10 @@ def submit_readings():
                 (cursor.lastrowid,)
             ).fetchone()
 
-    record = row_to_dict(row)
-
     return jsonify({
         "status": "success",
         "message": "Sensor readings saved to SQLite.",
-        "reading": record
+        "reading": row_to_dict(row)
     }), 201
 
 
@@ -270,7 +299,7 @@ def get_latest_analysis():
         return jsonify({
             "status": "no_data",
             "message": "No sensor readings are available for analysis."
-        }), 200
+        })
 
     readings = {
         field: row[field]
@@ -285,10 +314,111 @@ def get_latest_analysis():
     })
 
 
-# Create the database and table when the app starts.
+# -------------------- DATASET APIs --------------------
+
+@app.get("/api/datasets")
+def list_datasets():
+    with data_lock:
+        with get_db_connection() as connection:
+            tables = get_dataset_tables(connection)
+            datasets = []
+
+            for table_name in tables:
+                table = quote_identifier(table_name)
+
+                count = connection.execute(
+                    f"SELECT COUNT(*) FROM {table}"
+                ).fetchone()[0]
+
+                columns = connection.execute(
+                    f"PRAGMA table_info({table})"
+                ).fetchall()
+
+                datasets.append({
+                    "name": table_name,
+                    "row_count": count,
+                    "columns": [column["name"] for column in columns]
+                })
+
+    return jsonify({
+        "status": "success",
+        "count": len(datasets),
+        "datasets": datasets,
+        "message": (
+            "Datasets loaded."
+            if datasets
+            else "No dataset tables found. Expected table names "
+                 "beginning with dataset_col_."
+        )
+    })
+
+
+@app.get("/api/datasets/<table_name>")
+def get_dataset(table_name):
+    with data_lock:
+        with get_db_connection() as connection:
+            if not valid_dataset_table(table_name, connection):
+                return jsonify({
+                    "status": "error",
+                    "message": "Dataset table not found."
+                }), 404
+
+            table = quote_identifier(table_name)
+
+            columns = connection.execute(
+                f"PRAGMA table_info({table})"
+            ).fetchall()
+
+            rows = connection.execute(
+                f"SELECT * FROM {table} LIMIT 500"
+            ).fetchall()
+
+            records = [dict(row) for row in rows]
+
+    return jsonify({
+        "status": "success",
+        "dataset": table_name,
+        "columns": [column["name"] for column in columns],
+        "count": len(records),
+        "limit": 500,
+        "rows": records
+    })
+
+
+@app.post("/api/datasets/<table_name>/test")
+def test_dataset(table_name):
+    with data_lock:
+        with get_db_connection() as connection:
+            if not valid_dataset_table(table_name, connection):
+                return jsonify({
+                    "status": "error",
+                    "message": "Dataset table not found."
+                }), 404
+
+            table = quote_identifier(table_name)
+
+            try:
+                result = connection.execute(
+                    f"SELECT * FROM {table} LIMIT 1"
+                ).fetchone()
+
+                return jsonify({
+                    "status": "success",
+                    "dataset": table_name,
+                    "message": "Dataset table can be queried.",
+                    "has_data": result is not None
+                })
+
+            except sqlite3.Error as error:
+                return jsonify({
+                    "status": "error",
+                    "message": str(error)
+                }), 500
+
+
+# Create the database and sensor table when the app starts.
 initialize_database()
 
 
 if __name__ == "__main__":
-    # Local development only.
     app.run(host="127.0.0.1", port=5000, debug=False)
