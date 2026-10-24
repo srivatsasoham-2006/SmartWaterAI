@@ -9,23 +9,25 @@ import re
 from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 
-app = Flask(__name__)
+BASE_DIR = Path(__file__).resolve().parent
+STATIC_DIR = BASE_DIR / "static"
+DATABASE_PATH = BASE_DIR / "smartwater.db"
+data_lock = Lock()
+
+app = Flask(__name__, static_folder=str(STATIC_DIR), static_url_path="/static")
+CORS(app)
 
 @app.route("/debug-logo")
 def debug_logo():
+    logo_file = STATIC_DIR / "logo.png"
     return {
-        "app_root": app.root_path,
-        "static_folder": app.static_folder,
-        "logo_exists": os.path.isfile(
-            os.path.join(app.static_folder, "logo.png")
-        ) if app.static_folder else False
+        "app_root": str(app.root_path),
+        "static_folder": str(app.static_folder),
+        "static_dir": str(STATIC_DIR),
+        "logo_exists": logo_file.is_file(),
+        "logo_size_bytes": logo_file.stat().st_size if logo_file.is_file() else 0,
+        "static_files": [f.name for f in STATIC_DIR.iterdir()] if STATIC_DIR.is_dir() else []
     }
-
-CORS(app)
-
-BASE_DIR = Path(__file__).resolve().parent
-DATABASE_PATH = BASE_DIR / "smartwater.db"
-data_lock = Lock()
 
 SENSOR_FIELDS = {
     "ph": (0, 14),
@@ -198,6 +200,16 @@ def quote_identifier(identifier):
 @app.get("/index.html")
 def home():
     return send_from_directory(BASE_DIR, "index.html")
+
+
+@app.get("/favicon.ico")
+def favicon():
+    return send_from_directory(STATIC_DIR, "favicon.png", mimetype="image/png")
+
+
+@app.get("/static/<path:filename>")
+def serve_static(filename):
+    return send_from_directory(STATIC_DIR, filename)
 
 
 # -------------------- HEALTH API --------------------
