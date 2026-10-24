@@ -1,0 +1,1501 @@
+Station_ID,State,Water_Body_Type,Temperature_C,Dissolved_Oxygen_mgL,pH,Conductivity_uS,BOD_mgL,Nitrate_mgL,Fecal_Coliform_MPN,Potability_Grade
+STN_0001,West Bengal,Groundwater,26.7,7.8,7.94,587.4,1.81,6.83,2010,C
+STN_0002,Tamil Nadu,Groundwater,27.3,6.35,8.43,341.2,3.42,6.81,298,B
+STN_0003,West Bengal,Reservoir,26.9,3.69,8.49,786.0,0.72,0.77,1047,D
+STN_0004,Tamil Nadu,River,28.3,6.68,7.66,274.9,4.1,7.83,1513,B
+STN_0005,Karnataka,Reservoir,31.6,5.85,7.05,180.6,1.99,4.0,2495,D
+STN_0006,Gujarat,Groundwater,24.7,4.88,7.58,707.6,4.09,7.39,2112,D
+STN_0007,Maharashtra,River,26.7,8.35,7.13,544.6,4.18,10.1,737,B
+STN_0008,Uttar Pradesh,Reservoir,28.4,3.78,6.92,322.5,5.36,0.64,2141,B
+STN_0009,West Bengal,Groundwater,27.1,8.23,7.63,619.6,1.88,7.32,378,A
+STN_0010,Karnataka,Reservoir,24.6,4.3,7.91,686.7,3.28,6.81,1194,C
+STN_0011,Uttar Pradesh,Reservoir,27.5,5.38,7.74,741.2,6.27,2.56,905,C
+STN_0012,Karnataka,Groundwater,27.8,5.59,8.68,347.5,4.86,7.79,2363,B
+STN_0013,Gujarat,Reservoir,27.0,7.16,6.98,167.9,6.35,6.7,1509,A
+STN_0014,Karnataka,Reservoir,22.5,4.58,7.17,507.0,6.06,9.23,1492,C
+STN_0015,Karnataka,River,26.1,8.43,7.94,749.3,4.16,1.42,1773,A
+STN_0016,Maharashtra,Reservoir,30.6,7.25,7.76,295.5,2.08,5.38,719,B
+STN_0017,Karnataka,Lake,30.4,7.45,6.2,444.8,5.04,11.98,209,A
+STN_0018,Tamil Nadu,Groundwater,29.0,4.03,7.01,329.5,4.69,8.3,344,C
+STN_0019,Karnataka,Reservoir,28.4,5.88,6.86,159.4,4.03,8.24,188,C
+STN_0020,Karnataka,Groundwater,21.8,8.23,8.38,779.0,4.69,3.88,459,A
+STN_0021,Gujarat,Lake,25.5,4.85,8.45,244.5,4.18,1.22,1734,A
+STN_0022,Karnataka,Groundwater,21.3,4.23,6.94,686.7,3.62,11.4,1189,A
+STN_0023,Maharashtra,Lake,29.8,5.93,6.47,392.6,3.0,1.36,749,B
+STN_0024,Gujarat,Lake,23.5,8.15,6.73,344.4,0.77,11.91,877,A
+STN_0025,Uttar Pradesh,River,29.2,5.93,6.66,808.7,5.69,1.6,987,A
+STN_0026,Tamil Nadu,Lake,29.8,5.52,6.82,610.0,5.69,2.13,1429,C
+STN_0027,Tamil Nadu,River,30.7,6.75,6.81,630.8,4.06,3.77,1244,A
+STN_0028,Uttar Pradesh,Reservoir,29.0,8.18,7.45,681.8,2.11,6.2,675,B
+STN_0029,Karnataka,River,26.8,3.75,7.03,388.7,0.67,9.51,2082,B
+STN_0030,Maharashtra,River,27.2,4.27,7.66,544.6,0.51,11.65,792,A
+STN_0031,Maharashtra,Reservoir,23.8,4.16,7.09,339.2,0.94,4.37,211,B
+STN_0032,Maharashtra,Groundwater,22.1,3.93,8.32,734.2,2.66,0.34,619,B
+STN_0033,Maharashtra,Groundwater,21.6,5.01,8.67,569.5,1.63,7.44,1497,B
+STN_0034,Karnataka,Reservoir,22.2,4.65,7.25,320.4,2.09,8.56,446,A
+STN_0035,Uttar Pradesh,Lake,31.2,6.24,6.33,779.8,4.7,4.83,881,A
+STN_0036,Uttar Pradesh,River,22.0,5.14,6.82,556.6,6.25,2.28,2168,B
+STN_0037,Tamil Nadu,Groundwater,28.7,5.53,6.46,496.5,1.74,3.74,132,A
+STN_0038,Uttar Pradesh,Groundwater,22.2,8.21,7.1,174.1,3.29,7.9,2111,A
+STN_0039,Maharashtra,Lake,31.7,4.28,7.88,786.9,6.45,5.98,1504,B
+STN_0040,Karnataka,Groundwater,24.4,5.44,7.55,816.6,6.09,8.95,2224,B
+STN_0041,Gujarat,Groundwater,24.9,4.79,6.83,543.8,2.61,2.7,999,B
+STN_0042,Gujarat,Groundwater,24.9,6.25,8.19,459.8,2.42,10.12,2492,B
+STN_0043,Maharashtra,Reservoir,29.8,7.18,6.54,401.7,1.95,1.96,969,A
+STN_0044,West Bengal,Groundwater,22.6,7.58,6.79,337.6,1.43,4.03,1044,B
+STN_0045,Tamil Nadu,Groundwater,30.0,6.08,7.96,552.2,3.26,7.14,1416,B
+STN_0046,Gujarat,Reservoir,27.9,7.77,6.71,239.7,2.55,8.87,518,A
+STN_0047,West Bengal,Groundwater,22.6,7.43,7.96,793.4,4.97,3.27,573,A
+STN_0048,Maharashtra,Lake,20.8,4.29,8.74,273.2,1.92,11.38,734,B
+STN_0049,Karnataka,River,29.3,4.73,8.36,671.9,4.92,8.5,256,B
+STN_0050,Gujarat,Reservoir,22.6,6.86,6.62,364.8,2.23,2.69,1552,C
+STN_0051,Maharashtra,Reservoir,30.7,8.37,7.55,308.2,4.06,8.74,2197,C
+STN_0052,Gujarat,Groundwater,21.6,5.38,7.3,540.5,4.33,8.39,880,C
+STN_0053,Karnataka,River,27.4,4.65,8.78,685.6,4.53,9.06,414,A
+STN_0054,Uttar Pradesh,Lake,28.3,7.85,8.71,658.7,1.55,11.0,1257,B
+STN_0055,Uttar Pradesh,Lake,27.9,4.5,6.53,313.6,2.2,8.57,2404,A
+STN_0056,Karnataka,River,23.8,6.99,8.56,381.4,1.98,4.29,872,B
+STN_0057,Karnataka,River,30.5,3.67,6.7,758.2,3.96,9.51,2431,A
+STN_0058,Uttar Pradesh,Lake,29.2,3.59,7.03,656.3,0.95,8.38,1237,C
+STN_0059,Karnataka,Groundwater,26.1,5.76,7.12,648.9,3.61,6.93,642,B
+STN_0060,Karnataka,River,27.2,6.78,6.95,338.2,1.02,4.31,2349,C
+STN_0061,Karnataka,River,26.8,4.21,8.42,704.4,2.52,11.06,2334,B
+STN_0062,Uttar Pradesh,Groundwater,31.4,7.32,7.06,400.9,4.62,6.2,263,B
+STN_0063,Uttar Pradesh,Reservoir,30.8,4.14,8.32,431.0,2.98,7.57,2056,A
+STN_0064,West Bengal,River,22.8,6.17,8.79,351.3,2.18,5.04,668,B
+STN_0065,Gujarat,Groundwater,23.2,5.04,8.39,235.0,4.2,9.39,2060,A
+STN_0066,Uttar Pradesh,Lake,31.8,7.26,7.1,444.3,4.94,4.16,1221,A
+STN_0067,Gujarat,Reservoir,22.8,7.52,8.05,161.9,2.03,9.75,1133,A
+STN_0068,Uttar Pradesh,River,31.4,3.83,7.59,469.1,2.3,1.38,466,D
+STN_0069,Tamil Nadu,Groundwater,27.8,4.46,8.24,657.5,4.34,8.54,2475,C
+STN_0070,Gujarat,Reservoir,20.6,7.96,6.6,822.5,6.29,5.77,2214,C
+STN_0071,Karnataka,Groundwater,24.0,5.58,7.86,205.0,1.78,8.42,2259,D
+STN_0072,Tamil Nadu,Lake,25.7,5.88,8.21,346.9,4.43,6.42,893,B
+STN_0073,West Bengal,River,30.0,4.34,8.18,495.9,5.94,1.7,706,C
+STN_0074,Uttar Pradesh,Groundwater,23.9,8.47,8.71,269.3,3.27,5.78,338,A
+STN_0075,Uttar Pradesh,River,23.7,8.12,6.35,231.8,2.4,11.58,2097,B
+STN_0076,West Bengal,Groundwater,31.0,3.51,7.1,466.6,4.5,9.08,1339,B
+STN_0077,Tamil Nadu,River,20.9,6.25,7.44,556.5,0.69,3.67,724,A
+STN_0078,Maharashtra,River,26.6,7.86,7.01,724.1,2.66,11.33,2204,C
+STN_0079,Karnataka,Reservoir,26.1,5.65,7.01,848.5,2.05,9.37,251,A
+STN_0080,Gujarat,Groundwater,20.7,5.68,6.66,692.0,1.85,4.44,188,C
+STN_0081,Tamil Nadu,Groundwater,21.1,5.4,8.31,304.9,1.58,7.28,1082,C
+STN_0082,Gujarat,River,24.6,3.64,8.56,673.6,4.92,5.18,2237,B
+STN_0083,Uttar Pradesh,River,21.6,7.45,6.41,526.0,6.23,1.25,1924,A
+STN_0084,Maharashtra,Reservoir,25.7,5.78,6.6,465.6,2.81,9.69,760,B
+STN_0085,West Bengal,Lake,27.3,6.16,6.79,805.0,0.79,2.37,1349,A
+STN_0086,Maharashtra,Groundwater,28.3,4.78,7.52,641.5,4.81,5.55,1753,A
+STN_0087,Gujarat,River,26.6,7.42,8.26,627.2,3.73,8.46,2266,C
+STN_0088,West Bengal,Reservoir,24.6,7.47,6.39,158.2,4.84,11.19,1470,B
+STN_0089,Uttar Pradesh,River,21.6,6.26,7.86,755.6,4.39,0.85,358,A
+STN_0090,West Bengal,Groundwater,23.0,8.02,6.59,705.3,5.93,4.78,528,A
+STN_0091,West Bengal,Reservoir,25.0,4.08,8.73,359.3,1.34,7.41,396,C
+STN_0092,Maharashtra,Reservoir,31.1,7.43,8.54,354.5,1.51,9.37,1314,B
+STN_0093,Karnataka,River,22.4,6.29,8.67,187.4,2.55,11.06,1451,C
+STN_0094,Uttar Pradesh,River,25.0,4.66,6.48,185.6,3.45,0.11,810,A
+STN_0095,Tamil Nadu,Lake,28.8,4.16,7.47,618.0,6.05,7.57,616,A
+STN_0096,Tamil Nadu,Lake,28.5,5.01,6.63,280.4,5.94,0.18,353,B
+STN_0097,Tamil Nadu,Groundwater,31.6,7.78,7.76,796.5,5.73,9.47,1927,B
+STN_0098,Karnataka,Groundwater,22.3,7.44,6.81,739.7,1.84,1.88,375,A
+STN_0099,Uttar Pradesh,Reservoir,20.2,6.73,8.2,394.2,4.88,10.75,390,C
+STN_0100,West Bengal,Groundwater,23.9,3.95,7.87,416.0,2.8,1.95,1805,C
+STN_0101,Gujarat,Lake,21.8,8.27,7.69,379.1,6.09,9.2,994,A
+STN_0102,Gujarat,Lake,26.6,5.03,8.35,214.7,1.79,3.54,1134,A
+STN_0103,Uttar Pradesh,Lake,30.8,6.53,7.5,172.0,1.35,6.73,500,C
+STN_0104,Karnataka,River,28.3,7.52,6.9,466.5,5.55,7.34,2250,C
+STN_0105,Uttar Pradesh,Lake,21.6,4.16,7.81,810.1,4.8,2.56,2138,A
+STN_0106,Gujarat,Lake,21.4,6.76,8.69,792.1,5.43,3.65,887,A
+STN_0107,Uttar Pradesh,Groundwater,30.9,3.66,7.76,716.9,1.45,1.38,1488,B
+STN_0108,Tamil Nadu,Lake,25.9,4.01,7.84,590.0,5.81,0.16,1367,B
+STN_0109,West Bengal,Lake,31.1,7.12,8.63,749.4,4.57,2.95,138,B
+STN_0110,Uttar Pradesh,River,28.8,4.28,7.54,510.5,4.41,6.24,2036,C
+STN_0111,West Bengal,Lake,31.9,5.72,8.79,276.1,4.0,8.59,30,A
+STN_0112,Maharashtra,Groundwater,30.5,4.74,6.62,628.9,5.09,9.54,37,B
+STN_0113,Uttar Pradesh,River,25.0,5.61,7.6,794.5,2.99,0.93,932,B
+STN_0114,Gujarat,Reservoir,29.1,3.89,6.75,163.7,1.3,3.34,661,D
+STN_0115,Gujarat,Lake,25.7,7.27,7.38,326.0,3.74,9.27,842,C
+STN_0116,West Bengal,Lake,22.8,3.9,6.64,335.8,4.99,5.82,1463,C
+STN_0117,Gujarat,Lake,22.9,7.69,6.78,219.3,1.42,2.27,2292,C
+STN_0118,Tamil Nadu,Reservoir,24.8,6.81,6.75,307.8,1.84,4.77,2481,B
+STN_0119,Gujarat,River,21.3,5.58,7.03,418.8,4.68,3.31,1170,B
+STN_0120,Maharashtra,River,22.1,7.83,6.55,807.9,2.12,0.7,2139,A
+STN_0121,Uttar Pradesh,Lake,26.0,4.43,8.3,752.2,1.52,9.19,2375,B
+STN_0122,Karnataka,Reservoir,31.4,4.82,6.77,812.2,5.84,3.57,2422,C
+STN_0123,Gujarat,Groundwater,26.9,4.19,7.28,234.4,1.47,11.35,774,C
+STN_0124,Uttar Pradesh,Reservoir,24.9,5.41,6.24,169.6,2.56,10.67,749,B
+STN_0125,Tamil Nadu,Lake,22.9,8.43,6.47,226.9,3.07,8.62,409,A
+STN_0126,Uttar Pradesh,Reservoir,22.4,4.31,8.53,790.0,3.36,3.99,1900,B
+STN_0127,Gujarat,River,27.9,7.65,8.38,260.2,2.67,3.43,2413,A
+STN_0128,Gujarat,River,30.2,6.76,8.39,550.8,5.98,5.76,1485,A
+STN_0129,West Bengal,River,24.8,3.58,7.27,309.3,4.45,4.32,945,A
+STN_0130,Gujarat,Groundwater,26.6,8.22,6.57,164.4,2.66,10.82,244,B
+STN_0131,Maharashtra,Reservoir,28.5,8.36,6.48,209.2,2.65,1.57,44,D
+STN_0132,Uttar Pradesh,Lake,20.7,8.12,7.77,646.9,3.52,8.72,648,C
+STN_0133,West Bengal,Lake,24.2,6.01,8.35,277.7,0.7,7.37,348,A
+STN_0134,Karnataka,River,28.8,4.6,8.54,310.4,6.06,9.69,1512,C
+STN_0135,Maharashtra,Lake,28.2,5.46,6.95,414.1,1.84,6.56,1892,B
+STN_0136,Karnataka,Groundwater,20.6,6.57,7.03,610.1,4.69,7.59,429,B
+STN_0137,Gujarat,Reservoir,22.9,5.39,6.46,478.6,5.17,11.56,715,C
+STN_0138,Karnataka,Groundwater,28.2,7.04,8.21,811.2,5.46,1.19,761,B
+STN_0139,Karnataka,Reservoir,23.3,7.48,6.92,453.9,1.49,1.35,258,A
+STN_0140,Maharashtra,Reservoir,29.8,4.55,7.45,289.4,3.72,4.78,2350,C
+STN_0141,Maharashtra,Reservoir,20.4,5.52,8.62,525.3,1.0,5.73,216,C
+STN_0142,Uttar Pradesh,Lake,22.3,8.29,8.16,465.6,5.33,2.48,1134,A
+STN_0143,Karnataka,Lake,23.4,4.75,6.34,701.0,3.42,1.08,1248,A
+STN_0144,Maharashtra,Lake,31.1,5.23,6.22,804.6,1.45,0.36,1609,D
+STN_0145,Uttar Pradesh,Lake,29.6,3.68,8.25,735.4,4.81,9.2,444,D
+STN_0146,Karnataka,Lake,30.6,5.16,7.64,422.3,2.49,5.87,248,B
+STN_0147,Karnataka,Lake,25.3,5.35,8.07,301.3,1.19,10.14,1157,A
+STN_0148,West Bengal,River,29.9,4.0,6.61,790.1,3.27,4.39,527,D
+STN_0149,Gujarat,River,30.2,3.51,8.47,420.2,1.91,8.47,158,A
+STN_0150,Maharashtra,River,24.8,6.38,8.21,689.1,6.2,5.91,2114,A
+STN_0151,Tamil Nadu,Groundwater,31.9,5.01,8.52,842.7,2.67,7.38,2213,A
+STN_0152,West Bengal,Groundwater,30.2,3.59,7.09,554.2,3.93,4.51,545,B
+STN_0153,Maharashtra,Groundwater,31.7,7.8,6.92,485.9,6.19,1.07,2172,A
+STN_0154,West Bengal,Reservoir,30.4,6.42,6.59,639.9,2.86,11.37,2388,A
+STN_0155,Gujarat,Reservoir,29.3,4.36,8.62,285.8,2.65,10.05,1224,B
+STN_0156,West Bengal,Groundwater,31.3,7.83,6.66,491.8,1.47,3.81,375,A
+STN_0157,West Bengal,River,25.0,4.77,6.51,368.6,6.13,11.51,1282,B
+STN_0158,Uttar Pradesh,Lake,29.4,4.64,6.7,265.0,5.3,3.68,2354,A
+STN_0159,Maharashtra,Lake,22.6,7.97,8.21,577.1,1.83,5.37,474,A
+STN_0160,Karnataka,Lake,28.8,4.4,8.51,553.0,2.5,9.09,2044,D
+STN_0161,Tamil Nadu,Reservoir,29.4,7.89,8.31,682.8,5.99,3.78,1254,B
+STN_0162,Uttar Pradesh,Groundwater,28.6,7.51,7.66,761.1,3.72,3.96,820,C
+STN_0163,Maharashtra,River,30.2,5.05,8.78,304.3,3.84,4.98,1823,B
+STN_0164,Uttar Pradesh,Lake,25.0,3.67,6.38,695.8,4.39,5.67,1892,C
+STN_0165,Karnataka,Groundwater,26.5,3.91,8.45,407.2,5.07,1.57,408,C
+STN_0166,West Bengal,Groundwater,20.1,4.05,7.31,590.2,6.14,0.31,1085,D
+STN_0167,Tamil Nadu,Reservoir,21.8,7.95,7.38,745.2,5.31,11.04,1872,B
+STN_0168,Karnataka,Reservoir,27.7,5.52,6.53,329.3,6.11,4.3,895,B
+STN_0169,Tamil Nadu,Reservoir,26.7,3.66,6.29,570.7,5.42,1.31,1452,A
+STN_0170,Uttar Pradesh,Reservoir,22.4,6.28,7.02,486.2,0.78,9.13,1493,D
+STN_0171,West Bengal,Groundwater,22.9,4.54,6.65,703.4,1.21,3.61,1683,B
+STN_0172,West Bengal,Reservoir,24.1,4.68,7.46,638.1,5.81,2.26,1994,C
+STN_0173,Maharashtra,Lake,28.6,4.3,6.58,688.7,0.67,11.56,1173,A
+STN_0174,Tamil Nadu,River,27.3,7.31,6.56,351.6,5.27,11.05,2404,B
+STN_0175,Karnataka,Reservoir,20.8,3.5,8.48,643.0,5.6,1.36,1701,A
+STN_0176,Tamil Nadu,Lake,29.1,5.69,8.6,574.1,2.99,10.8,67,B
+STN_0177,Uttar Pradesh,River,23.2,3.93,8.71,469.7,2.63,10.7,667,A
+STN_0178,West Bengal,Reservoir,28.1,6.26,7.97,414.8,1.67,7.65,2235,B
+STN_0179,Uttar Pradesh,Reservoir,21.5,5.23,8.2,382.1,0.79,6.4,1520,B
+STN_0180,Uttar Pradesh,River,32.0,3.64,8.37,156.8,4.97,2.69,1160,C
+STN_0181,Maharashtra,Lake,21.0,5.8,7.91,268.7,0.94,1.54,1078,A
+STN_0182,Uttar Pradesh,Lake,28.9,6.35,7.06,191.3,6.17,7.32,2247,B
+STN_0183,Maharashtra,Groundwater,26.5,4.74,6.61,743.9,2.28,9.88,1395,A
+STN_0184,Gujarat,Groundwater,21.0,7.33,6.82,752.1,5.27,8.29,2423,C
+STN_0185,Tamil Nadu,Reservoir,20.3,5.36,8.39,742.3,0.86,2.25,2250,B
+STN_0186,West Bengal,Lake,24.4,7.25,8.01,722.5,3.72,3.55,2351,A
+STN_0187,West Bengal,Lake,29.6,6.4,7.39,304.9,2.59,6.6,781,B
+STN_0188,Karnataka,Reservoir,20.5,7.85,6.28,494.3,0.68,7.54,2206,B
+STN_0189,West Bengal,River,28.5,6.23,6.89,785.5,4.43,0.96,2206,B
+STN_0190,Maharashtra,River,27.9,4.43,8.1,681.8,6.16,7.41,2308,D
+STN_0191,West Bengal,Groundwater,23.2,7.61,7.53,151.3,0.56,8.86,2492,A
+STN_0192,Maharashtra,Reservoir,20.9,7.42,7.33,471.6,2.12,2.26,2271,A
+STN_0193,West Bengal,River,31.0,8.36,7.02,157.5,4.72,3.03,629,B
+STN_0194,Karnataka,Reservoir,23.6,3.97,7.78,346.5,5.73,3.18,2007,C
+STN_0195,Tamil Nadu,Lake,21.3,6.46,8.71,455.0,1.64,11.28,2092,B
+STN_0196,Uttar Pradesh,River,28.2,5.96,8.54,775.0,0.92,4.94,2438,A
+STN_0197,Tamil Nadu,River,22.6,6.85,6.28,608.1,0.55,6.41,781,B
+STN_0198,Maharashtra,River,25.7,8.4,7.45,403.7,1.79,8.72,2284,B
+STN_0199,Uttar Pradesh,Lake,20.6,6.16,7.06,493.5,0.93,4.52,2277,A
+STN_0200,Gujarat,Groundwater,31.9,6.93,7.53,722.2,2.66,1.36,1173,C
+STN_0201,Karnataka,Reservoir,25.4,5.24,7.78,359.8,3.14,7.89,2322,A
+STN_0202,Tamil Nadu,River,32.0,4.99,6.72,580.5,3.38,8.04,796,B
+STN_0203,Uttar Pradesh,Lake,24.6,5.18,8.23,333.6,1.35,3.2,345,C
+STN_0204,Karnataka,River,24.2,3.69,7.44,486.0,3.28,0.52,970,B
+STN_0205,Tamil Nadu,Reservoir,31.0,4.92,8.78,167.3,0.55,8.02,1590,A
+STN_0206,Maharashtra,Reservoir,24.0,4.36,6.27,746.6,1.94,8.47,2389,A
+STN_0207,Maharashtra,River,25.2,5.79,6.69,183.8,2.71,0.41,782,C
+STN_0208,Maharashtra,Lake,20.9,5.8,7.99,307.1,1.21,8.35,733,A
+STN_0209,Gujarat,River,31.5,7.33,8.01,383.5,5.38,11.27,1228,D
+STN_0210,West Bengal,Lake,21.0,6.01,7.71,587.6,1.71,2.23,640,C
+STN_0211,Maharashtra,Groundwater,29.3,5.82,8.73,654.0,5.03,6.3,715,A
+STN_0212,Maharashtra,River,26.5,4.66,7.28,206.3,3.34,8.39,1076,C
+STN_0213,West Bengal,Lake,20.7,7.76,7.28,180.4,3.38,2.84,989,B
+STN_0214,Maharashtra,River,20.0,3.96,8.57,709.3,4.37,9.04,1291,B
+STN_0215,Uttar Pradesh,Reservoir,31.2,8.41,7.6,648.5,0.77,10.43,451,A
+STN_0216,Karnataka,Reservoir,28.9,5.88,7.12,732.1,0.97,9.79,1329,A
+STN_0217,Gujarat,River,28.2,4.43,8.07,623.6,2.46,3.18,620,B
+STN_0218,Tamil Nadu,River,25.3,5.27,7.81,675.7,3.0,9.67,2494,B
+STN_0219,West Bengal,Lake,22.9,3.58,7.0,415.3,3.08,5.02,1741,B
+STN_0220,West Bengal,Lake,28.2,4.33,6.97,563.1,4.56,3.27,968,A
+STN_0221,West Bengal,Reservoir,27.3,5.18,7.23,713.8,0.5,2.1,1662,A
+STN_0222,Gujarat,Lake,28.7,6.27,6.39,270.5,6.25,10.92,1709,C
+STN_0223,Karnataka,Reservoir,24.4,4.15,8.65,446.0,1.55,5.18,911,C
+STN_0224,Maharashtra,Groundwater,31.8,6.88,6.68,668.3,1.99,10.4,1431,B
+STN_0225,West Bengal,River,20.8,7.72,6.7,522.8,5.93,2.0,1530,A
+STN_0226,Maharashtra,Lake,21.0,6.36,7.88,627.2,0.53,9.23,810,A
+STN_0227,Tamil Nadu,Reservoir,31.0,4.98,8.08,355.0,6.45,1.41,180,B
+STN_0228,West Bengal,Reservoir,27.8,4.11,8.12,172.6,0.72,0.31,319,B
+STN_0229,Gujarat,River,23.9,3.58,7.18,170.4,1.22,11.94,2409,B
+STN_0230,Gujarat,River,29.1,7.16,8.47,809.9,1.94,0.98,869,C
+STN_0231,Tamil Nadu,River,25.4,6.64,7.61,811.2,3.13,5.59,1384,B
+STN_0232,Gujarat,Lake,20.3,5.88,7.34,297.9,3.61,10.55,1606,C
+STN_0233,Gujarat,Groundwater,27.8,4.01,8.31,253.2,1.13,9.85,1005,A
+STN_0234,Gujarat,Groundwater,22.9,4.54,6.83,162.7,0.94,5.71,2198,B
+STN_0235,West Bengal,Groundwater,21.4,7.58,8.44,311.9,0.69,7.37,755,C
+STN_0236,Tamil Nadu,Groundwater,22.7,5.9,7.6,384.0,2.04,7.59,1819,B
+STN_0237,West Bengal,Reservoir,25.7,8.31,8.54,318.9,6.03,1.41,2278,D
+STN_0238,Tamil Nadu,Lake,20.6,8.5,6.72,708.2,2.84,3.49,1398,B
+STN_0239,Karnataka,Groundwater,30.6,7.5,8.63,674.6,5.08,3.68,752,D
+STN_0240,Gujarat,Groundwater,26.7,4.79,7.99,206.7,1.64,4.6,2170,B
+STN_0241,Karnataka,Lake,23.5,4.66,7.81,638.1,0.89,3.36,1503,B
+STN_0242,Uttar Pradesh,Lake,28.2,4.77,7.3,514.4,3.83,3.09,2010,A
+STN_0243,Uttar Pradesh,River,29.7,8.43,8.69,242.5,5.43,4.32,182,B
+STN_0244,Gujarat,River,27.4,5.18,7.35,667.7,5.89,4.61,1939,A
+STN_0245,Maharashtra,Groundwater,22.4,7.03,7.5,210.2,3.78,5.9,1938,A
+STN_0246,Uttar Pradesh,Reservoir,21.3,8.3,8.23,274.0,2.26,2.17,1975,A
+STN_0247,Maharashtra,River,30.3,7.6,6.94,254.5,1.16,9.48,154,B
+STN_0248,Karnataka,Lake,22.8,6.49,6.96,807.3,4.51,10.34,771,A
+STN_0249,Gujarat,River,20.2,4.34,8.22,638.7,2.18,3.05,2378,D
+STN_0250,Karnataka,River,27.7,4.37,6.53,437.9,5.56,1.57,1181,B
+STN_0251,West Bengal,Lake,21.8,5.96,8.34,725.5,4.13,8.7,2183,B
+STN_0252,Karnataka,Groundwater,31.9,8.26,7.83,301.2,5.65,11.1,1943,A
+STN_0253,Tamil Nadu,River,30.4,8.02,7.6,801.8,3.9,0.52,1674,B
+STN_0254,Gujarat,River,27.3,4.33,6.8,637.9,5.13,0.27,692,A
+STN_0255,Tamil Nadu,Groundwater,30.0,4.94,8.24,541.7,2.27,2.28,1026,B
+STN_0256,Karnataka,River,25.6,6.44,8.29,706.3,3.52,8.25,1519,A
+STN_0257,Maharashtra,Reservoir,29.5,5.89,7.46,601.3,0.62,11.58,2273,A
+STN_0258,Gujarat,Groundwater,27.8,4.1,7.21,771.0,4.15,9.03,2294,A
+STN_0259,Gujarat,Reservoir,20.3,5.35,6.84,730.4,3.7,6.92,2153,B
+STN_0260,Uttar Pradesh,Lake,31.4,8.27,8.16,288.5,5.03,8.44,1666,C
+STN_0261,Maharashtra,Reservoir,30.3,8.26,7.86,317.8,4.87,2.85,1283,A
+STN_0262,West Bengal,Lake,31.4,6.3,6.74,195.6,4.27,8.29,1656,B
+STN_0263,Maharashtra,Groundwater,28.8,6.68,8.27,304.1,0.84,3.93,2129,A
+STN_0264,Karnataka,Lake,24.9,4.61,8.49,390.4,5.92,2.75,2025,B
+STN_0265,Karnataka,Lake,22.5,7.21,6.35,170.2,0.61,2.92,927,C
+STN_0266,Karnataka,Lake,22.2,3.76,8.21,370.5,5.32,8.05,961,B
+STN_0267,Uttar Pradesh,Lake,21.7,4.6,8.42,690.1,3.38,9.23,2109,B
+STN_0268,Maharashtra,Reservoir,22.6,3.53,8.78,738.2,5.41,7.02,164,D
+STN_0269,Tamil Nadu,Lake,26.6,5.43,6.82,156.2,3.29,0.86,329,B
+STN_0270,Maharashtra,Lake,28.2,7.75,7.16,155.0,4.38,0.55,310,A
+STN_0271,Tamil Nadu,River,23.8,8.41,8.71,252.4,2.68,2.68,204,B
+STN_0272,Gujarat,River,26.6,6.84,6.44,760.8,4.96,3.51,2266,B
+STN_0273,Tamil Nadu,River,24.1,7.22,7.56,478.5,2.03,4.92,1447,B
+STN_0274,Gujarat,Lake,28.4,4.81,7.52,838.0,4.82,1.0,742,B
+STN_0275,West Bengal,River,31.9,6.1,7.78,771.1,1.66,8.73,855,B
+STN_0276,West Bengal,Reservoir,28.3,7.18,7.06,773.1,4.83,8.57,2310,B
+STN_0277,Karnataka,Groundwater,20.7,5.99,8.61,239.9,2.26,4.23,1461,D
+STN_0278,Maharashtra,Groundwater,25.7,3.94,6.9,482.7,2.17,6.8,623,C
+STN_0279,Karnataka,Groundwater,29.2,7.2,7.89,845.5,5.37,1.3,1298,C
+STN_0280,Maharashtra,River,26.5,4.6,7.49,254.3,5.38,5.04,1385,A
+STN_0281,Tamil Nadu,Lake,31.4,3.99,6.89,552.0,4.65,10.31,193,B
+STN_0282,Maharashtra,Groundwater,20.7,5.89,6.69,391.0,6.04,7.96,508,B
+STN_0283,Tamil Nadu,Reservoir,23.5,3.87,8.69,421.5,1.44,1.34,1009,B
+STN_0284,Maharashtra,River,22.6,6.65,7.66,773.6,2.12,10.19,2252,C
+STN_0285,Gujarat,River,29.2,6.7,7.77,561.5,2.26,8.2,2052,C
+STN_0286,Tamil Nadu,Reservoir,26.3,4.78,8.24,681.1,2.33,5.49,1054,C
+STN_0287,Karnataka,Lake,21.7,8.32,6.41,621.3,2.47,8.34,807,A
+STN_0288,Karnataka,Lake,23.4,7.62,8.06,520.3,4.68,2.16,1602,B
+STN_0289,Karnataka,Reservoir,26.3,4.05,6.63,704.2,2.12,6.65,1088,B
+STN_0290,Karnataka,Reservoir,32.0,7.24,8.13,829.5,2.22,7.45,1035,C
+STN_0291,Gujarat,River,24.4,5.27,6.57,826.8,3.92,11.14,313,C
+STN_0292,Gujarat,Reservoir,21.9,7.25,8.36,702.6,1.66,0.9,1567,A
+STN_0293,Uttar Pradesh,Lake,26.0,7.5,7.97,491.1,2.69,4.56,1174,B
+STN_0294,Uttar Pradesh,Lake,23.7,4.26,7.2,264.2,0.85,11.25,2146,B
+STN_0295,Uttar Pradesh,Lake,26.8,6.81,7.13,181.1,6.22,2.68,1844,A
+STN_0296,West Bengal,Lake,25.6,7.81,6.59,312.0,2.4,9.78,1017,D
+STN_0297,Uttar Pradesh,Lake,28.3,5.12,8.55,388.2,5.6,0.12,314,C
+STN_0298,Maharashtra,River,31.0,3.9,6.51,240.9,3.68,0.41,1198,B
+STN_0299,West Bengal,Reservoir,22.4,3.64,7.43,307.3,1.87,4.0,1397,C
+STN_0300,Tamil Nadu,Reservoir,29.9,4.05,6.81,208.5,1.66,9.25,293,C
+STN_0301,Karnataka,Groundwater,31.4,3.52,8.79,516.6,4.67,1.34,2053,B
+STN_0302,Maharashtra,River,24.5,5.13,7.72,238.4,6.29,4.66,450,B
+STN_0303,West Bengal,River,21.4,5.0,6.59,669.9,1.6,1.66,1478,C
+STN_0304,Gujarat,River,29.9,4.05,7.94,382.9,1.19,2.76,1972,C
+STN_0305,Karnataka,River,28.4,6.76,8.78,620.4,2.82,6.09,2245,A
+STN_0306,Tamil Nadu,River,22.6,8.46,7.77,767.8,2.86,3.9,1461,C
+STN_0307,Tamil Nadu,Lake,25.3,8.0,7.39,210.2,5.34,2.62,754,A
+STN_0308,Gujarat,Groundwater,26.9,4.76,6.96,842.3,3.31,4.78,566,B
+STN_0309,Karnataka,Lake,22.0,7.35,6.44,601.7,0.87,8.44,639,B
+STN_0310,Uttar Pradesh,Groundwater,28.6,8.18,6.79,187.4,6.02,1.52,1861,A
+STN_0311,Karnataka,River,28.3,8.03,7.64,369.8,2.74,5.81,2429,A
+STN_0312,Karnataka,River,30.6,7.92,8.16,770.4,4.51,3.37,2366,B
+STN_0313,Tamil Nadu,Reservoir,26.8,7.43,8.48,567.4,4.5,4.61,1392,A
+STN_0314,Gujarat,River,26.9,4.96,8.26,351.1,0.84,9.88,111,C
+STN_0315,Karnataka,River,27.4,3.92,6.53,808.3,0.52,11.16,2189,A
+STN_0316,Maharashtra,River,23.3,5.94,8.21,701.1,1.03,2.99,1893,B
+STN_0317,Maharashtra,River,29.1,3.77,7.71,664.9,6.24,7.6,211,A
+STN_0318,Gujarat,River,27.9,8.49,7.42,771.9,5.26,8.15,1880,A
+STN_0319,Uttar Pradesh,Groundwater,30.1,5.29,7.69,688.8,1.29,10.13,2351,D
+STN_0320,West Bengal,Reservoir,29.2,8.29,6.22,350.7,4.19,10.8,42,A
+STN_0321,Karnataka,River,27.7,7.37,6.38,558.7,4.17,5.67,27,B
+STN_0322,West Bengal,River,21.9,5.56,7.57,739.6,0.5,11.79,881,B
+STN_0323,Karnataka,River,31.0,4.09,6.65,276.6,3.07,11.65,681,A
+STN_0324,Tamil Nadu,Groundwater,24.4,4.69,7.62,264.1,4.77,6.13,2025,C
+STN_0325,Karnataka,Groundwater,31.6,6.87,7.12,261.3,1.62,6.55,2006,A
+STN_0326,West Bengal,Reservoir,24.8,7.65,8.56,286.0,5.61,8.05,1148,B
+STN_0327,Uttar Pradesh,River,21.8,8.4,8.67,222.3,4.46,4.55,217,B
+STN_0328,Karnataka,Reservoir,30.6,4.16,8.75,736.3,0.54,7.98,170,B
+STN_0329,Karnataka,Lake,29.5,4.28,8.54,722.8,5.63,6.22,328,B
+STN_0330,Tamil Nadu,Groundwater,29.4,3.71,8.76,256.0,0.62,0.52,471,D
+STN_0331,Maharashtra,River,21.1,4.8,8.04,643.9,5.83,10.25,1592,C
+STN_0332,Maharashtra,Groundwater,30.6,7.61,8.7,588.9,2.5,11.29,1995,B
+STN_0333,Uttar Pradesh,Reservoir,27.2,4.49,7.87,343.3,4.69,0.41,2109,B
+STN_0334,Gujarat,Lake,25.6,6.24,8.3,309.2,5.22,9.49,61,A
+STN_0335,Gujarat,River,31.0,5.73,6.54,325.4,2.19,4.69,619,C
+STN_0336,Tamil Nadu,Groundwater,28.0,5.13,7.97,661.4,2.64,7.07,1754,C
+STN_0337,West Bengal,Lake,21.6,6.59,8.62,373.5,3.56,6.05,2188,A
+STN_0338,West Bengal,Reservoir,26.2,6.01,7.6,344.6,4.0,6.66,973,A
+STN_0339,Karnataka,Reservoir,27.6,5.17,6.69,165.7,2.25,5.99,232,C
+STN_0340,Tamil Nadu,Groundwater,30.8,6.94,7.57,785.8,6.45,10.26,2372,B
+STN_0341,West Bengal,Groundwater,23.4,4.9,8.04,676.9,4.92,8.23,846,A
+STN_0342,Maharashtra,River,29.5,6.72,8.2,480.9,2.14,5.01,1159,B
+STN_0343,Uttar Pradesh,Reservoir,29.6,8.29,7.56,810.0,4.34,8.29,2187,A
+STN_0344,Gujarat,River,21.5,7.14,6.77,355.5,3.11,11.58,1077,A
+STN_0345,Karnataka,Groundwater,20.2,5.59,8.61,622.3,5.66,1.06,1839,B
+STN_0346,Gujarat,Lake,27.0,7.24,8.21,363.6,2.47,4.72,197,B
+STN_0347,Maharashtra,River,29.5,7.55,6.9,370.2,1.63,10.46,253,A
+STN_0348,Karnataka,Reservoir,26.7,5.13,8.31,741.3,0.78,8.89,932,D
+STN_0349,Maharashtra,Groundwater,29.8,7.03,7.1,700.9,6.41,11.23,1927,B
+STN_0350,Gujarat,Groundwater,27.5,5.67,7.01,355.9,2.66,0.57,1560,B
+STN_0351,Gujarat,River,27.8,7.59,8.44,207.0,1.82,10.37,2054,A
+STN_0352,Maharashtra,River,20.3,4.98,8.47,400.3,3.45,9.52,1727,B
+STN_0353,Karnataka,Groundwater,21.1,8.19,7.24,682.0,2.25,9.8,328,C
+STN_0354,Maharashtra,River,28.7,6.37,6.22,220.4,1.9,7.21,1607,C
+STN_0355,Karnataka,Groundwater,29.2,5.27,6.69,620.5,4.2,0.72,1623,A
+STN_0356,Tamil Nadu,Reservoir,26.5,5.6,8.56,772.8,0.95,6.52,2331,B
+STN_0357,Tamil Nadu,Lake,27.1,5.24,8.54,275.5,3.55,4.95,772,A
+STN_0358,Karnataka,River,27.4,4.23,7.38,753.5,2.82,6.37,2128,C
+STN_0359,Maharashtra,Reservoir,21.3,3.84,6.99,186.0,3.7,8.91,1986,C
+STN_0360,Karnataka,Reservoir,28.0,5.11,6.99,616.8,2.42,7.19,2031,B
+STN_0361,Gujarat,River,25.7,5.79,8.53,703.7,3.92,3.58,2081,B
+STN_0362,Maharashtra,Reservoir,27.2,5.31,7.04,461.3,0.99,7.23,1327,C
+STN_0363,West Bengal,Groundwater,26.8,3.57,7.53,292.6,2.76,1.09,2191,A
+STN_0364,Karnataka,River,29.2,6.4,8.1,797.3,1.92,0.16,211,A
+STN_0365,Gujarat,Lake,23.8,4.22,6.74,164.0,3.13,4.88,1567,A
+STN_0366,Uttar Pradesh,Groundwater,24.5,4.56,6.86,538.5,2.89,9.11,2218,A
+STN_0367,Gujarat,Reservoir,24.7,4.1,7.13,411.0,4.29,9.89,1079,A
+STN_0368,West Bengal,Reservoir,29.1,6.1,7.9,472.7,4.27,6.64,507,B
+STN_0369,Karnataka,Lake,25.2,3.98,8.33,525.6,2.98,10.43,1471,D
+STN_0370,Maharashtra,Lake,22.1,4.78,7.62,524.3,1.59,1.6,114,B
+STN_0371,Maharashtra,Reservoir,31.8,5.76,6.55,292.5,3.99,11.57,956,B
+STN_0372,Tamil Nadu,Lake,25.9,4.34,7.36,625.8,6.3,11.07,1118,C
+STN_0373,West Bengal,Lake,21.3,5.73,6.53,163.4,1.61,7.23,1857,C
+STN_0374,Karnataka,Reservoir,28.0,5.21,6.43,164.8,0.91,0.8,1587,B
+STN_0375,Gujarat,Groundwater,28.9,7.8,7.73,484.9,2.09,5.51,993,B
+STN_0376,Gujarat,River,26.0,7.47,8.69,529.3,2.98,2.23,2348,A
+STN_0377,West Bengal,Reservoir,27.8,8.46,8.38,342.4,2.34,7.58,2396,B
+STN_0378,Karnataka,Lake,22.1,6.14,8.21,536.2,5.51,2.36,2070,B
+STN_0379,Gujarat,Lake,24.4,6.38,8.09,511.3,3.46,5.83,543,A
+STN_0380,Uttar Pradesh,Groundwater,21.9,8.23,8.53,394.5,1.98,2.55,561,B
+STN_0381,West Bengal,Reservoir,24.6,5.5,8.16,606.2,6.2,2.26,1965,A
+STN_0382,Tamil Nadu,Reservoir,26.8,6.28,7.83,820.6,1.25,3.05,1509,B
+STN_0383,Maharashtra,Lake,25.3,5.4,7.15,493.6,1.24,0.45,136,B
+STN_0384,Gujarat,Reservoir,27.1,6.23,6.46,700.2,1.97,8.62,1767,C
+STN_0385,Uttar Pradesh,Lake,26.0,3.9,7.4,323.3,0.96,3.75,1022,B
+STN_0386,Karnataka,Lake,23.8,7.42,8.6,683.4,5.01,8.41,832,B
+STN_0387,Gujarat,Lake,21.7,8.43,7.72,604.2,2.38,7.88,980,B
+STN_0388,West Bengal,River,23.0,3.83,6.68,597.8,4.88,0.89,2279,A
+STN_0389,Karnataka,Lake,22.4,7.51,7.89,775.1,5.08,3.81,1624,B
+STN_0390,Uttar Pradesh,Groundwater,28.5,4.71,7.41,313.3,1.93,6.85,2454,C
+STN_0391,Uttar Pradesh,Reservoir,29.8,4.49,8.62,407.9,3.61,11.03,108,C
+STN_0392,Maharashtra,River,28.6,6.97,6.62,208.1,3.62,4.88,1516,B
+STN_0393,Karnataka,Reservoir,27.7,3.72,8.05,658.3,5.73,6.11,1268,B
+STN_0394,Tamil Nadu,Groundwater,23.7,5.82,7.97,740.7,0.65,9.03,288,B
+STN_0395,Maharashtra,River,28.5,3.51,8.76,434.1,2.4,9.66,1838,A
+STN_0396,Karnataka,Reservoir,27.3,6.27,7.67,399.8,5.79,11.09,385,A
+STN_0397,Karnataka,River,20.6,5.81,8.47,611.1,1.92,6.02,245,A
+STN_0398,Uttar Pradesh,Lake,30.9,8.08,6.26,202.9,1.32,2.41,667,A
+STN_0399,West Bengal,Lake,21.0,7.1,6.52,355.7,3.96,9.2,77,A
+STN_0400,Uttar Pradesh,Reservoir,26.0,4.13,7.1,406.3,2.34,1.59,1990,B
+STN_0401,Karnataka,Groundwater,26.2,5.27,7.81,513.0,3.3,5.08,1209,A
+STN_0402,West Bengal,River,30.0,8.16,7.37,483.6,5.42,7.58,626,B
+STN_0403,West Bengal,River,31.0,7.13,6.73,296.1,3.62,8.33,1963,D
+STN_0404,Uttar Pradesh,Reservoir,31.3,6.47,7.73,528.6,3.6,8.82,1552,B
+STN_0405,Karnataka,Lake,26.8,6.3,7.67,798.1,2.17,2.4,827,C
+STN_0406,Karnataka,River,28.1,5.49,7.56,169.0,5.26,11.78,62,A
+STN_0407,West Bengal,Lake,21.1,6.43,6.44,626.2,4.94,2.22,1362,D
+STN_0408,Maharashtra,Lake,25.9,7.36,8.61,587.3,1.9,1.24,1300,A
+STN_0409,Maharashtra,Groundwater,30.8,4.14,7.74,797.1,2.42,8.0,725,B
+STN_0410,Tamil Nadu,Lake,25.5,8.35,6.89,601.7,5.23,10.93,401,D
+STN_0411,Maharashtra,Lake,20.8,4.7,7.99,587.4,2.65,6.76,200,C
+STN_0412,Gujarat,River,22.4,5.74,7.03,688.9,2.92,7.19,1728,D
+STN_0413,Gujarat,Groundwater,25.2,3.61,7.52,337.5,2.69,6.51,840,B
+STN_0414,Uttar Pradesh,Groundwater,22.9,6.25,7.09,567.0,1.47,0.61,1187,A
+STN_0415,West Bengal,Reservoir,24.7,5.41,8.49,513.6,2.55,8.21,2108,A
+STN_0416,Gujarat,Reservoir,24.0,4.75,8.78,456.9,5.32,4.36,2335,D
+STN_0417,Maharashtra,Reservoir,23.8,8.43,6.62,205.6,3.45,11.23,460,B
+STN_0418,West Bengal,Groundwater,21.1,5.64,6.26,354.8,3.25,2.32,1896,A
+STN_0419,Tamil Nadu,Lake,30.6,5.57,6.77,346.0,1.44,3.7,343,B
+STN_0420,Karnataka,Groundwater,28.3,5.82,7.73,657.0,1.57,6.11,774,B
+STN_0421,Tamil Nadu,Lake,27.5,4.08,6.65,794.5,0.76,5.78,1544,A
+STN_0422,Maharashtra,Reservoir,27.3,5.47,8.31,311.6,0.58,4.86,491,B
+STN_0423,Maharashtra,Reservoir,24.8,5.18,7.26,202.2,3.43,3.84,2417,B
+STN_0424,Maharashtra,Lake,29.9,5.83,7.79,850.0,2.96,1.85,2202,A
+STN_0425,Uttar Pradesh,Lake,31.2,7.78,7.38,633.8,2.15,9.87,562,A
+STN_0426,Gujarat,Reservoir,20.1,4.46,8.55,770.5,6.44,5.44,85,C
+STN_0427,Maharashtra,Lake,21.0,6.54,6.29,250.7,2.89,6.92,682,B
+STN_0428,Karnataka,Groundwater,28.1,3.69,8.1,710.5,5.23,6.6,2345,A
+STN_0429,Gujarat,Reservoir,22.8,5.08,7.9,719.3,1.76,6.95,1182,B
+STN_0430,Gujarat,Groundwater,30.9,5.86,7.89,256.0,1.98,8.49,1470,B
+STN_0431,Uttar Pradesh,Reservoir,28.0,3.87,7.28,263.0,3.91,7.59,1099,B
+STN_0432,Tamil Nadu,River,24.4,6.22,6.24,356.8,0.52,3.36,1360,A
+STN_0433,West Bengal,Groundwater,25.0,5.05,7.99,301.8,0.6,6.69,2008,A
+STN_0434,Gujarat,River,28.3,8.46,8.36,832.8,1.35,3.01,1893,A
+STN_0435,Gujarat,Reservoir,21.7,6.65,6.42,404.1,1.84,7.11,946,A
+STN_0436,Maharashtra,Groundwater,30.6,4.72,7.35,682.9,3.67,5.24,208,A
+STN_0437,Karnataka,Groundwater,20.1,4.01,6.62,713.5,4.62,0.57,2477,C
+STN_0438,Maharashtra,Groundwater,31.7,3.7,7.79,420.2,2.37,8.83,1107,A
+STN_0439,Karnataka,Lake,22.0,3.95,8.24,627.8,1.93,3.37,120,B
+STN_0440,Gujarat,Groundwater,28.9,6.9,7.93,225.5,5.44,11.05,2151,C
+STN_0441,Karnataka,Groundwater,20.5,7.77,7.03,427.9,1.48,3.44,2417,C
+STN_0442,Maharashtra,River,25.2,4.28,6.56,827.1,4.57,11.96,306,B
+STN_0443,Maharashtra,Groundwater,27.6,5.51,8.27,268.0,6.09,5.61,2318,B
+STN_0444,Tamil Nadu,Lake,20.8,5.27,7.04,420.0,1.89,0.41,327,D
+STN_0445,Uttar Pradesh,Groundwater,25.3,6.72,6.26,703.4,1.02,1.01,281,B
+STN_0446,Tamil Nadu,River,23.6,4.41,7.69,615.8,6.38,1.08,2265,C
+STN_0447,Gujarat,Groundwater,26.0,8.27,6.84,592.1,2.12,0.77,1377,B
+STN_0448,Karnataka,Groundwater,26.1,7.14,8.39,747.3,2.15,3.29,2460,A
+STN_0449,Maharashtra,River,29.4,8.28,6.57,170.4,3.4,3.96,1668,A
+STN_0450,Maharashtra,Reservoir,21.5,4.89,7.33,689.8,1.89,1.42,1710,D
+STN_0451,Maharashtra,Groundwater,21.0,6.44,6.86,767.8,6.46,5.31,1609,C
+STN_0452,West Bengal,Reservoir,24.8,7.16,7.99,161.3,0.76,4.45,452,B
+STN_0453,Maharashtra,River,30.7,7.05,7.63,541.3,3.21,7.67,618,A
+STN_0454,West Bengal,River,30.3,3.61,8.26,394.0,3.79,2.43,1102,A
+STN_0455,Gujarat,Reservoir,26.7,8.49,7.39,185.5,3.3,10.98,1954,C
+STN_0456,Uttar Pradesh,Lake,30.7,8.14,6.21,442.4,3.62,6.24,952,A
+STN_0457,Tamil Nadu,Lake,29.7,4.1,6.76,600.8,6.43,7.52,1374,B
+STN_0458,West Bengal,River,23.3,6.22,8.8,793.3,5.76,0.57,1467,C
+STN_0459,Tamil Nadu,Lake,22.0,5.07,7.25,584.4,2.35,6.75,1374,A
+STN_0460,West Bengal,Lake,23.6,7.89,7.81,749.7,3.81,4.48,2148,B
+STN_0461,Maharashtra,River,22.7,6.99,8.55,235.1,0.5,11.1,298,B
+STN_0462,Maharashtra,Groundwater,27.5,4.62,6.25,297.4,2.96,10.64,2029,A
+STN_0463,Karnataka,Groundwater,27.0,3.67,7.91,829.2,1.48,7.69,600,B
+STN_0464,Maharashtra,Groundwater,27.2,4.96,6.95,771.2,4.77,9.24,1739,B
+STN_0465,Tamil Nadu,Lake,22.3,3.69,6.93,314.7,1.83,7.77,557,A
+STN_0466,Karnataka,Reservoir,29.5,4.21,6.78,584.7,4.99,0.3,567,A
+STN_0467,Karnataka,Lake,25.2,6.68,8.34,403.8,2.38,8.47,233,B
+STN_0468,Maharashtra,Groundwater,25.7,7.23,7.17,478.0,6.05,2.21,1531,C
+STN_0469,Karnataka,River,32.0,5.84,6.37,752.6,3.17,8.22,1664,B
+STN_0470,Uttar Pradesh,River,23.4,6.5,6.45,665.0,5.54,0.23,1962,A
+STN_0471,Maharashtra,River,24.7,4.28,6.59,316.9,4.27,3.8,1058,C
+STN_0472,Uttar Pradesh,Lake,28.1,5.08,8.54,371.2,6.36,6.25,686,A
+STN_0473,Maharashtra,Reservoir,30.6,7.06,7.31,352.8,4.96,4.06,2221,B
+STN_0474,West Bengal,Groundwater,21.5,5.32,8.58,696.5,4.87,8.36,2348,A
+STN_0475,Uttar Pradesh,River,28.8,5.24,8.33,493.1,2.09,6.32,2102,A
+STN_0476,Maharashtra,Groundwater,31.0,4.47,8.38,815.5,3.53,11.52,377,B
+STN_0477,Tamil Nadu,Groundwater,25.1,6.47,6.95,721.7,2.24,4.36,1244,A
+STN_0478,West Bengal,Lake,23.4,7.55,6.91,297.8,0.62,8.69,746,A
+STN_0479,West Bengal,River,28.1,5.85,7.66,700.2,4.76,10.05,155,A
+STN_0480,West Bengal,Lake,23.0,4.08,7.29,504.3,1.92,3.12,932,D
+STN_0481,Maharashtra,Groundwater,24.6,7.69,7.52,327.6,2.88,9.07,2407,C
+STN_0482,Tamil Nadu,Groundwater,30.8,3.86,6.34,404.3,2.21,4.78,808,C
+STN_0483,Gujarat,Groundwater,27.1,5.86,8.73,830.5,1.7,1.63,1043,B
+STN_0484,West Bengal,River,21.1,4.81,6.35,488.8,0.9,0.14,1067,A
+STN_0485,Gujarat,River,24.0,8.18,6.66,653.7,2.53,8.95,2291,B
+STN_0486,Maharashtra,River,27.5,7.19,7.96,484.0,0.99,2.32,1947,B
+STN_0487,West Bengal,Groundwater,25.8,6.33,6.6,410.1,3.74,0.71,533,B
+STN_0488,Tamil Nadu,Groundwater,27.9,6.84,6.48,707.5,0.62,6.02,1737,A
+STN_0489,Tamil Nadu,Reservoir,29.1,6.16,6.6,743.8,6.14,4.23,1897,A
+STN_0490,West Bengal,River,25.8,4.24,6.36,200.3,6.3,8.33,395,A
+STN_0491,Karnataka,Groundwater,31.8,7.05,6.85,345.3,2.33,1.38,2330,A
+STN_0492,Karnataka,Groundwater,31.0,5.96,6.9,505.5,2.06,1.68,853,A
+STN_0493,West Bengal,Reservoir,20.7,6.67,7.5,371.5,1.13,4.91,2384,C
+STN_0494,Uttar Pradesh,Reservoir,23.2,3.73,7.34,698.5,5.93,6.29,2392,B
+STN_0495,Karnataka,Groundwater,23.6,4.21,7.43,230.3,4.02,9.91,523,B
+STN_0496,Maharashtra,River,22.2,6.45,7.8,708.5,4.16,7.07,36,A
+STN_0497,Karnataka,Lake,23.7,5.8,6.8,582.5,5.88,10.84,1955,B
+STN_0498,Karnataka,Lake,25.1,4.63,6.55,352.6,5.96,2.69,674,A
+STN_0499,Maharashtra,Lake,20.6,4.7,8.49,391.1,5.47,7.2,2197,A
+STN_0500,Maharashtra,River,21.5,6.66,7.85,278.0,5.14,7.9,1738,B
+STN_0501,Uttar Pradesh,Groundwater,21.2,3.79,6.36,326.8,5.76,8.74,2152,A
+STN_0502,Tamil Nadu,Lake,20.6,5.67,8.7,652.1,5.76,11.86,2225,B
+STN_0503,Karnataka,Lake,25.8,6.12,8.0,413.1,2.71,5.67,1550,D
+STN_0504,West Bengal,River,24.0,5.04,6.59,631.2,6.34,4.49,1765,A
+STN_0505,West Bengal,Groundwater,31.2,7.6,8.72,509.9,4.75,10.24,37,B
+STN_0506,Gujarat,Groundwater,21.2,3.78,7.15,251.7,2.72,2.2,317,A
+STN_0507,Tamil Nadu,River,31.1,7.83,8.76,499.3,3.15,0.54,143,B
+STN_0508,Maharashtra,Lake,21.0,7.12,6.47,679.5,4.62,5.38,2003,B
+STN_0509,West Bengal,Groundwater,27.4,5.73,6.62,358.4,2.67,3.04,713,D
+STN_0510,Karnataka,Groundwater,23.0,8.12,7.91,603.7,5.46,4.82,364,B
+STN_0511,Uttar Pradesh,Lake,29.9,7.01,6.26,289.3,1.39,11.83,556,C
+STN_0512,Gujarat,River,20.7,8.16,6.25,245.0,5.95,4.25,1050,A
+STN_0513,Tamil Nadu,Lake,31.4,5.86,8.26,402.2,2.31,8.52,119,A
+STN_0514,Karnataka,Reservoir,20.6,5.76,6.64,422.4,1.42,3.08,1508,C
+STN_0515,Maharashtra,Groundwater,22.9,6.15,8.59,682.7,5.65,3.71,2067,B
+STN_0516,Tamil Nadu,River,25.6,3.83,7.31,472.1,1.94,2.99,572,C
+STN_0517,Gujarat,Lake,29.1,8.04,8.47,206.9,5.56,6.91,1597,A
+STN_0518,Maharashtra,Lake,31.4,6.84,7.29,593.8,2.28,2.79,475,A
+STN_0519,Gujarat,River,25.1,6.59,7.58,478.5,6.1,8.65,1413,A
+STN_0520,Karnataka,Groundwater,29.1,8.13,7.02,382.2,1.81,8.2,186,C
+STN_0521,Tamil Nadu,River,28.7,8.47,7.91,711.6,0.92,5.11,1397,D
+STN_0522,Uttar Pradesh,Reservoir,26.9,4.32,7.03,258.1,6.12,0.4,1775,C
+STN_0523,Karnataka,River,28.3,7.24,6.78,789.2,1.49,0.37,1296,B
+STN_0524,West Bengal,Reservoir,20.5,6.4,6.41,383.8,6.16,6.44,995,A
+STN_0525,Karnataka,Groundwater,25.3,5.8,6.35,472.7,5.44,10.09,970,B
+STN_0526,Uttar Pradesh,Lake,29.4,8.39,7.0,800.5,0.99,7.23,904,B
+STN_0527,Uttar Pradesh,Reservoir,25.7,7.75,8.11,682.9,3.17,5.28,1492,B
+STN_0528,West Bengal,Reservoir,30.5,6.98,6.73,202.0,0.94,10.6,2323,B
+STN_0529,West Bengal,River,30.0,5.41,6.98,554.8,2.48,2.44,1320,B
+STN_0530,Maharashtra,River,30.4,6.83,8.55,367.3,2.61,4.38,34,B
+STN_0531,Gujarat,Lake,21.6,6.16,7.86,505.9,4.1,6.83,1218,C
+STN_0532,Karnataka,Groundwater,22.9,4.75,8.59,670.1,6.36,3.57,436,C
+STN_0533,Maharashtra,Reservoir,20.4,5.75,8.57,497.3,1.52,11.97,1537,A
+STN_0534,West Bengal,Lake,31.8,4.56,6.36,199.7,2.47,5.48,1164,A
+STN_0535,Maharashtra,Reservoir,22.8,6.0,8.68,521.0,4.02,0.72,1337,A
+STN_0536,Karnataka,Lake,24.4,7.1,6.33,166.9,1.53,2.2,1866,B
+STN_0537,Gujarat,River,23.3,3.68,8.61,393.9,4.76,6.44,1916,B
+STN_0538,Uttar Pradesh,River,20.5,7.33,7.62,484.6,2.92,6.65,96,C
+STN_0539,Karnataka,Groundwater,23.1,3.6,7.59,601.3,6.2,11.81,1882,D
+STN_0540,Gujarat,River,21.2,6.09,8.05,504.3,4.28,7.24,402,B
+STN_0541,Uttar Pradesh,Lake,24.7,6.37,8.49,256.4,2.68,8.03,765,B
+STN_0542,Tamil Nadu,Reservoir,31.6,7.31,7.8,802.6,4.82,2.64,2217,B
+STN_0543,Karnataka,Lake,28.4,7.31,7.31,605.2,5.53,1.37,227,C
+STN_0544,West Bengal,Groundwater,28.5,5.59,6.49,371.9,5.3,7.26,1454,B
+STN_0545,Karnataka,River,25.4,3.83,8.25,826.2,2.08,10.39,792,B
+STN_0546,West Bengal,River,29.7,6.97,6.53,767.8,3.0,7.09,555,B
+STN_0547,Gujarat,Reservoir,30.9,6.05,8.09,250.4,3.21,5.37,1694,B
+STN_0548,Maharashtra,Groundwater,31.5,5.17,7.57,608.8,2.83,6.98,2016,C
+STN_0549,Maharashtra,Groundwater,21.2,4.67,7.2,542.0,2.37,5.68,1554,A
+STN_0550,Gujarat,River,30.6,4.1,7.79,285.0,5.02,1.79,2097,B
+STN_0551,Karnataka,Groundwater,22.7,4.98,8.21,313.4,0.57,8.92,2083,C
+STN_0552,Karnataka,Lake,24.8,5.79,8.65,544.6,2.26,6.44,500,A
+STN_0553,West Bengal,Groundwater,24.1,5.89,6.89,374.9,1.35,4.85,1058,C
+STN_0554,Karnataka,Lake,28.1,6.41,8.66,734.4,1.27,6.76,208,C
+STN_0555,Tamil Nadu,Lake,27.2,5.31,8.7,218.4,2.16,2.97,380,B
+STN_0556,West Bengal,Lake,21.3,8.1,8.32,789.8,5.07,5.19,100,A
+STN_0557,Maharashtra,River,29.4,5.98,8.49,738.4,6.32,7.51,408,C
+STN_0558,Tamil Nadu,Lake,25.3,5.62,8.0,667.0,3.59,2.79,469,A
+STN_0559,Karnataka,Reservoir,20.0,3.74,6.3,333.8,2.53,9.01,2282,B
+STN_0560,Maharashtra,Groundwater,25.0,6.5,7.7,650.5,5.48,6.3,2146,C
+STN_0561,West Bengal,Lake,26.2,6.51,8.14,457.1,0.9,10.35,1375,B
+STN_0562,Karnataka,Reservoir,20.8,6.42,8.65,593.6,1.06,10.18,582,A
+STN_0563,West Bengal,River,21.8,7.94,7.68,368.8,2.57,5.98,1303,C
+STN_0564,Karnataka,River,31.9,7.31,8.26,735.1,3.19,2.43,2401,C
+STN_0565,Gujarat,River,30.5,7.84,8.03,178.4,5.29,8.87,1868,B
+STN_0566,Maharashtra,River,21.6,3.8,6.93,634.0,6.05,5.08,1208,C
+STN_0567,Karnataka,Groundwater,27.0,5.09,6.6,730.0,3.69,7.18,479,B
+STN_0568,Uttar Pradesh,River,24.6,5.09,8.15,602.5,3.47,1.38,921,B
+STN_0569,Uttar Pradesh,Groundwater,26.5,6.79,6.81,284.4,1.78,7.62,848,A
+STN_0570,West Bengal,Reservoir,25.6,5.74,6.84,349.5,3.21,4.55,1974,B
+STN_0571,Karnataka,River,20.6,7.39,7.87,510.4,6.04,4.08,1028,B
+STN_0572,Gujarat,River,23.8,5.42,8.25,380.6,2.86,11.76,2287,B
+STN_0573,West Bengal,Reservoir,21.5,4.61,7.71,153.4,1.76,5.25,1739,B
+STN_0574,Karnataka,Reservoir,25.9,4.95,8.5,178.5,2.52,8.17,2187,C
+STN_0575,Uttar Pradesh,Groundwater,30.9,4.41,6.75,687.4,3.59,7.57,1183,B
+STN_0576,Maharashtra,Lake,31.9,4.49,6.86,208.6,4.09,1.34,175,C
+STN_0577,Gujarat,Groundwater,31.3,4.58,7.86,799.6,3.09,9.0,1701,A
+STN_0578,Karnataka,Lake,31.8,3.58,8.36,459.9,5.05,3.95,1306,C
+STN_0579,Uttar Pradesh,Groundwater,20.2,7.08,7.6,680.7,4.01,9.61,252,A
+STN_0580,Maharashtra,Lake,28.8,5.5,6.23,237.9,4.49,7.33,2425,A
+STN_0581,Uttar Pradesh,River,23.3,3.61,7.96,798.6,5.68,3.87,636,B
+STN_0582,West Bengal,Lake,30.4,5.35,8.32,173.7,5.69,4.34,2315,B
+STN_0583,Gujarat,Reservoir,29.8,8.03,6.92,179.5,1.72,8.8,2264,D
+STN_0584,West Bengal,Reservoir,25.1,6.06,6.34,188.2,4.24,6.65,1141,A
+STN_0585,Tamil Nadu,Lake,25.7,8.43,7.55,222.4,4.8,8.05,2313,A
+STN_0586,Karnataka,River,23.2,6.2,6.31,490.8,1.38,1.98,1654,B
+STN_0587,West Bengal,River,23.5,8.31,7.28,701.8,5.56,9.47,2304,A
+STN_0588,Maharashtra,Lake,31.8,4.51,6.25,349.5,1.58,3.91,187,B
+STN_0589,Gujarat,Lake,30.7,4.95,6.78,672.0,5.3,7.48,1176,C
+STN_0590,Gujarat,Reservoir,22.3,7.0,7.21,691.8,1.47,1.46,1110,B
+STN_0591,Tamil Nadu,Reservoir,23.3,8.43,6.49,785.8,4.95,3.92,2095,B
+STN_0592,Tamil Nadu,Groundwater,21.3,7.63,6.5,254.5,1.39,7.82,401,A
+STN_0593,Karnataka,River,31.9,6.27,8.35,244.9,2.77,3.36,601,A
+STN_0594,West Bengal,River,30.9,3.93,6.31,235.5,1.36,10.58,1477,B
+STN_0595,Karnataka,River,26.6,5.32,7.99,401.5,2.12,7.97,940,C
+STN_0596,West Bengal,Groundwater,28.3,3.93,8.32,492.6,6.41,10.46,130,B
+STN_0597,West Bengal,Groundwater,29.0,5.06,6.54,473.1,1.15,4.81,346,B
+STN_0598,Gujarat,Reservoir,22.4,4.79,6.71,329.9,2.94,0.5,1819,B
+STN_0599,West Bengal,Reservoir,31.2,5.44,7.87,585.4,4.56,6.96,2192,C
+STN_0600,Karnataka,Lake,26.3,7.69,7.02,386.8,1.07,4.14,1269,B
+STN_0601,Karnataka,Groundwater,21.1,4.25,7.44,406.3,1.15,5.43,1068,C
+STN_0602,Tamil Nadu,Groundwater,24.8,5.03,8.37,223.9,1.36,8.21,2426,B
+STN_0603,Gujarat,Groundwater,27.2,4.81,6.56,564.6,4.37,8.44,1845,A
+STN_0604,Uttar Pradesh,River,24.2,4.98,7.81,608.7,5.96,0.43,63,A
+STN_0605,Uttar Pradesh,Reservoir,28.4,5.3,8.65,680.6,5.46,9.25,1162,A
+STN_0606,Maharashtra,Lake,30.6,4.72,6.35,782.8,6.4,5.97,290,A
+STN_0607,Tamil Nadu,Groundwater,29.3,8.21,6.36,686.2,3.97,6.72,1369,B
+STN_0608,Maharashtra,Groundwater,27.7,5.6,7.64,315.0,6.27,3.65,258,A
+STN_0609,Gujarat,Groundwater,26.1,4.07,8.7,315.0,2.33,5.11,1816,B
+STN_0610,Uttar Pradesh,River,23.1,5.84,6.77,790.6,3.03,8.55,596,B
+STN_0611,Uttar Pradesh,Lake,25.5,4.42,7.06,703.1,2.88,9.34,366,A
+STN_0612,Uttar Pradesh,Lake,23.5,4.58,6.46,697.6,0.78,4.71,496,B
+STN_0613,Maharashtra,Groundwater,31.2,4.93,7.14,653.8,5.48,8.32,1718,B
+STN_0614,Karnataka,Lake,30.9,4.12,6.32,337.0,0.65,3.17,1409,C
+STN_0615,Maharashtra,River,21.9,7.11,7.21,743.2,4.88,10.0,1078,A
+STN_0616,Uttar Pradesh,Groundwater,29.9,7.46,7.64,250.0,2.94,7.36,1468,B
+STN_0617,Tamil Nadu,Reservoir,28.4,5.47,8.74,395.0,0.54,9.32,541,C
+STN_0618,Tamil Nadu,Reservoir,31.7,6.94,8.33,392.5,2.24,5.78,216,B
+STN_0619,West Bengal,Lake,25.6,5.44,8.34,542.1,2.58,2.83,1900,D
+STN_0620,Maharashtra,Reservoir,28.7,4.32,6.79,474.4,6.29,5.21,294,A
+STN_0621,West Bengal,Reservoir,26.2,5.49,6.43,471.9,4.47,4.64,1821,A
+STN_0622,West Bengal,Groundwater,20.8,6.28,7.77,537.5,3.76,4.06,947,A
+STN_0623,Maharashtra,River,20.6,3.7,7.55,440.8,1.26,2.62,1880,A
+STN_0624,West Bengal,Groundwater,21.5,6.77,7.54,325.0,2.85,9.13,2153,B
+STN_0625,Gujarat,River,23.6,7.21,6.48,614.9,0.71,1.13,2041,B
+STN_0626,Maharashtra,Groundwater,23.1,7.8,7.48,703.4,5.07,10.66,892,A
+STN_0627,West Bengal,Reservoir,28.7,4.01,6.59,485.3,1.48,2.18,1813,B
+STN_0628,West Bengal,Groundwater,28.6,3.5,7.3,604.6,4.07,11.76,2018,C
+STN_0629,Maharashtra,Lake,31.7,3.87,6.36,524.8,4.7,11.86,1643,B
+STN_0630,Uttar Pradesh,Lake,23.7,8.12,8.43,191.3,2.7,4.84,835,A
+STN_0631,West Bengal,River,31.3,7.33,6.23,446.2,4.3,11.86,1910,A
+STN_0632,Karnataka,River,27.4,7.68,8.64,156.9,5.09,10.44,70,B
+STN_0633,Uttar Pradesh,River,25.9,6.09,8.44,613.3,1.6,1.08,1162,B
+STN_0634,Karnataka,Lake,28.0,6.13,8.16,505.7,4.11,11.37,2146,C
+STN_0635,Uttar Pradesh,Groundwater,28.4,4.99,8.75,238.8,4.9,0.61,2027,D
+STN_0636,Uttar Pradesh,Reservoir,22.1,7.71,6.34,529.5,2.64,2.26,79,D
+STN_0637,Gujarat,River,29.0,7.65,7.87,778.9,1.47,7.06,694,B
+STN_0638,West Bengal,Groundwater,28.7,5.46,8.41,388.3,2.22,1.06,2450,A
+STN_0639,Karnataka,Groundwater,32.0,5.15,6.53,837.7,6.1,2.02,1185,A
+STN_0640,Uttar Pradesh,Lake,30.9,7.19,7.72,821.6,2.64,11.45,1605,B
+STN_0641,Uttar Pradesh,Lake,28.2,3.63,7.22,699.7,1.15,11.94,1264,C
+STN_0642,Karnataka,Reservoir,28.5,7.8,7.33,719.7,1.0,9.6,1031,A
+STN_0643,Gujarat,Groundwater,31.4,5.73,8.57,437.4,1.58,6.23,441,B
+STN_0644,Karnataka,River,31.6,5.71,7.6,431.8,1.27,10.81,944,B
+STN_0645,Gujarat,Lake,29.9,6.85,6.44,818.1,3.47,1.43,283,A
+STN_0646,Gujarat,Groundwater,29.2,6.73,8.64,406.3,2.59,11.32,1381,A
+STN_0647,Tamil Nadu,Lake,21.3,4.83,6.68,217.8,5.55,4.28,1341,B
+STN_0648,Gujarat,Groundwater,30.0,8.22,8.52,256.9,5.79,10.35,1390,A
+STN_0649,Tamil Nadu,Lake,23.0,8.43,8.72,647.3,3.34,8.05,242,B
+STN_0650,West Bengal,River,26.8,6.13,8.48,418.1,5.83,11.53,1197,A
+STN_0651,Maharashtra,Reservoir,24.9,6.31,7.96,289.5,3.2,10.39,1337,A
+STN_0652,Gujarat,River,24.1,6.27,8.13,719.7,4.35,10.67,894,A
+STN_0653,Karnataka,Lake,23.7,5.93,8.02,492.1,1.48,7.62,812,B
+STN_0654,Tamil Nadu,Lake,30.3,8.23,7.4,547.3,0.82,10.01,719,B
+STN_0655,Maharashtra,Lake,29.2,4.72,6.91,257.8,1.46,9.11,858,B
+STN_0656,West Bengal,River,26.3,4.04,6.94,284.9,2.01,2.02,1639,B
+STN_0657,Maharashtra,Lake,28.0,8.15,8.1,238.1,5.01,7.82,1660,B
+STN_0658,Gujarat,River,31.8,4.57,7.83,510.2,1.54,1.86,1105,B
+STN_0659,Karnataka,Lake,24.8,7.25,7.72,693.0,1.28,10.45,1881,A
+STN_0660,Gujarat,Reservoir,26.6,4.52,7.9,662.6,6.07,0.88,1839,A
+STN_0661,Uttar Pradesh,Reservoir,26.4,8.3,8.21,332.9,4.63,11.85,2211,D
+STN_0662,Maharashtra,Lake,31.2,7.46,8.15,746.1,3.34,4.87,2311,B
+STN_0663,Uttar Pradesh,Groundwater,24.2,8.09,6.47,224.0,1.07,2.13,701,C
+STN_0664,Uttar Pradesh,River,31.8,8.25,7.14,229.8,5.61,11.23,1477,C
+STN_0665,Tamil Nadu,Lake,23.7,3.92,6.89,744.5,1.15,0.64,17,B
+STN_0666,Uttar Pradesh,River,21.3,5.67,7.6,321.1,4.17,5.69,2092,A
+STN_0667,Maharashtra,Groundwater,22.3,6.74,6.36,645.7,4.51,9.27,811,B
+STN_0668,Maharashtra,Reservoir,25.1,7.51,8.18,156.4,2.9,3.87,1171,B
+STN_0669,Karnataka,River,27.8,4.71,6.48,215.5,5.97,6.39,1713,D
+STN_0670,Gujarat,River,26.2,8.07,6.91,576.5,0.8,8.43,1141,C
+STN_0671,Karnataka,River,24.5,4.6,8.24,277.7,5.41,11.43,149,C
+STN_0672,Karnataka,River,26.7,7.83,6.33,169.7,3.82,1.32,2212,B
+STN_0673,Gujarat,River,30.1,6.06,7.92,476.9,4.17,1.97,668,A
+STN_0674,Maharashtra,Reservoir,30.1,6.08,8.6,381.4,6.42,6.16,322,C
+STN_0675,Tamil Nadu,River,28.7,5.37,7.81,711.6,4.0,5.08,1251,A
+STN_0676,Uttar Pradesh,River,31.4,4.02,8.05,723.2,5.28,4.99,575,A
+STN_0677,Tamil Nadu,Reservoir,27.1,5.24,8.26,580.1,1.42,3.63,1560,C
+STN_0678,Uttar Pradesh,Lake,20.1,5.63,6.78,355.1,5.36,6.77,1256,A
+STN_0679,Gujarat,Lake,23.5,5.9,7.71,473.1,5.07,10.61,1966,C
+STN_0680,Gujarat,River,23.9,7.2,7.0,641.6,6.31,2.01,411,A
+STN_0681,Karnataka,Reservoir,26.6,5.26,6.85,198.5,6.11,2.66,2441,C
+STN_0682,West Bengal,River,30.9,5.53,6.7,382.7,1.78,8.08,861,B
+STN_0683,West Bengal,Lake,30.1,8.03,7.72,725.7,3.29,0.77,792,B
+STN_0684,Gujarat,Reservoir,22.8,7.26,8.27,434.2,5.97,8.12,352,C
+STN_0685,Uttar Pradesh,Groundwater,26.2,3.61,8.48,587.3,4.34,3.84,1796,D
+STN_0686,West Bengal,Reservoir,27.9,7.56,7.31,217.4,3.28,4.36,585,A
+STN_0687,Tamil Nadu,Lake,31.9,8.45,7.17,693.9,1.15,4.93,791,B
+STN_0688,Tamil Nadu,Reservoir,20.4,8.2,7.99,220.3,2.61,4.26,1348,D
+STN_0689,Tamil Nadu,Groundwater,25.6,7.68,8.23,753.1,4.49,10.11,1220,B
+STN_0690,West Bengal,Reservoir,31.9,6.65,6.86,224.6,5.16,11.36,1460,A
+STN_0691,Tamil Nadu,River,31.7,4.89,6.97,773.6,3.18,6.62,701,B
+STN_0692,Karnataka,River,24.0,6.77,7.59,404.6,0.84,7.02,668,B
+STN_0693,West Bengal,Lake,20.0,6.98,7.36,587.2,4.3,0.94,193,A
+STN_0694,Tamil Nadu,Reservoir,27.0,4.91,8.04,742.6,6.03,8.59,1709,A
+STN_0695,Uttar Pradesh,Lake,30.4,4.78,7.51,157.2,3.48,7.05,1213,A
+STN_0696,Karnataka,Reservoir,23.9,5.48,6.49,336.0,6.07,0.7,1333,B
+STN_0697,Karnataka,Lake,31.2,6.71,6.63,785.8,2.62,2.46,1847,C
+STN_0698,West Bengal,Reservoir,24.0,4.97,8.54,421.7,5.82,2.5,2154,C
+STN_0699,Karnataka,River,27.3,6.28,6.79,644.5,5.22,2.13,1713,B
+STN_0700,Gujarat,Lake,28.7,8.0,6.33,248.0,6.27,7.94,345,B
+STN_0701,Karnataka,Lake,24.1,4.98,8.1,624.9,5.25,11.15,1474,B
+STN_0702,Uttar Pradesh,Groundwater,24.2,8.33,7.98,201.2,2.43,9.18,412,B
+STN_0703,West Bengal,Reservoir,25.6,5.87,7.76,652.1,5.9,5.78,245,D
+STN_0704,West Bengal,River,30.0,4.0,7.51,376.7,4.52,4.91,615,C
+STN_0705,Tamil Nadu,River,21.2,3.78,8.72,476.1,1.47,4.7,232,A
+STN_0706,Gujarat,River,27.6,5.19,6.51,266.4,0.78,7.25,925,C
+STN_0707,Tamil Nadu,Lake,28.1,4.79,7.53,589.5,2.7,4.37,632,A
+STN_0708,Maharashtra,River,26.7,7.72,7.67,386.3,5.22,2.79,1843,B
+STN_0709,Gujarat,Lake,31.2,7.19,6.26,418.4,4.21,7.27,2119,A
+STN_0710,Uttar Pradesh,Groundwater,27.2,7.92,7.27,606.5,3.66,4.75,1262,C
+STN_0711,Gujarat,River,27.6,6.45,8.24,275.2,0.52,0.27,248,A
+STN_0712,Karnataka,Groundwater,27.2,5.68,7.42,746.4,3.11,0.36,1759,B
+STN_0713,Gujarat,Reservoir,28.7,4.85,8.48,667.5,1.45,3.36,1622,A
+STN_0714,Karnataka,Reservoir,21.6,6.42,7.88,554.4,3.23,6.2,1583,D
+STN_0715,Tamil Nadu,Groundwater,30.7,6.59,8.19,239.8,6.45,4.32,616,A
+STN_0716,Gujarat,Reservoir,20.5,5.46,8.29,631.0,5.78,0.39,2442,A
+STN_0717,Gujarat,River,27.7,8.18,7.99,162.7,2.36,2.76,952,B
+STN_0718,Uttar Pradesh,River,27.4,6.7,8.15,713.1,4.06,1.25,2420,B
+STN_0719,Maharashtra,Lake,22.5,7.69,8.01,362.7,3.51,11.39,1174,B
+STN_0720,Gujarat,Groundwater,20.5,6.6,7.63,232.0,1.28,3.82,581,A
+STN_0721,Tamil Nadu,Groundwater,21.7,5.08,7.67,265.1,6.44,0.28,986,A
+STN_0722,Karnataka,Lake,23.3,7.18,6.69,824.2,3.05,7.96,969,A
+STN_0723,Tamil Nadu,River,30.6,4.65,8.35,691.7,3.53,2.87,1485,A
+STN_0724,West Bengal,Groundwater,30.3,6.48,7.01,316.5,4.39,6.84,2344,C
+STN_0725,West Bengal,Lake,20.8,5.51,7.59,824.4,1.65,1.89,1943,D
+STN_0726,Uttar Pradesh,Groundwater,23.5,4.25,6.85,248.1,1.83,11.81,896,B
+STN_0727,West Bengal,Groundwater,30.7,5.57,8.01,663.5,1.66,11.65,703,A
+STN_0728,Gujarat,Lake,22.8,5.05,8.74,609.7,2.81,7.91,190,A
+STN_0729,Maharashtra,Groundwater,32.0,4.06,8.29,725.0,1.7,8.52,1198,A
+STN_0730,Maharashtra,Reservoir,23.1,7.62,7.81,417.2,6.06,5.17,1522,A
+STN_0731,Gujarat,Lake,28.9,5.99,7.68,431.3,4.79,11.55,2452,B
+STN_0732,Maharashtra,Lake,25.0,5.23,7.47,587.2,5.89,5.14,307,B
+STN_0733,Tamil Nadu,Reservoir,21.6,6.02,6.73,428.7,5.59,2.95,1199,A
+STN_0734,Karnataka,Groundwater,23.1,7.27,7.1,178.9,4.72,1.47,918,B
+STN_0735,Gujarat,Reservoir,28.1,3.59,7.26,660.8,1.96,2.58,1375,B
+STN_0736,West Bengal,Groundwater,24.0,6.23,8.66,598.7,4.19,6.91,1811,A
+STN_0737,Karnataka,River,27.2,5.9,7.31,446.6,1.62,3.02,2197,C
+STN_0738,Maharashtra,Reservoir,22.5,7.97,7.72,362.0,1.29,7.89,1277,B
+STN_0739,Uttar Pradesh,Reservoir,25.4,6.28,8.6,374.5,4.3,4.65,2023,A
+STN_0740,Karnataka,Reservoir,26.1,4.19,7.55,668.7,4.25,10.65,1244,A
+STN_0741,Uttar Pradesh,River,25.0,5.44,6.85,660.4,1.44,6.75,1662,B
+STN_0742,Tamil Nadu,Groundwater,22.4,6.61,7.19,723.2,2.61,7.51,19,A
+STN_0743,Uttar Pradesh,River,25.5,3.73,7.18,683.5,0.9,6.72,962,D
+STN_0744,Karnataka,Reservoir,28.3,7.92,8.06,680.6,4.79,10.64,80,B
+STN_0745,Karnataka,River,31.6,3.84,6.97,326.2,6.42,0.85,2184,C
+STN_0746,Gujarat,Reservoir,29.5,3.65,8.1,221.1,4.94,0.9,2317,B
+STN_0747,West Bengal,Lake,21.9,3.51,8.51,683.2,5.56,8.45,237,A
+STN_0748,Uttar Pradesh,Groundwater,23.3,6.92,7.07,219.0,3.36,9.24,2014,D
+STN_0749,Tamil Nadu,Reservoir,20.9,5.78,6.55,837.5,1.07,5.26,787,A
+STN_0750,Gujarat,River,21.6,4.01,7.86,762.6,4.86,4.29,1248,B
+STN_0751,Gujarat,River,23.0,7.78,7.14,523.4,2.04,3.41,1422,C
+STN_0752,Tamil Nadu,River,22.4,4.51,7.59,396.5,2.83,2.89,1990,C
+STN_0753,Gujarat,Groundwater,22.6,5.13,7.85,518.8,4.72,10.95,2297,B
+STN_0754,Tamil Nadu,Lake,22.8,4.39,7.26,664.0,5.93,3.61,389,A
+STN_0755,Maharashtra,Groundwater,23.6,8.13,8.6,679.4,3.42,7.81,2389,B
+STN_0756,Gujarat,Lake,21.5,7.29,7.24,201.6,6.27,9.47,935,B
+STN_0757,Karnataka,River,23.3,7.12,7.0,713.4,3.62,0.36,2474,D
+STN_0758,Maharashtra,Groundwater,28.3,3.72,8.5,599.0,1.24,0.5,174,C
+STN_0759,Gujarat,Lake,22.8,6.11,6.55,178.4,3.61,4.06,2020,C
+STN_0760,Tamil Nadu,River,22.1,6.38,6.52,369.2,5.66,8.38,248,D
+STN_0761,Maharashtra,River,20.8,5.41,8.63,507.4,3.73,3.2,2336,B
+STN_0762,West Bengal,Groundwater,26.0,5.11,6.74,281.9,4.99,0.12,2127,B
+STN_0763,Maharashtra,Lake,30.1,7.76,6.59,258.7,3.79,3.53,1808,B
+STN_0764,Karnataka,River,20.7,3.62,7.59,160.0,3.78,1.17,28,A
+STN_0765,Gujarat,River,26.5,6.63,6.32,788.1,2.21,2.71,2295,B
+STN_0766,Gujarat,River,27.8,5.47,7.81,189.3,1.71,4.06,920,B
+STN_0767,Tamil Nadu,Reservoir,27.1,6.83,7.38,406.2,2.17,1.62,2127,A
+STN_0768,Maharashtra,Lake,30.5,4.49,7.87,294.0,3.15,8.51,207,C
+STN_0769,Karnataka,Lake,30.4,4.69,6.94,668.7,5.36,3.15,203,A
+STN_0770,Tamil Nadu,Reservoir,20.7,6.43,8.55,645.0,5.47,7.97,141,B
+STN_0771,West Bengal,River,24.3,8.4,6.9,714.4,1.48,7.23,2432,B
+STN_0772,Tamil Nadu,Reservoir,28.0,8.37,7.86,581.8,3.82,10.79,1103,A
+STN_0773,Karnataka,Reservoir,31.4,4.74,8.66,564.2,3.0,1.15,776,C
+STN_0774,Gujarat,Reservoir,29.7,4.01,7.24,435.0,3.93,2.65,1478,A
+STN_0775,Karnataka,Lake,22.1,6.45,6.62,595.5,4.39,10.4,2428,B
+STN_0776,Gujarat,River,23.4,5.6,6.38,230.6,2.18,9.88,1473,A
+STN_0777,Uttar Pradesh,River,29.2,7.31,8.7,629.2,6.02,2.39,1902,B
+STN_0778,Maharashtra,Lake,25.7,6.14,8.19,222.7,6.11,1.38,239,B
+STN_0779,Karnataka,Lake,26.6,6.05,8.59,753.2,1.13,10.29,1116,A
+STN_0780,West Bengal,Reservoir,27.3,6.73,8.02,504.0,4.72,2.22,764,B
+STN_0781,West Bengal,Reservoir,21.2,4.13,7.09,521.2,0.7,10.47,1552,B
+STN_0782,Tamil Nadu,Groundwater,30.3,6.89,6.52,559.4,0.78,11.54,1471,B
+STN_0783,Gujarat,Groundwater,30.4,5.94,8.62,693.2,6.25,2.73,1499,B
+STN_0784,Maharashtra,Lake,25.6,7.6,7.47,484.9,4.67,10.1,2240,C
+STN_0785,West Bengal,Reservoir,27.5,4.19,7.23,449.3,2.45,5.14,2412,B
+STN_0786,Maharashtra,Lake,27.9,5.0,7.7,351.8,4.52,9.49,1784,C
+STN_0787,Karnataka,Reservoir,22.3,8.25,6.48,239.6,5.58,4.95,574,B
+STN_0788,Tamil Nadu,Reservoir,21.4,6.27,7.0,283.2,5.73,0.94,1628,A
+STN_0789,West Bengal,Lake,20.2,8.15,7.86,150.4,0.62,8.58,1717,A
+STN_0790,Karnataka,Lake,31.0,6.95,6.46,758.6,5.41,1.89,2085,A
+STN_0791,Tamil Nadu,River,24.1,8.13,6.55,685.5,5.62,11.13,823,A
+STN_0792,Uttar Pradesh,River,21.0,5.09,7.53,303.1,4.07,5.07,460,B
+STN_0793,Karnataka,Groundwater,25.6,3.95,7.82,151.7,3.38,1.08,496,A
+STN_0794,Gujarat,Lake,20.9,7.51,6.69,494.5,1.17,2.82,1700,B
+STN_0795,Karnataka,Groundwater,21.0,7.52,6.29,438.8,1.94,10.36,2010,B
+STN_0796,Karnataka,Lake,25.9,6.59,8.69,693.2,3.44,3.92,216,B
+STN_0797,West Bengal,Lake,26.1,6.4,6.27,432.0,5.69,10.29,1277,B
+STN_0798,Uttar Pradesh,Lake,27.0,8.07,6.21,754.9,5.32,2.15,688,B
+STN_0799,West Bengal,River,27.9,4.38,7.04,217.1,3.48,5.67,2271,B
+STN_0800,Uttar Pradesh,Groundwater,28.0,6.58,6.78,406.1,5.21,10.55,1117,D
+STN_0801,West Bengal,Lake,25.2,3.75,7.69,803.8,5.09,0.68,2084,B
+STN_0802,Karnataka,Groundwater,27.7,4.2,8.52,158.2,3.97,3.72,1535,B
+STN_0803,Tamil Nadu,Groundwater,23.7,5.69,7.45,423.6,1.82,10.93,78,B
+STN_0804,Uttar Pradesh,River,25.3,7.61,8.21,331.8,2.59,7.2,2251,A
+STN_0805,Uttar Pradesh,River,24.7,7.17,8.56,522.3,1.48,8.62,2354,C
+STN_0806,Tamil Nadu,Lake,23.9,8.37,6.69,345.1,0.54,10.12,1595,B
+STN_0807,Maharashtra,Reservoir,22.9,3.72,7.47,758.9,0.98,6.33,566,B
+STN_0808,Uttar Pradesh,Groundwater,20.9,5.41,7.87,806.0,5.06,10.16,1665,A
+STN_0809,Uttar Pradesh,River,26.1,4.29,7.06,744.4,0.7,7.7,976,A
+STN_0810,Tamil Nadu,Groundwater,26.4,3.68,8.12,429.0,2.9,8.26,301,A
+STN_0811,Tamil Nadu,Reservoir,24.0,4.82,8.03,843.0,6.41,1.92,1745,B
+STN_0812,Karnataka,Groundwater,31.7,4.72,7.29,664.5,5.27,11.27,612,C
+STN_0813,Karnataka,Lake,26.7,5.6,6.43,398.9,5.0,9.57,335,C
+STN_0814,Maharashtra,Groundwater,30.7,4.2,6.23,215.6,2.15,3.12,1185,B
+STN_0815,Maharashtra,River,26.8,5.94,7.16,616.9,4.35,7.0,685,B
+STN_0816,Maharashtra,Lake,22.3,8.1,6.41,660.0,3.49,4.58,1166,A
+STN_0817,Gujarat,Lake,31.7,7.24,8.23,235.7,4.24,7.96,1024,B
+STN_0818,Tamil Nadu,Reservoir,30.6,7.71,7.07,534.8,3.11,11.93,1949,B
+STN_0819,Uttar Pradesh,Lake,25.7,7.52,7.93,841.0,3.69,0.64,190,B
+STN_0820,Tamil Nadu,River,22.9,5.45,7.1,378.4,6.43,11.44,370,B
+STN_0821,Tamil Nadu,Reservoir,22.7,7.04,8.27,361.3,2.48,0.96,2481,B
+STN_0822,Maharashtra,Lake,29.7,7.27,8.51,782.3,1.8,5.58,619,C
+STN_0823,Tamil Nadu,Reservoir,20.8,4.53,8.38,232.2,3.19,5.84,1904,C
+STN_0824,Gujarat,Groundwater,27.7,7.8,7.46,803.5,3.65,3.3,2181,B
+STN_0825,West Bengal,Lake,27.7,5.79,6.42,695.6,1.01,6.84,2235,D
+STN_0826,Uttar Pradesh,River,22.2,3.58,7.17,423.6,5.34,10.02,339,C
+STN_0827,West Bengal,River,28.5,6.72,7.3,208.5,3.03,3.6,1786,B
+STN_0828,Maharashtra,Lake,28.5,6.88,8.7,163.4,2.98,0.94,1259,B
+STN_0829,Karnataka,Groundwater,24.2,6.26,7.67,413.1,4.45,7.62,172,B
+STN_0830,West Bengal,Reservoir,25.8,4.56,7.87,643.7,5.14,9.05,1865,B
+STN_0831,Uttar Pradesh,River,30.0,5.91,8.23,491.3,6.42,11.46,1966,C
+STN_0832,West Bengal,River,26.3,5.5,7.68,667.1,1.54,2.0,822,A
+STN_0833,Karnataka,Reservoir,27.4,8.37,7.76,619.4,2.57,10.83,502,A
+STN_0834,Karnataka,Reservoir,25.0,7.62,6.84,551.0,1.51,5.84,1839,B
+STN_0835,Tamil Nadu,River,21.8,7.31,6.35,827.2,5.79,2.91,480,A
+STN_0836,Uttar Pradesh,Reservoir,32.0,4.41,8.08,659.9,3.79,11.56,1390,A
+STN_0837,Gujarat,Lake,26.4,5.16,8.41,790.2,5.61,2.94,350,D
+STN_0838,Tamil Nadu,River,24.0,5.4,7.27,319.5,6.41,8.83,2212,A
+STN_0839,Karnataka,River,28.6,5.96,7.63,649.5,3.8,9.44,769,A
+STN_0840,West Bengal,River,27.4,3.65,7.0,568.5,1.21,5.22,2157,A
+STN_0841,Uttar Pradesh,Lake,22.8,6.47,7.37,797.0,2.67,8.31,235,B
+STN_0842,Tamil Nadu,River,30.5,5.29,6.74,507.3,0.72,6.91,1063,B
+STN_0843,Uttar Pradesh,Reservoir,20.9,6.31,8.18,345.7,5.6,2.39,1049,B
+STN_0844,West Bengal,River,27.3,3.54,7.48,419.4,0.61,9.14,1999,A
+STN_0845,Maharashtra,Lake,25.7,5.11,7.62,303.2,4.05,11.14,2273,B
+STN_0846,Gujarat,Lake,23.8,7.34,6.3,304.0,1.14,5.91,621,B
+STN_0847,Gujarat,Groundwater,29.9,6.01,7.82,479.3,0.55,11.93,1808,A
+STN_0848,Gujarat,River,27.9,7.44,6.73,774.8,2.04,5.19,442,C
+STN_0849,Karnataka,Lake,29.1,6.99,7.2,284.3,3.81,5.81,249,B
+STN_0850,Karnataka,Groundwater,25.0,7.77,7.27,351.5,0.95,8.12,825,B
+STN_0851,Gujarat,River,31.3,3.54,7.37,747.1,4.19,2.31,111,C
+STN_0852,Uttar Pradesh,Lake,24.1,4.81,6.79,387.5,4.53,10.83,674,B
+STN_0853,Maharashtra,Lake,26.4,6.24,8.41,823.7,6.32,9.64,1600,C
+STN_0854,Karnataka,River,31.2,8.21,7.31,338.2,5.9,10.48,2378,A
+STN_0855,West Bengal,River,21.0,6.9,7.79,459.5,3.9,7.35,1701,A
+STN_0856,Tamil Nadu,Groundwater,21.3,5.78,7.8,216.9,5.26,10.62,422,B
+STN_0857,Tamil Nadu,River,31.9,4.15,7.78,844.5,2.68,8.19,937,A
+STN_0858,Karnataka,River,31.7,5.97,7.65,773.1,4.01,6.19,43,B
+STN_0859,Gujarat,Reservoir,29.3,5.71,8.34,722.3,2.92,11.19,1860,A
+STN_0860,Uttar Pradesh,River,25.8,7.39,8.31,260.1,2.52,5.33,454,B
+STN_0861,Maharashtra,Lake,26.1,5.57,7.28,828.6,4.87,6.06,189,C
+STN_0862,Tamil Nadu,Groundwater,23.1,5.09,7.85,800.4,2.28,2.12,1864,A
+STN_0863,Karnataka,Groundwater,25.2,3.95,6.47,455.0,2.78,11.38,1699,B
+STN_0864,Uttar Pradesh,Groundwater,25.2,3.73,6.44,627.1,2.7,2.73,726,B
+STN_0865,Gujarat,Lake,20.4,5.7,7.45,844.7,5.72,2.5,1301,A
+STN_0866,Maharashtra,River,25.4,5.23,8.54,436.8,1.52,1.3,978,A
+STN_0867,Maharashtra,Lake,25.8,6.28,7.89,229.1,2.79,5.49,321,B
+STN_0868,Tamil Nadu,Reservoir,28.0,7.06,7.94,757.4,5.83,3.36,15,A
+STN_0869,Tamil Nadu,Groundwater,26.2,3.7,6.61,483.5,0.59,8.92,647,B
+STN_0870,West Bengal,River,30.3,5.98,7.38,840.9,6.19,3.76,467,D
+STN_0871,Karnataka,River,24.4,7.81,7.24,535.6,5.89,8.68,1774,B
+STN_0872,Maharashtra,Groundwater,24.9,5.78,8.24,170.6,3.01,2.43,1732,C
+STN_0873,Gujarat,Reservoir,26.9,6.11,6.56,494.2,4.42,2.84,2125,C
+STN_0874,Gujarat,Reservoir,22.4,5.93,7.6,652.6,6.45,9.69,129,A
+STN_0875,Karnataka,River,24.7,5.45,8.57,168.2,3.83,4.52,973,B
+STN_0876,Maharashtra,Lake,28.2,4.05,8.52,439.4,1.08,1.43,1366,D
+STN_0877,Tamil Nadu,Groundwater,24.9,4.13,8.42,258.9,5.62,11.54,857,B
+STN_0878,West Bengal,Lake,30.9,4.4,7.17,600.2,1.3,2.21,884,C
+STN_0879,Gujarat,River,27.4,7.46,8.65,820.1,2.04,1.89,2403,B
+STN_0880,Uttar Pradesh,Groundwater,21.8,4.88,8.29,587.2,5.74,4.36,1898,B
+STN_0881,Karnataka,Reservoir,25.8,8.24,8.41,636.4,2.04,1.24,1699,A
+STN_0882,Gujarat,Reservoir,29.2,7.55,8.62,427.6,4.97,1.95,1874,C
+STN_0883,Uttar Pradesh,Reservoir,27.7,6.92,8.64,544.2,3.19,10.17,1330,B
+STN_0884,Uttar Pradesh,River,30.6,7.1,6.82,530.7,5.06,2.14,1748,B
+STN_0885,Gujarat,Reservoir,29.0,3.74,6.53,681.7,1.89,1.43,1678,B
+STN_0886,Karnataka,Groundwater,20.7,6.34,8.0,749.8,3.02,10.57,943,A
+STN_0887,Uttar Pradesh,Groundwater,21.4,8.21,7.66,614.0,2.41,5.38,1393,B
+STN_0888,Uttar Pradesh,Groundwater,27.8,3.7,7.05,835.9,1.99,1.97,1381,A
+STN_0889,Maharashtra,Groundwater,22.9,4.96,7.98,729.8,2.39,7.02,1470,C
+STN_0890,West Bengal,Reservoir,27.1,3.76,6.36,237.3,2.44,0.59,1985,B
+STN_0891,West Bengal,Groundwater,29.5,6.35,6.32,505.2,6.23,5.19,284,A
+STN_0892,West Bengal,River,26.9,4.08,7.12,782.3,3.7,7.12,78,B
+STN_0893,Maharashtra,Groundwater,25.0,5.9,6.7,810.8,3.27,11.49,318,D
+STN_0894,West Bengal,Reservoir,27.8,7.1,8.07,416.1,3.52,3.98,2204,A
+STN_0895,Maharashtra,Reservoir,21.7,4.32,8.66,658.0,6.48,9.2,587,A
+STN_0896,Uttar Pradesh,Lake,28.7,7.28,7.92,437.4,4.42,1.68,185,B
+STN_0897,Uttar Pradesh,Groundwater,28.4,3.8,7.9,236.6,4.72,5.26,2258,B
+STN_0898,Karnataka,Reservoir,26.2,4.25,6.22,769.2,2.38,2.76,1840,B
+STN_0899,Tamil Nadu,Lake,23.3,4.9,7.53,802.4,3.33,5.96,1672,B
+STN_0900,Maharashtra,River,29.6,7.48,8.32,503.3,1.6,5.07,1184,D
+STN_0901,West Bengal,Groundwater,26.1,7.75,7.9,162.8,4.61,11.76,1194,A
+STN_0902,Tamil Nadu,Reservoir,20.7,4.6,6.79,721.2,2.57,11.02,2245,C
+STN_0903,Maharashtra,Reservoir,31.0,3.98,8.41,483.9,4.99,7.03,239,A
+STN_0904,West Bengal,Groundwater,29.2,7.74,8.71,202.5,1.78,2.2,1643,A
+STN_0905,Maharashtra,Lake,27.0,6.75,6.93,282.6,2.92,6.73,1955,A
+STN_0906,West Bengal,Groundwater,25.2,4.29,6.74,256.5,3.33,9.53,1214,C
+STN_0907,Karnataka,River,31.5,6.29,7.08,630.4,1.5,0.55,855,B
+STN_0908,Karnataka,River,29.3,7.86,6.36,359.6,0.92,5.26,1503,B
+STN_0909,Gujarat,Groundwater,26.4,3.85,8.47,239.4,2.4,0.61,436,B
+STN_0910,Maharashtra,Lake,27.8,3.92,8.62,792.4,3.77,3.0,1849,B
+STN_0911,Maharashtra,River,23.4,4.87,7.85,819.6,4.42,1.2,1437,B
+STN_0912,Maharashtra,Groundwater,22.3,6.76,8.19,247.0,3.05,11.53,487,D
+STN_0913,Karnataka,Lake,23.3,4.39,7.94,311.2,3.5,2.11,1964,A
+STN_0914,West Bengal,Lake,23.5,7.58,7.18,564.5,3.76,1.89,1066,B
+STN_0915,Maharashtra,Reservoir,28.9,7.25,7.84,255.4,3.57,11.67,759,B
+STN_0916,Gujarat,River,21.7,6.31,8.37,261.0,1.04,6.24,523,B
+STN_0917,Uttar Pradesh,Groundwater,29.3,4.08,8.31,385.6,2.93,9.12,341,D
+STN_0918,Gujarat,River,26.3,8.44,6.41,814.4,1.73,4.0,1449,A
+STN_0919,West Bengal,Lake,24.6,5.95,7.4,823.7,3.7,6.44,542,D
+STN_0920,Uttar Pradesh,Reservoir,23.6,5.76,7.23,739.3,5.05,0.18,2062,C
+STN_0921,Karnataka,River,26.2,8.48,8.16,637.0,3.98,4.96,2341,C
+STN_0922,West Bengal,Groundwater,23.8,7.82,7.5,654.5,1.83,6.71,313,A
+STN_0923,Tamil Nadu,River,25.2,5.78,7.11,478.7,1.75,6.22,1287,D
+STN_0924,West Bengal,Lake,28.9,5.59,8.04,521.1,0.72,4.93,876,C
+STN_0925,Karnataka,Reservoir,27.5,3.98,7.43,594.1,3.06,9.48,1628,B
+STN_0926,Tamil Nadu,River,29.0,8.13,6.87,661.9,3.1,6.07,2225,A
+STN_0927,Uttar Pradesh,Lake,28.6,7.72,8.52,217.8,1.92,7.67,2063,B
+STN_0928,Tamil Nadu,Lake,29.8,5.05,6.49,307.4,5.09,2.3,151,C
+STN_0929,Uttar Pradesh,Reservoir,22.4,7.27,6.25,824.1,2.82,10.35,384,B
+STN_0930,West Bengal,Lake,31.9,7.31,6.57,384.6,4.52,4.42,1158,B
+STN_0931,Tamil Nadu,River,25.7,4.64,6.63,337.9,4.34,5.84,2452,A
+STN_0932,Uttar Pradesh,Groundwater,28.6,6.57,7.6,445.3,4.13,4.29,1200,A
+STN_0933,West Bengal,Reservoir,28.1,4.78,7.82,353.6,5.95,10.71,1714,B
+STN_0934,Tamil Nadu,Lake,26.8,7.45,7.37,213.8,0.6,10.82,1057,C
+STN_0935,Uttar Pradesh,River,31.9,4.27,6.73,295.6,0.91,2.77,1716,A
+STN_0936,Gujarat,Reservoir,22.6,6.84,6.54,598.1,4.83,9.06,2166,C
+STN_0937,Maharashtra,Lake,25.1,5.13,7.48,306.2,2.62,1.32,2267,B
+STN_0938,Gujarat,River,21.5,3.68,7.67,603.4,6.42,0.46,1235,C
+STN_0939,Karnataka,Lake,22.2,4.12,6.99,220.1,1.8,10.06,1443,B
+STN_0940,Tamil Nadu,River,28.6,6.77,6.77,179.3,1.6,1.66,2059,A
+STN_0941,West Bengal,Lake,20.1,4.7,6.41,753.1,4.03,1.94,1831,C
+STN_0942,Uttar Pradesh,Reservoir,30.7,6.66,6.27,682.0,2.18,7.32,1144,B
+STN_0943,Gujarat,Reservoir,27.6,5.57,6.47,616.2,2.54,9.82,2133,A
+STN_0944,Gujarat,Reservoir,25.3,6.96,8.13,171.6,6.03,2.36,2269,B
+STN_0945,West Bengal,Lake,24.0,5.96,7.09,317.5,0.66,1.46,1986,B
+STN_0946,Uttar Pradesh,Lake,21.5,5.04,6.27,718.6,3.69,1.02,1266,C
+STN_0947,Tamil Nadu,Reservoir,31.1,4.23,7.52,251.3,2.51,0.4,2244,A
+STN_0948,West Bengal,Reservoir,28.5,5.21,7.59,719.0,2.58,1.49,1308,B
+STN_0949,Karnataka,Groundwater,24.0,6.67,7.31,559.0,1.99,11.32,2367,A
+STN_0950,Karnataka,River,20.9,7.2,6.49,668.3,1.31,1.23,897,A
+STN_0951,West Bengal,Groundwater,23.9,4.3,8.16,601.2,0.71,7.21,220,A
+STN_0952,Karnataka,River,22.2,6.82,7.99,441.9,6.43,11.06,2408,A
+STN_0953,Uttar Pradesh,Lake,29.4,4.4,7.23,354.4,4.46,7.57,1834,B
+STN_0954,Gujarat,River,28.6,4.61,7.19,620.9,5.16,0.49,2379,B
+STN_0955,West Bengal,River,26.0,6.16,6.61,714.8,0.89,7.2,216,B
+STN_0956,Karnataka,Lake,30.6,4.95,8.16,181.3,0.59,10.85,1123,B
+STN_0957,Gujarat,Lake,22.2,6.81,7.76,415.9,4.1,3.94,74,A
+STN_0958,West Bengal,Lake,25.4,8.28,6.42,395.5,4.84,3.83,2473,B
+STN_0959,Karnataka,Reservoir,28.5,4.24,7.18,541.6,2.87,3.06,1032,A
+STN_0960,Karnataka,Reservoir,20.8,6.35,8.55,229.7,2.83,6.12,1933,D
+STN_0961,West Bengal,River,24.5,8.12,7.38,803.4,2.81,2.93,1325,A
+STN_0962,Tamil Nadu,Lake,26.9,4.38,7.04,534.0,1.42,8.71,2052,A
+STN_0963,Uttar Pradesh,Reservoir,24.4,5.33,7.87,796.6,5.02,7.77,1474,B
+STN_0964,Tamil Nadu,Lake,25.8,4.12,6.73,721.9,1.79,4.87,379,D
+STN_0965,Gujarat,River,27.3,6.71,7.56,284.1,2.45,8.7,441,A
+STN_0966,Gujarat,Reservoir,24.4,6.85,7.94,242.6,4.53,1.27,2296,B
+STN_0967,West Bengal,Reservoir,21.3,6.82,8.42,752.9,0.5,9.02,302,D
+STN_0968,Uttar Pradesh,Groundwater,21.7,6.21,8.0,525.3,5.1,7.27,2294,B
+STN_0969,Karnataka,River,26.3,7.23,7.2,163.8,5.89,7.6,1851,B
+STN_0970,Uttar Pradesh,Reservoir,22.1,3.68,8.2,804.0,0.81,0.87,710,D
+STN_0971,Karnataka,River,30.7,8.29,8.54,481.1,4.05,7.46,1759,B
+STN_0972,Maharashtra,River,30.0,4.61,7.44,360.7,2.95,5.98,334,A
+STN_0973,Maharashtra,Lake,24.2,4.11,6.21,511.6,0.97,5.88,2479,A
+STN_0974,Uttar Pradesh,River,30.0,8.21,8.49,726.0,4.59,3.93,439,B
+STN_0975,Maharashtra,Groundwater,26.4,7.65,6.63,227.2,4.17,0.19,363,A
+STN_0976,Maharashtra,Reservoir,21.9,7.32,6.53,401.3,4.36,5.13,1688,B
+STN_0977,Gujarat,River,27.4,4.02,7.0,373.2,5.38,4.87,1529,B
+STN_0978,Karnataka,River,28.2,7.54,7.19,737.8,2.22,5.13,302,B
+STN_0979,West Bengal,Lake,21.0,6.55,8.28,694.9,4.56,7.38,1290,A
+STN_0980,Maharashtra,Lake,23.8,7.16,7.21,430.1,4.96,3.67,1446,C
+STN_0981,Tamil Nadu,Groundwater,20.1,8.39,6.33,615.1,1.51,3.31,390,C
+STN_0982,Gujarat,River,23.8,4.47,7.85,426.1,6.24,6.02,1233,A
+STN_0983,Karnataka,River,24.0,6.02,7.95,549.9,2.54,7.15,234,B
+STN_0984,Gujarat,River,27.6,7.27,8.32,843.9,4.78,6.85,912,B
+STN_0985,Tamil Nadu,River,22.4,5.67,7.24,524.9,5.02,10.59,1830,A
+STN_0986,West Bengal,Reservoir,20.4,3.77,6.42,842.0,3.52,9.25,680,B
+STN_0987,Karnataka,River,23.8,4.06,7.64,673.0,1.27,0.72,1327,B
+STN_0988,Uttar Pradesh,River,29.9,6.51,6.51,234.5,2.15,6.81,616,C
+STN_0989,Uttar Pradesh,Reservoir,24.8,4.93,6.24,707.2,1.91,5.07,452,A
+STN_0990,Gujarat,Lake,25.0,4.19,8.22,262.9,3.61,4.4,191,B
+STN_0991,West Bengal,Groundwater,25.6,5.2,7.25,522.6,2.07,11.5,451,A
+STN_0992,Uttar Pradesh,River,29.0,4.5,7.57,579.3,3.78,5.54,1315,A
+STN_0993,Karnataka,Reservoir,25.8,3.62,7.92,774.6,2.23,8.66,953,A
+STN_0994,Tamil Nadu,River,21.1,4.26,7.24,297.3,0.51,11.61,276,A
+STN_0995,Tamil Nadu,Lake,22.5,7.92,6.33,763.2,2.68,1.9,810,A
+STN_0996,Uttar Pradesh,Reservoir,22.3,3.56,6.86,804.1,4.14,0.75,1002,B
+STN_0997,Maharashtra,Reservoir,26.1,7.37,6.71,212.6,5.14,3.83,1419,B
+STN_0998,Maharashtra,Reservoir,20.4,7.27,8.74,769.7,0.67,0.63,2170,B
+STN_0999,West Bengal,River,23.4,6.32,8.12,331.4,2.05,1.49,2189,A
+STN_1000,Maharashtra,Lake,27.3,4.54,7.37,206.7,6.41,11.9,934,C
+STN_1001,Uttar Pradesh,Groundwater,24.3,7.89,6.36,821.0,2.07,11.53,2035,B
+STN_1002,Uttar Pradesh,Reservoir,28.5,5.88,6.5,424.5,5.16,8.33,1784,D
+STN_1003,Uttar Pradesh,River,24.7,4.37,8.31,586.1,3.56,9.06,884,B
+STN_1004,Karnataka,Groundwater,31.8,5.65,8.66,537.0,1.23,1.77,2160,B
+STN_1005,Maharashtra,Reservoir,31.6,4.47,6.28,299.2,4.36,7.18,691,A
+STN_1006,Gujarat,River,29.6,5.38,8.57,618.7,6.3,1.94,1979,A
+STN_1007,West Bengal,Groundwater,31.5,5.98,7.19,182.3,5.82,4.6,2123,A
+STN_1008,Karnataka,Groundwater,22.5,5.3,6.76,292.2,4.64,4.21,2192,B
+STN_1009,West Bengal,Reservoir,29.0,6.79,6.47,811.3,3.57,7.41,66,A
+STN_1010,West Bengal,River,23.9,8.18,8.21,817.5,2.42,1.05,1335,C
+STN_1011,Karnataka,Groundwater,28.7,5.24,7.42,487.9,2.64,1.33,799,C
+STN_1012,Uttar Pradesh,Lake,24.5,5.28,8.36,268.4,2.58,7.36,916,B
+STN_1013,Uttar Pradesh,Lake,23.5,7.19,6.79,445.1,6.03,7.67,1962,A
+STN_1014,Karnataka,Groundwater,31.5,6.15,7.96,763.9,1.77,4.14,703,A
+STN_1015,Uttar Pradesh,Reservoir,22.5,5.64,6.51,199.2,2.77,1.85,1693,B
+STN_1016,Maharashtra,Reservoir,29.1,7.57,6.43,239.5,3.09,10.64,475,B
+STN_1017,Karnataka,Reservoir,28.1,7.96,6.55,777.0,2.95,0.73,1033,A
+STN_1018,West Bengal,Groundwater,23.6,6.45,8.3,440.8,0.53,8.64,1475,A
+STN_1019,Karnataka,Reservoir,25.5,4.43,7.9,208.4,2.13,1.77,36,A
+STN_1020,Karnataka,Reservoir,21.7,5.83,6.63,247.4,3.49,7.68,781,A
+STN_1021,Uttar Pradesh,Lake,31.1,6.02,7.2,767.7,5.06,8.0,1417,B
+STN_1022,Karnataka,River,31.6,5.66,8.19,493.1,3.92,9.67,2377,A
+STN_1023,Gujarat,Lake,28.8,4.81,6.94,264.1,2.81,4.8,228,A
+STN_1024,Gujarat,Groundwater,30.2,5.86,8.6,775.8,4.49,0.36,1887,B
+STN_1025,Maharashtra,Lake,21.0,5.73,8.58,741.7,4.5,9.75,1203,B
+STN_1026,Karnataka,River,24.6,4.55,7.64,166.1,1.99,5.38,1446,C
+STN_1027,Karnataka,Lake,24.0,8.02,7.84,556.7,1.12,10.18,1625,A
+STN_1028,West Bengal,Reservoir,26.8,7.93,7.9,321.0,5.32,9.33,2476,B
+STN_1029,Uttar Pradesh,River,22.2,7.3,6.87,523.2,3.68,6.03,2008,C
+STN_1030,West Bengal,Groundwater,26.8,5.5,7.15,345.5,1.56,11.99,2126,C
+STN_1031,Tamil Nadu,Lake,27.9,5.35,6.55,371.1,2.07,5.6,1320,B
+STN_1032,West Bengal,Lake,21.6,7.08,8.6,571.3,5.1,8.39,1012,C
+STN_1033,Tamil Nadu,Reservoir,21.6,6.54,8.08,527.2,4.42,8.07,158,B
+STN_1034,Karnataka,River,20.4,6.5,6.32,426.6,6.17,6.26,1911,C
+STN_1035,Maharashtra,Reservoir,29.1,4.12,7.63,225.3,3.29,7.07,1768,B
+STN_1036,Gujarat,Lake,24.0,6.59,7.09,828.6,0.81,9.6,2250,B
+STN_1037,Karnataka,Lake,22.7,8.01,8.32,272.2,4.7,6.9,1750,B
+STN_1038,Karnataka,River,29.3,3.93,7.09,593.2,2.03,5.46,171,B
+STN_1039,Maharashtra,Lake,21.7,5.2,7.87,207.9,2.44,7.98,1990,B
+STN_1040,Maharashtra,River,25.1,6.05,6.63,631.8,1.68,0.52,1581,A
+STN_1041,Tamil Nadu,Groundwater,28.9,6.93,7.65,216.4,2.35,1.4,1491,B
+STN_1042,Karnataka,Lake,26.9,3.95,6.96,310.7,5.48,1.59,562,C
+STN_1043,Karnataka,River,26.6,7.86,6.63,602.9,3.96,5.17,2219,A
+STN_1044,Uttar Pradesh,River,21.9,3.7,7.81,348.1,1.15,10.47,2210,C
+STN_1045,Gujarat,Reservoir,22.2,7.79,7.86,523.0,4.02,7.76,330,D
+STN_1046,Uttar Pradesh,Lake,27.0,3.64,8.76,237.2,4.3,11.67,389,A
+STN_1047,Uttar Pradesh,Reservoir,20.3,4.27,7.94,291.7,5.81,0.58,1733,B
+STN_1048,Gujarat,River,30.4,7.5,7.54,663.6,5.66,8.69,1823,A
+STN_1049,Karnataka,Groundwater,24.2,7.8,8.57,174.6,0.88,3.84,710,A
+STN_1050,Tamil Nadu,Groundwater,25.0,8.41,8.35,228.3,5.7,0.38,1159,B
+STN_1051,Gujarat,Lake,23.1,4.08,7.63,300.5,0.81,9.93,1233,A
+STN_1052,Maharashtra,Groundwater,30.5,6.13,7.53,164.1,1.42,2.04,1258,B
+STN_1053,Karnataka,Lake,27.7,3.89,8.65,216.8,1.17,2.65,590,B
+STN_1054,Gujarat,Lake,25.4,4.28,7.8,347.0,1.59,4.15,1555,B
+STN_1055,Gujarat,River,27.0,4.37,8.06,215.0,5.32,9.48,1812,B
+STN_1056,West Bengal,River,24.6,3.82,6.43,756.3,4.62,7.53,1279,A
+STN_1057,Gujarat,River,25.6,7.96,8.07,196.3,4.62,3.25,2023,B
+STN_1058,Tamil Nadu,Reservoir,24.3,4.13,6.89,752.7,6.03,2.11,421,B
+STN_1059,Uttar Pradesh,River,24.9,6.65,6.5,726.0,2.85,1.4,1806,C
+STN_1060,Uttar Pradesh,Lake,23.8,6.63,8.41,220.5,0.52,1.88,1557,B
+STN_1061,West Bengal,River,20.9,4.49,8.0,167.6,4.34,10.43,358,B
+STN_1062,Gujarat,Reservoir,20.4,8.49,7.26,185.0,5.71,11.08,998,C
+STN_1063,Gujarat,River,22.1,5.24,7.32,563.3,6.36,11.62,1830,B
+STN_1064,Uttar Pradesh,Groundwater,23.0,8.03,6.71,619.2,2.68,10.03,1495,A
+STN_1065,Tamil Nadu,Lake,30.7,8.24,6.22,584.5,5.43,10.66,1325,A
+STN_1066,Karnataka,Groundwater,27.3,8.24,7.11,529.0,5.6,9.81,378,B
+STN_1067,Uttar Pradesh,Groundwater,31.5,7.26,6.59,272.3,1.37,11.5,1297,B
+STN_1068,Gujarat,Reservoir,24.1,4.77,7.3,738.7,4.29,10.16,1305,B
+STN_1069,Tamil Nadu,Groundwater,24.8,4.1,8.37,379.3,1.54,5.6,2126,A
+STN_1070,Tamil Nadu,River,28.6,6.35,6.5,840.3,3.18,3.95,2201,B
+STN_1071,West Bengal,Lake,26.9,5.3,6.44,419.4,5.78,7.05,2113,B
+STN_1072,Gujarat,Groundwater,26.3,7.66,8.55,334.1,5.24,7.34,1586,B
+STN_1073,Maharashtra,Groundwater,26.9,7.22,8.14,776.0,3.92,6.94,529,A
+STN_1074,Tamil Nadu,Lake,27.0,4.88,6.34,547.2,5.35,8.51,1343,B
+STN_1075,Uttar Pradesh,River,29.2,3.59,6.41,655.3,1.42,8.42,2147,B
+STN_1076,Maharashtra,Groundwater,28.0,4.69,7.98,435.9,1.67,1.14,2433,C
+STN_1077,West Bengal,Lake,31.5,6.34,7.16,770.8,1.75,3.5,1616,B
+STN_1078,Karnataka,River,31.4,3.89,8.08,792.4,5.16,10.69,1831,A
+STN_1079,Uttar Pradesh,River,25.1,6.79,7.25,455.7,5.85,7.12,2394,A
+STN_1080,West Bengal,River,20.4,6.86,8.72,318.5,3.88,4.01,2165,B
+STN_1081,West Bengal,Reservoir,20.1,4.35,8.01,603.4,6.25,10.22,520,B
+STN_1082,West Bengal,River,21.5,6.48,6.32,818.2,4.87,3.06,2378,A
+STN_1083,Gujarat,River,20.9,6.53,7.06,585.7,3.88,4.97,1509,C
+STN_1084,Maharashtra,Lake,24.5,5.89,7.67,818.0,4.17,3.39,2343,B
+STN_1085,West Bengal,Reservoir,20.6,8.27,6.57,390.7,5.6,10.47,865,B
+STN_1086,West Bengal,River,27.5,4.04,6.21,790.6,1.04,8.77,1960,B
+STN_1087,West Bengal,Groundwater,22.3,5.53,6.41,228.8,1.51,5.58,596,C
+STN_1088,Uttar Pradesh,Reservoir,26.2,7.91,7.56,401.2,2.1,11.19,371,A
+STN_1089,West Bengal,Lake,21.2,5.43,7.84,496.1,5.87,11.14,1369,A
+STN_1090,Tamil Nadu,Reservoir,29.9,5.62,6.44,607.2,6.17,8.57,1682,B
+STN_1091,Gujarat,Groundwater,29.4,6.84,7.93,355.9,2.64,10.71,2279,A
+STN_1092,Maharashtra,Reservoir,24.6,6.83,7.8,797.0,6.04,8.66,725,B
+STN_1093,Tamil Nadu,Groundwater,30.9,3.61,8.64,782.4,3.78,7.58,2495,B
+STN_1094,West Bengal,River,22.2,5.78,8.39,709.5,3.34,5.11,1016,A
+STN_1095,Gujarat,River,29.8,5.17,8.65,230.1,5.5,3.35,582,B
+STN_1096,Gujarat,Reservoir,26.6,6.64,8.71,204.8,3.78,0.82,1898,C
+STN_1097,Maharashtra,Reservoir,24.0,6.28,7.35,498.7,3.23,9.63,310,A
+STN_1098,Maharashtra,Lake,21.0,6.75,7.47,685.7,0.6,1.55,982,A
+STN_1099,Maharashtra,Lake,22.1,6.77,6.93,236.3,0.58,4.98,1004,B
+STN_1100,Uttar Pradesh,Groundwater,30.4,4.77,7.52,599.0,4.27,2.89,1013,C
+STN_1101,Gujarat,River,27.3,4.73,6.59,519.5,0.94,5.51,1891,B
+STN_1102,West Bengal,Reservoir,22.8,5.35,7.95,658.2,4.92,3.85,623,C
+STN_1103,Karnataka,River,26.0,4.71,6.26,454.8,4.23,9.97,1143,D
+STN_1104,Tamil Nadu,Reservoir,21.3,6.91,6.81,635.3,3.25,11.74,517,B
+STN_1105,Maharashtra,Groundwater,21.2,6.51,6.74,261.7,4.76,11.3,900,D
+STN_1106,Gujarat,River,30.9,4.58,8.64,300.2,6.46,7.51,2034,A
+STN_1107,West Bengal,Lake,25.5,7.92,6.58,782.3,1.98,11.75,1705,B
+STN_1108,Tamil Nadu,Groundwater,24.3,5.8,8.52,380.6,3.84,4.87,892,C
+STN_1109,Karnataka,River,31.4,4.14,6.52,839.9,5.56,6.32,825,B
+STN_1110,Tamil Nadu,Groundwater,24.8,4.56,7.89,182.3,0.6,3.16,508,B
+STN_1111,Karnataka,Reservoir,24.0,6.2,7.03,497.1,1.72,10.79,1690,D
+STN_1112,West Bengal,River,23.3,5.19,7.02,377.5,3.63,2.24,1346,A
+STN_1113,Maharashtra,River,26.8,7.76,8.8,847.2,3.81,7.36,463,B
+STN_1114,Uttar Pradesh,River,26.7,5.97,6.79,843.0,1.02,9.61,994,C
+STN_1115,Karnataka,Lake,20.2,8.08,6.73,314.7,2.94,7.19,258,A
+STN_1116,Maharashtra,Groundwater,27.8,4.01,7.73,337.1,3.62,1.04,1706,B
+STN_1117,Tamil Nadu,Lake,29.5,6.84,8.13,674.8,3.04,7.38,668,A
+STN_1118,West Bengal,Lake,27.4,7.93,8.75,772.8,4.7,9.23,684,B
+STN_1119,Tamil Nadu,Groundwater,30.4,4.96,8.02,614.6,5.13,2.34,698,B
+STN_1120,Tamil Nadu,Groundwater,23.3,4.18,7.66,755.3,3.26,8.87,2287,A
+STN_1121,West Bengal,River,22.3,5.78,7.26,194.3,3.05,10.56,1709,A
+STN_1122,West Bengal,River,28.4,8.31,7.75,598.4,4.73,11.84,233,B
+STN_1123,Uttar Pradesh,Groundwater,22.3,6.67,7.76,640.1,3.83,4.98,1769,C
+STN_1124,Gujarat,River,21.1,6.72,6.77,283.2,5.72,0.4,63,A
+STN_1125,Karnataka,Reservoir,21.2,6.86,7.95,694.6,3.39,5.09,1069,A
+STN_1126,West Bengal,River,29.2,3.7,6.73,811.0,3.95,7.96,1598,A
+STN_1127,Gujarat,Groundwater,20.3,5.73,7.47,778.6,1.27,10.71,709,B
+STN_1128,Tamil Nadu,Lake,23.5,3.89,6.88,321.5,5.52,11.26,595,B
+STN_1129,Uttar Pradesh,Groundwater,21.6,5.08,7.01,376.8,3.03,10.92,298,C
+STN_1130,Maharashtra,Groundwater,29.1,7.61,7.8,499.7,4.81,7.93,1461,A
+STN_1131,Uttar Pradesh,Lake,26.0,6.78,6.37,260.9,3.08,8.22,320,C
+STN_1132,West Bengal,Reservoir,22.5,8.48,6.23,817.8,0.51,0.13,1589,C
+STN_1133,Gujarat,River,29.0,4.36,6.54,263.1,2.9,4.43,2108,A
+STN_1134,Tamil Nadu,Reservoir,29.0,5.49,6.64,683.0,1.39,10.89,1542,A
+STN_1135,Karnataka,Lake,26.3,7.55,6.71,389.0,2.89,8.31,1132,A
+STN_1136,Uttar Pradesh,Reservoir,23.3,4.58,8.21,551.6,2.43,5.67,351,B
+STN_1137,Gujarat,Lake,27.0,4.27,7.36,183.0,1.72,1.34,572,B
+STN_1138,Gujarat,Groundwater,31.2,5.64,7.42,293.5,1.24,3.03,992,A
+STN_1139,Maharashtra,Reservoir,20.6,5.42,7.88,461.1,4.87,6.7,1418,B
+STN_1140,Karnataka,River,23.2,8.4,8.1,624.0,5.03,10.78,466,B
+STN_1141,Gujarat,River,23.4,5.78,6.21,694.3,2.09,1.24,1337,B
+STN_1142,Karnataka,Lake,27.6,7.8,8.43,171.1,3.47,1.93,1928,A
+STN_1143,Tamil Nadu,Groundwater,27.8,7.94,8.77,256.7,3.28,7.89,1659,C
+STN_1144,West Bengal,Reservoir,22.5,4.29,6.52,660.9,2.63,3.6,1720,B
+STN_1145,Uttar Pradesh,Reservoir,22.6,7.08,7.89,719.1,2.17,2.12,1592,B
+STN_1146,Gujarat,Lake,31.1,4.89,6.21,315.6,1.62,2.22,2323,B
+STN_1147,Tamil Nadu,Reservoir,29.1,3.97,6.33,310.8,5.74,5.96,2083,C
+STN_1148,Maharashtra,River,31.2,7.87,6.94,211.6,5.5,7.05,1083,B
+STN_1149,Karnataka,River,30.0,4.96,8.4,255.2,3.0,10.86,952,A
+STN_1150,West Bengal,Reservoir,24.8,5.23,7.9,155.6,4.83,6.4,374,B
+STN_1151,Tamil Nadu,Reservoir,21.5,5.12,7.36,562.9,3.49,8.33,1864,B
+STN_1152,Karnataka,Groundwater,27.6,4.5,7.34,782.7,1.01,2.25,1178,A
+STN_1153,West Bengal,Groundwater,24.2,5.67,7.41,254.7,5.43,8.59,154,B
+STN_1154,Karnataka,Reservoir,25.1,5.64,7.01,676.0,1.82,7.82,2224,A
+STN_1155,Gujarat,Reservoir,25.1,5.54,8.48,551.6,4.74,2.67,1076,B
+STN_1156,Karnataka,Lake,31.2,8.08,7.68,807.9,3.66,8.07,981,B
+STN_1157,Tamil Nadu,Groundwater,20.8,5.2,7.46,708.7,4.64,2.62,1586,B
+STN_1158,Maharashtra,Reservoir,22.3,3.65,7.41,746.9,3.33,7.16,138,B
+STN_1159,Gujarat,Lake,27.3,4.39,8.63,597.4,4.72,8.06,67,A
+STN_1160,Uttar Pradesh,Groundwater,30.6,7.11,8.08,717.9,0.7,8.35,63,B
+STN_1161,Maharashtra,Lake,31.0,6.45,6.58,395.6,0.75,10.92,1257,A
+STN_1162,Tamil Nadu,Reservoir,26.7,8.26,7.34,296.3,5.88,11.38,142,D
+STN_1163,Gujarat,River,20.4,6.97,6.95,788.8,5.0,9.74,1276,A
+STN_1164,West Bengal,River,24.4,4.47,8.77,664.0,5.47,10.56,219,A
+STN_1165,West Bengal,River,31.0,4.1,7.28,213.5,3.24,0.33,251,B
+STN_1166,Karnataka,River,26.0,6.1,6.38,756.8,3.26,4.42,2440,B
+STN_1167,Maharashtra,Reservoir,28.7,6.83,7.27,394.2,3.7,0.57,2272,B
+STN_1168,Gujarat,River,23.2,4.33,7.04,358.8,1.96,2.78,1104,C
+STN_1169,Uttar Pradesh,River,20.3,6.51,7.76,586.3,4.9,4.64,823,A
+STN_1170,Uttar Pradesh,Reservoir,26.9,7.83,6.79,548.0,5.48,10.42,2141,B
+STN_1171,Uttar Pradesh,Groundwater,30.0,7.14,6.29,526.8,5.94,6.19,1458,A
+STN_1172,West Bengal,Groundwater,31.9,6.82,6.45,328.4,3.6,7.82,2041,C
+STN_1173,Gujarat,Groundwater,30.2,7.45,6.94,821.8,2.99,4.42,1705,C
+STN_1174,Maharashtra,Lake,26.6,4.02,7.11,815.1,5.49,7.27,1519,B
+STN_1175,Karnataka,Groundwater,27.3,4.52,8.37,152.9,5.02,9.8,1968,A
+STN_1176,Maharashtra,Reservoir,29.9,3.69,6.9,386.5,5.7,3.68,2139,C
+STN_1177,Karnataka,Groundwater,20.2,4.22,6.28,181.9,4.43,11.19,2146,C
+STN_1178,Maharashtra,Lake,31.4,8.07,8.23,745.2,5.8,2.64,2217,A
+STN_1179,Maharashtra,Lake,26.4,4.61,8.46,770.6,1.03,11.04,2427,B
+STN_1180,Gujarat,River,31.4,6.81,7.48,512.8,4.58,0.44,188,D
+STN_1181,Uttar Pradesh,Reservoir,29.2,6.96,6.94,737.8,1.03,6.56,1238,B
+STN_1182,Uttar Pradesh,Groundwater,21.8,6.73,8.21,642.4,4.99,11.82,1564,C
+STN_1183,Uttar Pradesh,Groundwater,22.0,6.27,6.22,499.7,4.27,7.36,125,A
+STN_1184,Uttar Pradesh,Reservoir,24.2,5.93,8.6,404.7,0.6,6.7,2458,A
+STN_1185,Maharashtra,Reservoir,23.2,5.6,8.45,336.4,4.1,8.22,308,B
+STN_1186,Uttar Pradesh,Reservoir,25.3,8.08,7.62,331.6,1.38,3.54,678,B
+STN_1187,Maharashtra,Reservoir,27.2,3.55,6.92,543.4,1.35,0.74,1786,C
+STN_1188,Karnataka,Reservoir,25.2,3.77,6.29,266.8,1.4,3.09,519,B
+STN_1189,Tamil Nadu,Reservoir,20.7,5.96,8.8,272.4,3.4,2.2,2109,A
+STN_1190,Tamil Nadu,Reservoir,31.7,5.15,8.18,157.3,1.19,11.09,1017,C
+STN_1191,Karnataka,Lake,25.1,5.54,7.08,579.3,1.25,10.24,1386,C
+STN_1192,Maharashtra,River,30.2,8.49,6.25,846.0,2.04,3.88,549,B
+STN_1193,Uttar Pradesh,Groundwater,20.9,7.38,7.86,772.5,0.51,10.05,221,A
+STN_1194,Gujarat,Lake,29.7,7.89,8.77,644.0,2.15,2.62,1142,A
+STN_1195,Maharashtra,Lake,22.1,5.34,8.04,699.9,4.21,2.47,2009,B
+STN_1196,Maharashtra,Groundwater,28.2,4.7,6.42,441.8,4.11,9.23,1403,B
+STN_1197,Karnataka,Lake,27.9,7.34,7.25,358.7,6.32,3.99,1273,A
+STN_1198,Karnataka,Reservoir,30.9,7.54,6.48,408.0,1.22,0.87,1022,A
+STN_1199,Gujarat,Lake,23.8,6.25,8.57,207.0,5.69,8.67,1829,B
+STN_1200,Uttar Pradesh,Groundwater,21.3,7.98,7.06,593.7,2.85,11.88,805,B
+STN_1201,Tamil Nadu,River,30.4,8.34,8.11,272.4,2.82,6.84,1213,A
+STN_1202,West Bengal,Groundwater,24.0,5.86,6.42,684.0,2.59,3.24,938,B
+STN_1203,Uttar Pradesh,River,22.8,4.61,6.53,283.0,1.25,4.54,94,A
+STN_1204,Uttar Pradesh,Reservoir,25.8,6.09,7.97,309.7,3.37,7.82,1806,A
+STN_1205,West Bengal,Lake,21.8,8.45,8.39,820.1,5.22,8.45,430,A
+STN_1206,West Bengal,Groundwater,23.6,4.96,6.72,223.8,5.75,10.65,2267,B
+STN_1207,Maharashtra,Groundwater,24.6,6.59,7.29,499.2,6.28,10.92,1993,B
+STN_1208,Gujarat,River,23.3,6.97,7.81,193.9,5.21,10.35,71,C
+STN_1209,Maharashtra,Lake,25.4,4.57,8.27,213.3,4.24,7.82,14,A
+STN_1210,Karnataka,Groundwater,24.6,6.44,7.83,593.5,3.49,5.45,505,A
+STN_1211,West Bengal,Groundwater,29.3,5.07,6.45,591.5,5.75,8.18,1556,C
+STN_1212,Tamil Nadu,Lake,31.0,7.77,7.61,285.2,4.94,8.03,1887,B
+STN_1213,Gujarat,Reservoir,21.2,7.07,8.5,760.7,1.47,2.69,1760,A
+STN_1214,Gujarat,River,29.9,7.63,8.46,641.5,4.6,6.14,740,B
+STN_1215,Uttar Pradesh,Groundwater,31.2,4.5,7.72,360.4,3.09,2.58,188,B
+STN_1216,Maharashtra,Lake,28.2,3.67,8.79,323.9,4.07,10.8,1523,B
+STN_1217,Uttar Pradesh,Reservoir,32.0,7.75,6.47,678.0,5.89,3.95,1861,A
+STN_1218,Uttar Pradesh,Groundwater,24.0,5.43,7.44,663.5,4.42,9.68,1730,A
+STN_1219,Gujarat,Reservoir,30.0,4.4,8.22,254.2,6.13,4.59,538,B
+STN_1220,Tamil Nadu,Groundwater,28.1,3.96,6.57,394.4,5.7,9.19,1420,B
+STN_1221,Karnataka,Groundwater,23.9,6.08,8.73,301.7,1.27,2.73,2444,A
+STN_1222,Uttar Pradesh,Reservoir,28.5,4.25,7.12,355.9,0.57,9.19,345,A
+STN_1223,West Bengal,River,26.1,6.33,7.11,351.3,2.81,2.24,767,B
+STN_1224,Tamil Nadu,Reservoir,22.3,7.14,6.75,833.2,5.69,5.94,1084,C
+STN_1225,West Bengal,Lake,22.1,6.18,6.95,675.1,1.88,1.45,650,A
+STN_1226,Uttar Pradesh,Groundwater,28.6,8.02,7.7,696.0,4.65,6.38,2364,D
+STN_1227,Tamil Nadu,Reservoir,28.5,4.28,7.32,344.2,3.36,9.87,730,B
+STN_1228,Maharashtra,Reservoir,26.4,5.97,6.7,150.4,4.98,9.09,220,B
+STN_1229,West Bengal,Groundwater,26.0,4.32,8.3,190.7,1.49,0.7,1677,B
+STN_1230,Karnataka,Groundwater,22.2,7.88,6.36,537.1,1.93,5.96,1464,A
+STN_1231,Gujarat,Reservoir,25.2,8.16,8.37,349.8,1.96,10.24,944,B
+STN_1232,Maharashtra,River,30.5,5.5,6.91,285.1,3.79,7.84,58,B
+STN_1233,Uttar Pradesh,Groundwater,30.3,5.03,7.49,184.7,2.24,0.8,450,C
+STN_1234,Uttar Pradesh,Reservoir,27.9,4.9,7.19,763.1,5.37,3.98,2303,B
+STN_1235,Karnataka,Lake,32.0,7.8,7.68,570.1,2.58,6.72,2034,B
+STN_1236,West Bengal,River,30.7,6.91,8.27,225.2,4.47,2.15,560,A
+STN_1237,West Bengal,Lake,21.7,7.9,8.77,686.5,6.19,8.21,461,A
+STN_1238,Karnataka,Groundwater,24.8,4.09,7.0,679.1,4.14,7.65,664,B
+STN_1239,Karnataka,Groundwater,21.6,5.88,7.64,352.6,1.95,2.51,256,B
+STN_1240,Uttar Pradesh,River,25.6,6.88,7.41,281.9,5.48,6.65,2418,D
+STN_1241,Uttar Pradesh,Groundwater,29.3,7.99,8.8,719.8,0.58,9.76,677,A
+STN_1242,Gujarat,Lake,21.9,5.41,8.3,380.7,2.04,4.56,2073,A
+STN_1243,Karnataka,Reservoir,30.6,5.07,7.23,743.2,2.82,3.04,2447,A
+STN_1244,Tamil Nadu,Reservoir,26.8,8.06,7.44,180.6,1.68,8.44,2405,B
+STN_1245,Gujarat,Lake,29.0,3.74,6.84,499.5,4.12,0.94,2010,A
+STN_1246,Tamil Nadu,Lake,20.5,5.9,8.16,275.7,3.85,10.01,290,B
+STN_1247,Maharashtra,Groundwater,21.1,5.79,8.4,620.4,2.94,11.33,154,A
+STN_1248,Karnataka,Groundwater,27.5,4.23,8.71,848.0,2.27,11.58,2103,D
+STN_1249,Gujarat,River,30.1,5.47,7.67,438.8,3.1,5.25,830,D
+STN_1250,West Bengal,Reservoir,30.5,7.11,7.94,220.2,2.25,7.52,1403,B
+STN_1251,Gujarat,River,28.3,5.33,7.36,372.4,1.83,10.3,1565,C
+STN_1252,Maharashtra,Lake,22.4,5.05,7.78,774.1,2.61,2.76,2190,A
+STN_1253,Maharashtra,Lake,22.3,7.41,7.11,686.0,4.11,0.43,1904,A
+STN_1254,Maharashtra,River,30.6,8.44,8.12,312.5,4.39,4.68,277,A
+STN_1255,Gujarat,River,21.4,7.4,6.26,817.5,2.28,10.62,2281,A
+STN_1256,Uttar Pradesh,Reservoir,28.2,7.73,6.27,585.5,6.18,6.11,921,B
+STN_1257,Tamil Nadu,Lake,26.4,8.2,8.06,267.6,2.07,6.41,11,A
+STN_1258,West Bengal,River,25.1,7.51,8.62,550.6,4.77,8.33,981,C
+STN_1259,West Bengal,Reservoir,25.3,8.4,7.84,465.9,0.99,6.94,126,C
+STN_1260,Tamil Nadu,Groundwater,31.3,7.24,8.09,723.8,4.49,0.75,1932,A
+STN_1261,West Bengal,Groundwater,30.3,6.81,8.34,390.9,3.26,6.77,446,A
+STN_1262,Maharashtra,Reservoir,30.4,6.97,7.14,762.5,3.91,7.81,2368,A
+STN_1263,West Bengal,River,24.9,8.0,6.48,718.4,1.6,7.73,1594,B
+STN_1264,Uttar Pradesh,Reservoir,21.3,6.92,8.63,622.2,3.1,8.77,226,A
+STN_1265,Uttar Pradesh,Reservoir,32.0,7.31,8.64,331.0,5.1,6.29,580,A
+STN_1266,Maharashtra,River,21.7,4.58,7.35,829.2,5.1,10.81,1605,B
+STN_1267,Karnataka,Groundwater,26.2,8.06,6.76,534.1,1.93,5.62,2402,C
+STN_1268,Gujarat,Reservoir,23.2,5.74,8.52,785.3,2.62,6.27,2135,A
+STN_1269,Karnataka,Groundwater,26.1,4.31,8.04,301.0,0.52,9.39,1352,B
+STN_1270,Uttar Pradesh,Reservoir,23.7,7.5,6.22,838.4,1.04,10.02,1672,A
+STN_1271,Maharashtra,Lake,30.8,5.28,6.48,721.2,1.26,7.82,1355,B
+STN_1272,Gujarat,River,31.6,4.42,8.76,814.5,2.26,1.6,678,B
+STN_1273,Tamil Nadu,Groundwater,24.9,4.78,6.3,298.7,5.05,4.05,1824,C
+STN_1274,West Bengal,River,20.8,3.67,6.93,451.5,3.56,0.34,2367,D
+STN_1275,Uttar Pradesh,Groundwater,28.0,3.95,7.63,218.3,5.26,3.62,1797,B
+STN_1276,Gujarat,Groundwater,24.5,6.46,6.68,245.9,5.03,6.89,1950,C
+STN_1277,Gujarat,River,31.8,7.83,6.8,348.8,4.02,9.68,53,A
+STN_1278,Karnataka,Reservoir,21.1,5.74,7.12,816.1,3.5,7.07,1986,B
+STN_1279,Tamil Nadu,Reservoir,21.4,6.63,6.9,617.0,6.09,0.57,462,B
+STN_1280,Karnataka,Lake,28.4,7.55,8.29,370.2,3.92,3.18,1017,B
+STN_1281,Karnataka,Groundwater,29.1,5.28,7.5,818.2,3.4,6.98,739,A
+STN_1282,Karnataka,River,25.7,6.77,6.92,667.8,5.71,8.54,1232,B
+STN_1283,Karnataka,Groundwater,23.3,5.25,7.01,784.9,0.93,10.41,1725,B
+STN_1284,Uttar Pradesh,Reservoir,23.7,6.71,6.3,799.1,4.44,11.61,203,A
+STN_1285,Tamil Nadu,River,24.1,4.59,6.33,675.5,1.18,10.71,1045,D
+STN_1286,Karnataka,River,22.7,8.39,8.07,320.2,5.42,5.66,1159,C
+STN_1287,Uttar Pradesh,Groundwater,30.2,3.88,6.49,847.6,5.26,8.99,2405,B
+STN_1288,West Bengal,Lake,20.8,6.03,7.44,377.6,3.52,2.96,449,A
+STN_1289,Uttar Pradesh,Reservoir,24.9,4.93,8.39,620.2,4.47,0.86,741,B
+STN_1290,Gujarat,Reservoir,29.0,6.5,7.16,741.4,5.14,0.76,311,A
+STN_1291,Gujarat,Groundwater,20.0,5.64,7.1,272.6,3.4,2.97,2406,B
+STN_1292,Maharashtra,Groundwater,30.5,5.03,8.47,576.3,5.94,0.55,130,B
+STN_1293,Uttar Pradesh,Lake,28.5,4.75,8.45,412.6,3.12,10.22,795,B
+STN_1294,Maharashtra,Reservoir,20.9,4.41,8.49,321.0,5.85,5.93,2045,D
+STN_1295,Uttar Pradesh,Lake,30.7,7.41,7.69,158.2,4.0,9.75,1333,B
+STN_1296,Karnataka,River,25.8,4.61,8.68,760.4,3.06,11.28,217,D
+STN_1297,Karnataka,River,27.8,7.37,8.33,245.1,0.52,11.93,223,C
+STN_1298,Maharashtra,Lake,30.6,5.93,7.28,764.7,2.27,11.25,1368,A
+STN_1299,Karnataka,Lake,30.6,3.86,7.84,570.5,5.71,8.63,2134,B
+STN_1300,Karnataka,Groundwater,24.9,4.33,6.52,584.7,3.07,5.36,1183,B
+STN_1301,Gujarat,Reservoir,22.9,7.96,7.63,730.1,3.03,7.22,2309,A
+STN_1302,Karnataka,Reservoir,23.1,6.51,6.88,506.6,3.44,9.82,222,A
+STN_1303,Gujarat,Reservoir,29.2,4.42,6.94,400.1,2.22,10.78,507,B
+STN_1304,Tamil Nadu,Lake,31.2,7.02,6.53,247.2,3.45,11.48,1825,B
+STN_1305,Uttar Pradesh,Groundwater,20.9,7.62,7.13,549.3,2.75,8.79,714,C
+STN_1306,Gujarat,Groundwater,20.2,5.15,7.45,537.2,5.96,6.53,38,B
+STN_1307,West Bengal,Groundwater,29.9,6.28,7.76,355.7,3.88,11.62,2130,B
+STN_1308,West Bengal,Lake,24.6,4.97,6.99,570.0,5.5,11.51,798,C
+STN_1309,Gujarat,Lake,23.3,3.9,8.26,457.6,4.62,5.78,2263,B
+STN_1310,Gujarat,Groundwater,22.3,5.5,7.55,713.9,1.78,7.82,2052,C
+STN_1311,West Bengal,Lake,24.2,7.26,7.86,541.6,5.71,9.73,2109,C
+STN_1312,Uttar Pradesh,River,31.7,5.79,6.92,803.6,1.02,5.25,1012,B
+STN_1313,Uttar Pradesh,Reservoir,31.7,5.53,8.32,512.6,3.19,9.97,2379,B
+STN_1314,Uttar Pradesh,Reservoir,24.0,5.33,7.82,771.2,1.93,1.43,1259,B
+STN_1315,West Bengal,Reservoir,31.6,5.79,8.44,514.4,3.73,5.83,1633,B
+STN_1316,Karnataka,River,23.6,5.09,6.62,540.6,2.3,5.84,2076,B
+STN_1317,Gujarat,Groundwater,30.3,6.56,7.19,406.8,4.84,8.25,1803,B
+STN_1318,Uttar Pradesh,Reservoir,22.5,3.82,6.49,430.1,6.12,1.49,320,C
+STN_1319,Tamil Nadu,Lake,29.9,7.54,6.76,803.2,4.75,1.33,94,A
+STN_1320,West Bengal,River,24.2,4.37,7.23,306.3,2.63,10.82,1572,C
+STN_1321,Uttar Pradesh,Groundwater,22.3,6.67,8.53,235.0,4.1,3.71,2060,A
+STN_1322,Maharashtra,River,31.2,5.75,7.65,731.1,5.83,3.99,780,C
+STN_1323,Maharashtra,Reservoir,22.6,7.37,7.06,553.8,2.12,9.34,1276,A
+STN_1324,Gujarat,Groundwater,31.9,7.63,8.14,349.3,1.21,5.04,414,A
+STN_1325,Gujarat,Reservoir,21.3,4.52,6.25,452.7,1.28,10.01,242,A
+STN_1326,Gujarat,Groundwater,20.1,6.89,7.16,517.4,3.47,4.88,517,A
+STN_1327,Karnataka,Reservoir,30.4,4.45,7.76,564.5,4.89,9.15,1838,A
+STN_1328,West Bengal,Groundwater,27.0,4.12,7.72,724.7,4.44,6.35,1383,B
+STN_1329,Maharashtra,River,25.1,8.15,7.78,426.0,3.22,11.24,1473,B
+STN_1330,Maharashtra,Groundwater,21.0,4.32,6.75,623.6,4.88,4.0,1584,B
+STN_1331,Gujarat,Groundwater,26.9,4.64,7.08,734.3,4.3,4.42,925,A
+STN_1332,West Bengal,River,24.7,4.15,8.62,740.6,4.27,11.64,1866,C
+STN_1333,Maharashtra,Groundwater,25.8,5.85,8.73,328.0,1.71,8.88,1332,B
+STN_1334,Maharashtra,River,27.6,8.1,7.01,395.1,2.38,9.29,30,A
+STN_1335,Karnataka,Reservoir,27.7,4.82,7.88,566.4,2.57,3.62,1043,B
+STN_1336,Tamil Nadu,Reservoir,31.5,6.21,6.83,770.0,5.35,6.43,2102,B
+STN_1337,Gujarat,Reservoir,27.9,5.56,7.16,703.3,5.15,3.83,2100,B
+STN_1338,Tamil Nadu,Groundwater,24.1,5.18,8.26,558.8,2.02,3.19,306,B
+STN_1339,Tamil Nadu,Lake,24.0,6.36,7.5,838.6,0.83,6.47,2434,D
+STN_1340,Karnataka,Lake,25.7,6.29,8.41,457.3,5.11,11.85,1140,A
+STN_1341,Maharashtra,Reservoir,23.1,5.3,7.83,739.7,2.96,2.65,726,B
+STN_1342,Gujarat,River,24.5,7.75,7.84,722.9,1.82,2.99,645,B
+STN_1343,Uttar Pradesh,Groundwater,30.1,3.77,6.29,785.6,1.2,2.99,2434,D
+STN_1344,Tamil Nadu,River,30.3,3.93,8.15,841.4,0.58,9.52,56,B
+STN_1345,West Bengal,Groundwater,27.5,8.45,8.74,497.0,3.07,6.17,1317,B
+STN_1346,Tamil Nadu,River,27.0,7.24,7.43,286.9,2.54,4.68,340,C
+STN_1347,Karnataka,Reservoir,25.1,7.52,6.61,472.6,4.68,10.14,245,B
+STN_1348,Tamil Nadu,Lake,27.6,6.51,8.74,747.7,6.36,3.64,871,D
+STN_1349,Tamil Nadu,River,29.7,5.6,6.95,735.3,1.74,4.77,2342,C
+STN_1350,Tamil Nadu,Reservoir,28.9,6.65,7.26,385.2,1.96,0.98,725,A
+STN_1351,Karnataka,Lake,20.4,3.96,6.4,183.1,2.52,1.52,1090,A
+STN_1352,Maharashtra,Lake,28.8,7.29,6.49,506.9,3.3,1.73,2494,A
+STN_1353,West Bengal,Lake,28.6,6.2,6.76,481.9,4.69,4.23,1107,A
+STN_1354,Tamil Nadu,River,21.2,8.28,7.63,210.0,2.61,6.34,2053,B
+STN_1355,Gujarat,River,21.8,6.69,7.65,706.4,1.13,0.11,2176,C
+STN_1356,West Bengal,Lake,29.5,4.26,7.78,348.5,4.88,2.36,580,B
+STN_1357,Tamil Nadu,River,26.7,5.89,7.72,602.0,5.27,2.19,1324,B
+STN_1358,Tamil Nadu,Reservoir,29.9,3.79,7.49,221.0,1.99,3.11,957,D
+STN_1359,Gujarat,Groundwater,22.2,7.23,8.29,752.5,1.32,2.08,1366,A
+STN_1360,Karnataka,Lake,20.4,6.01,8.63,667.5,3.67,2.42,67,B
+STN_1361,Uttar Pradesh,Groundwater,21.9,5.35,6.9,421.9,1.75,11.81,509,A
+STN_1362,Gujarat,Lake,25.4,8.34,6.54,590.6,2.74,7.18,740,A
+STN_1363,Uttar Pradesh,Groundwater,26.3,8.2,7.31,281.2,5.16,9.18,1291,C
+STN_1364,Maharashtra,Lake,30.3,8.26,6.27,839.8,1.82,9.85,491,B
+STN_1365,Maharashtra,Reservoir,28.6,4.6,8.5,707.3,5.34,8.05,1502,C
+STN_1366,Tamil Nadu,Lake,31.9,7.14,6.82,702.3,4.54,8.48,335,B
+STN_1367,West Bengal,Reservoir,20.9,8.23,7.63,257.4,1.82,7.62,1861,B
+STN_1368,Tamil Nadu,Lake,21.6,6.35,6.5,162.4,3.66,7.83,240,B
+STN_1369,Karnataka,River,21.0,4.57,7.64,559.8,4.18,11.15,1393,A
+STN_1370,Uttar Pradesh,Groundwater,26.5,7.59,6.3,250.9,1.7,2.31,564,B
+STN_1371,Maharashtra,Reservoir,23.2,7.9,8.2,696.3,1.37,3.37,2480,B
+STN_1372,Maharashtra,Lake,28.2,7.02,8.68,441.3,3.69,1.21,212,D
+STN_1373,Tamil Nadu,River,21.6,4.97,7.0,387.0,4.66,10.06,699,D
+STN_1374,Tamil Nadu,Lake,21.2,4.45,6.87,201.6,3.29,5.44,793,D
+STN_1375,Karnataka,Groundwater,25.5,6.62,7.36,847.2,0.92,10.89,1597,A
+STN_1376,Tamil Nadu,Lake,24.5,5.91,7.81,819.2,6.05,5.0,462,B
+STN_1377,West Bengal,River,29.9,6.84,6.69,242.1,4.67,5.37,1616,C
+STN_1378,Tamil Nadu,Lake,30.1,4.06,8.29,383.0,4.23,5.44,1122,B
+STN_1379,West Bengal,Lake,21.4,4.18,6.72,423.6,4.36,7.39,1084,B
+STN_1380,West Bengal,Reservoir,29.7,5.31,6.21,357.8,2.89,9.22,681,B
+STN_1381,Karnataka,Reservoir,26.8,4.79,7.56,804.1,6.41,4.28,489,B
+STN_1382,Tamil Nadu,Lake,26.0,6.6,6.5,654.9,1.3,7.6,2453,B
+STN_1383,West Bengal,Lake,21.1,5.34,8.02,819.1,4.93,2.53,168,C
+STN_1384,West Bengal,River,28.9,6.92,6.64,762.2,3.03,6.69,1183,C
+STN_1385,Tamil Nadu,Lake,20.7,7.34,8.33,678.2,5.79,6.6,568,B
+STN_1386,Tamil Nadu,Groundwater,23.3,4.44,7.42,637.9,4.8,10.68,1531,A
+STN_1387,Uttar Pradesh,Reservoir,21.1,8.1,7.67,756.3,3.87,10.76,1906,D
+STN_1388,Maharashtra,Groundwater,26.4,7.44,6.69,628.9,6.13,5.9,1345,A
+STN_1389,Gujarat,Lake,27.7,6.63,6.58,282.1,5.97,0.39,2019,B
+STN_1390,Maharashtra,River,30.7,8.04,7.84,603.7,0.81,10.15,2304,B
+STN_1391,Uttar Pradesh,Groundwater,28.8,4.83,6.86,510.5,1.66,0.11,1871,B
+STN_1392,Gujarat,Lake,31.5,5.61,7.2,837.3,4.56,5.79,1365,B
+STN_1393,Maharashtra,Reservoir,29.1,3.93,7.45,507.0,6.03,0.34,1204,D
+STN_1394,Karnataka,Lake,23.6,5.78,6.8,176.9,3.08,4.3,1508,A
+STN_1395,Uttar Pradesh,Reservoir,26.6,6.03,8.27,334.9,0.73,7.68,1398,B
+STN_1396,Karnataka,River,25.5,6.58,8.64,792.2,4.36,4.52,1038,A
+STN_1397,Karnataka,Reservoir,26.8,3.82,7.32,823.6,1.67,11.13,525,B
+STN_1398,Maharashtra,Lake,26.9,3.66,8.59,659.9,3.81,7.73,496,A
+STN_1399,West Bengal,River,28.4,5.6,8.49,189.8,2.81,7.79,907,C
+STN_1400,Gujarat,Reservoir,21.0,4.45,6.63,166.5,3.85,4.56,1466,D
+STN_1401,West Bengal,Reservoir,29.0,7.29,6.65,485.7,6.09,0.56,321,A
+STN_1402,Tamil Nadu,Groundwater,21.7,6.84,7.44,849.8,3.41,8.88,1681,B
+STN_1403,Tamil Nadu,Reservoir,20.3,5.13,7.57,758.5,0.71,8.62,1993,B
+STN_1404,Uttar Pradesh,Lake,26.2,3.73,7.09,803.2,3.99,6.41,1313,B
+STN_1405,Karnataka,River,27.0,4.41,7.01,586.5,2.45,5.05,772,A
+STN_1406,Uttar Pradesh,Lake,20.4,6.96,7.32,751.4,5.17,6.51,703,B
+STN_1407,Maharashtra,Reservoir,26.2,8.45,8.0,373.8,3.32,8.99,2266,A
+STN_1408,Karnataka,Lake,26.4,5.13,6.42,169.2,4.95,8.58,1358,A
+STN_1409,Tamil Nadu,Groundwater,20.6,7.51,8.05,792.8,5.95,7.93,2007,C
+STN_1410,Maharashtra,Lake,28.5,7.84,8.61,302.9,2.67,10.85,759,B
+STN_1411,Maharashtra,River,22.5,3.74,8.19,659.9,6.44,7.36,168,C
+STN_1412,West Bengal,River,29.5,8.08,6.7,611.3,1.4,0.27,2111,C
+STN_1413,Uttar Pradesh,Reservoir,23.7,5.83,6.43,260.7,4.36,7.45,402,B
+STN_1414,Uttar Pradesh,River,25.7,8.32,7.47,287.0,0.71,7.39,253,A
+STN_1415,West Bengal,Lake,30.7,6.19,8.69,380.4,1.78,0.93,1749,A
+STN_1416,Gujarat,Reservoir,29.7,4.68,8.33,679.9,4.3,5.19,753,D
+STN_1417,Tamil Nadu,Lake,29.4,8.37,7.66,177.5,0.78,7.85,1369,A
+STN_1418,Tamil Nadu,Groundwater,21.9,4.72,6.57,434.9,1.11,8.48,1226,B
+STN_1419,Uttar Pradesh,Lake,20.6,7.91,8.06,615.6,2.25,10.73,1245,B
+STN_1420,Tamil Nadu,River,27.3,4.37,8.31,270.0,3.95,10.11,300,A
+STN_1421,Tamil Nadu,River,24.9,6.87,8.63,233.6,0.6,1.49,1650,B
+STN_1422,Maharashtra,Groundwater,30.9,5.56,7.79,423.1,3.39,7.34,1532,A
+STN_1423,West Bengal,Reservoir,24.2,8.36,7.54,350.6,4.25,7.2,140,B
+STN_1424,West Bengal,River,24.9,4.42,7.81,604.4,2.92,3.71,1310,B
+STN_1425,Karnataka,River,26.3,5.54,8.65,828.7,0.91,2.29,1424,D
+STN_1426,Karnataka,River,29.6,6.7,7.83,153.1,4.17,2.47,287,D
+STN_1427,Gujarat,Groundwater,23.2,8.39,6.87,781.7,4.14,2.21,2199,A
+STN_1428,Karnataka,Groundwater,31.3,5.02,7.85,453.3,3.54,9.69,1984,B
+STN_1429,West Bengal,River,26.5,5.48,8.49,614.8,4.66,1.87,2124,B
+STN_1430,Tamil Nadu,Reservoir,30.1,5.81,7.67,745.7,1.75,3.25,1422,A
+STN_1431,West Bengal,River,26.3,4.76,7.51,551.4,4.57,2.69,1779,B
+STN_1432,Maharashtra,Lake,29.3,7.59,8.11,218.1,1.47,8.58,402,A
+STN_1433,West Bengal,Lake,20.6,3.96,7.92,248.4,2.86,1.98,2233,A
+STN_1434,Karnataka,Reservoir,29.6,7.02,6.35,702.5,0.91,0.39,2094,C
+STN_1435,Tamil Nadu,River,26.3,6.17,8.09,310.4,5.41,4.55,606,B
+STN_1436,West Bengal,Reservoir,25.4,4.71,7.26,548.3,3.73,3.73,2491,A
+STN_1437,Tamil Nadu,Lake,21.3,5.96,8.65,449.7,6.33,4.83,1569,B
+STN_1438,Uttar Pradesh,River,28.9,7.65,8.72,362.5,6.15,9.07,901,B
+STN_1439,West Bengal,River,21.6,5.73,7.37,700.9,6.49,0.25,2362,C
+STN_1440,Uttar Pradesh,Lake,22.3,4.11,8.72,661.9,1.11,0.55,265,C
+STN_1441,Karnataka,Reservoir,21.5,3.7,7.01,602.3,4.14,3.14,1425,B
+STN_1442,Uttar Pradesh,Reservoir,20.1,7.39,7.97,410.9,2.95,10.68,596,A
+STN_1443,Tamil Nadu,Groundwater,27.9,5.15,6.4,308.5,3.7,2.11,1039,B
+STN_1444,Tamil Nadu,Groundwater,23.3,8.16,6.58,511.1,2.35,11.96,1585,C
+STN_1445,Uttar Pradesh,Groundwater,21.8,6.59,8.45,722.0,0.79,9.69,858,A
+STN_1446,Maharashtra,Reservoir,23.8,5.68,8.52,553.0,4.75,5.53,1398,C
+STN_1447,Uttar Pradesh,River,26.0,6.32,7.58,829.1,6.29,9.0,1340,B
+STN_1448,Maharashtra,River,26.0,5.79,7.08,160.8,3.69,6.27,1035,C
+STN_1449,Uttar Pradesh,Groundwater,24.4,8.03,7.37,848.8,2.48,6.84,827,B
+STN_1450,Tamil Nadu,Reservoir,25.9,5.79,8.46,634.0,6.13,7.01,2285,C
+STN_1451,West Bengal,Groundwater,25.1,4.02,6.75,732.9,2.69,7.82,1232,B
+STN_1452,Tamil Nadu,Reservoir,29.9,6.49,6.97,384.5,5.99,0.82,1433,A
+STN_1453,Uttar Pradesh,Reservoir,20.4,6.61,8.24,505.8,5.63,7.44,92,A
+STN_1454,Gujarat,Groundwater,30.4,7.33,8.63,707.9,3.67,8.63,2498,B
+STN_1455,Maharashtra,River,22.9,8.17,6.44,682.5,4.56,3.8,1469,B
+STN_1456,Gujarat,River,28.7,5.72,8.29,383.8,4.7,11.75,184,A
+STN_1457,Tamil Nadu,Reservoir,24.9,5.26,7.88,377.1,4.35,1.82,1578,C
+STN_1458,Maharashtra,Lake,23.5,5.95,6.8,614.0,1.46,10.93,393,C
+STN_1459,West Bengal,Lake,27.4,8.0,8.17,803.6,4.66,8.15,417,C
+STN_1460,Uttar Pradesh,Lake,29.2,8.4,8.09,457.2,0.52,8.01,2249,D
+STN_1461,Maharashtra,Groundwater,25.4,8.36,6.57,397.1,4.76,10.52,1118,B
+STN_1462,Maharashtra,River,25.6,4.65,7.51,776.3,3.83,10.0,730,B
+STN_1463,Karnataka,Lake,20.7,5.98,8.17,628.1,2.06,4.21,2086,C
+STN_1464,West Bengal,Lake,31.1,4.8,6.7,421.8,5.32,8.49,1081,B
+STN_1465,Maharashtra,Lake,30.2,5.34,7.4,190.1,2.93,0.7,276,B
+STN_1466,West Bengal,Lake,24.8,3.66,6.51,655.0,3.41,5.62,2444,B
+STN_1467,Tamil Nadu,Groundwater,29.2,4.3,7.0,397.0,0.67,11.26,1049,D
+STN_1468,West Bengal,River,23.8,5.49,6.77,199.4,2.91,3.36,356,B
+STN_1469,Gujarat,River,28.8,5.32,7.51,578.6,1.5,0.69,2344,A
+STN_1470,Gujarat,River,26.2,4.89,6.57,376.1,2.16,7.04,1572,B
+STN_1471,West Bengal,Lake,25.5,4.65,7.2,386.9,2.01,4.33,386,A
+STN_1472,Uttar Pradesh,Reservoir,20.7,7.24,6.92,485.4,0.78,4.62,2479,C
+STN_1473,Karnataka,Groundwater,31.6,4.97,8.14,652.2,3.26,7.03,941,C
+STN_1474,Gujarat,Groundwater,30.0,7.03,8.02,343.4,3.64,7.5,1861,A
+STN_1475,Gujarat,Groundwater,29.5,5.34,6.45,206.7,3.93,5.3,773,B
+STN_1476,Maharashtra,River,23.7,7.51,8.68,447.1,3.27,6.14,754,A
+STN_1477,West Bengal,River,23.5,4.34,8.14,188.4,5.72,11.92,2276,A
+STN_1478,Tamil Nadu,Groundwater,26.9,4.29,7.8,638.1,0.73,11.49,66,A
+STN_1479,West Bengal,Lake,30.2,6.9,7.44,821.5,4.18,8.52,696,C
+STN_1480,West Bengal,Reservoir,31.2,8.07,6.66,611.1,5.7,2.02,123,A
+STN_1481,Tamil Nadu,River,23.2,4.21,8.7,342.8,0.75,4.38,1763,A
+STN_1482,Uttar Pradesh,River,27.3,3.87,6.22,277.2,3.48,10.61,1852,A
+STN_1483,Tamil Nadu,Lake,28.7,8.17,8.0,312.9,4.03,5.14,2115,B
+STN_1484,Gujarat,Lake,22.7,4.09,7.52,305.1,1.65,11.47,2361,B
+STN_1485,Maharashtra,River,24.9,4.75,8.55,369.7,2.02,5.91,1109,C
+STN_1486,Tamil Nadu,Lake,22.2,8.15,7.19,218.1,5.21,10.36,2360,A
+STN_1487,Karnataka,Lake,28.4,7.51,7.55,777.0,3.9,0.52,1656,B
+STN_1488,Karnataka,Lake,30.4,5.21,8.13,769.6,2.39,5.27,1657,C
+STN_1489,Karnataka,Reservoir,30.5,8.27,6.32,580.7,5.09,8.43,1509,C
+STN_1490,Tamil Nadu,Reservoir,28.0,6.34,6.34,193.3,4.98,10.38,2050,A
+STN_1491,Maharashtra,Reservoir,24.2,3.86,6.75,712.8,2.57,7.35,11,A
+STN_1492,Tamil Nadu,Lake,27.9,7.02,6.58,193.3,3.43,2.16,1073,A
+STN_1493,Gujarat,Lake,30.4,6.19,6.22,224.5,4.49,10.64,1081,B
+STN_1494,Tamil Nadu,Reservoir,27.5,6.36,7.82,377.7,2.56,6.94,1998,B
+STN_1495,West Bengal,Reservoir,25.0,8.47,8.27,452.0,4.27,1.39,2045,B
+STN_1496,Karnataka,Groundwater,31.0,4.26,8.69,397.7,2.01,5.62,2114,B
+STN_1497,Karnataka,River,30.0,6.78,7.35,265.7,2.25,8.42,1741,B
+STN_1498,West Bengal,Reservoir,30.6,5.79,6.93,228.5,2.36,5.47,2069,B
+STN_1499,Maharashtra,Groundwater,30.8,4.86,8.45,751.6,6.12,10.46,467,B
+STN_1500,Uttar Pradesh,Groundwater,24.7,6.97,8.4,404.2,5.5,5.14,700,A
