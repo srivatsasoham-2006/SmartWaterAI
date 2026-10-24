@@ -10,6 +10,17 @@ from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 
 app = Flask(__name__)
+
+@app.route("/debug-logo")
+def debug_logo():
+    return {
+        "app_root": app.root_path,
+        "static_folder": app.static_folder,
+        "logo_exists": os.path.isfile(
+            os.path.join(app.static_folder, "logo.png")
+        ) if app.static_folder else False
+    }
+
 CORS(app)
 
 BASE_DIR = Path(__file__).resolve().parent
