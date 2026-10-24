@@ -74,6 +74,15 @@
       color: var(--primary);
       font-size: 25px;
     }
+    
+.brand-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
 
     .brand-name {
       font-size: 20px;
@@ -619,13 +628,17 @@
 
     <!-- Sidebar -->
     <aside class="sidebar">
-      <div class="brand">
-        <div class="brand-icon">💧</div>
-        <div>
-          <div class="brand-name">Smart<span>Water</span></div>
-          <div class="brand-caption">AI Monitoring</div>
-        </div>
-      </div>
+     
+<div class="brand">
+  <img src="/static/logo.png"
+       alt="SmartWater AI Logo"
+       class="brand-logo">
+  <div>
+    <div class="brand-name">Smart<span>Water</span></div>
+    <div class="brand-caption">AI Monitoring</div>
+  </div>
+</div>
+
 
       <div class="nav-label">Main Menu</div>
 
