@@ -204,7 +204,7 @@ def home():
 
 @app.get("/favicon.ico")
 def favicon():
-    return send_from_directory(STATIC_DIR, "favicon.png", mimetype="image/png")
+    return send_from_directory(STATIC_DIR, "favicon.ico", mimetype="image/x-icon")
 
 
 @app.get("/static/<path:filename>")
